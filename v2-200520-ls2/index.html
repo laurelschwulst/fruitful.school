@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<!---
+               *%%%%%&%/
+         %#  (#%%%%%%%%%%%&.
+         ,(#*,,,,,,,,,****,
+      ,%#,/(.............,,,**,
+    #%%%*,*(,...............,,,*,
+  /####/**/#*.................,,**
+ /#####***(#*,.................,,**,
+ #####(/*(##/,.................,,***,
+ #####///#(#/*,,..............,,,,***
+ ####((((###/**,,,,,,,,,,,,,,,,,,,****
+ .###(((#(((//**,,,,,,,,,,,,,,,,******
+  *##(((//((//****,,,,,,,,,,*******//*
+   (((. *//////*****************/////*
+   ..    *////////*********//////////,
+          .*///////////////////((((//
+            .///(((((((((((((((((((/
+               *//(((((((((#####((/
+                   *//((((((((((//
+
+by John Provencher & Laurel Schwulst
+
+--->
+
+
+<html>
+
+<head>
+  <title>fruitful school</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="fruitful.school" />
+  <meta itemprop="name" content="fruitful.school" />
+  <meta itemprop="description" content="fruitful.school" />
+  <meta name="twitter:title" content="fruitful.school" />
+  <meta name="twitter:description" content="fruitful.school">
+  <meta property="og:title" content="fruitful.school" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="fruitful.school" />
+  <link rel="stylesheet" type="text/css" href="css/98.css" />
+  <link rel="stylesheet" type="text/css" href="style.css?8439248" />
+  <style>
+    * { box-sizing: border-box; }
+    audio {
+      display: none;
+    }
+    #console {
+      background: black;
+      color: #a0a0a0;
+      position: fixed;
+      bottom: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      width: 100vw;
+      padding: 10px;
+      font-size: 15px;
+      text-align: left;
+      font-family: "Menlo", monospace;
+      transition: 1s all ease;
+    }
+    .carat {
+      height: 1.2em;
+      width: 0.6em;
+      vertical-align: -0.1em;
+      background:  #a0a0a0;
+      display: inline-block;
+      animation: blink infinite 1.8s;
+    }
+
+    @keyframes blink {
+      0% { opacity: 1; }
+      49% { opacity: 1; }
+      50% { opacity: 0; }
+      99% { opacity: 0; }
+    }
+
+    @keyframes bob {
+      0% { margin-top: -1em; }
+      100% { margin-top: 0; }
+    }
+
+    #console.center {
+      cursor: pointer;
+      background: #6B6863;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    #console #orange {
+      animation: none;
+    }
+
+    #console.center #orange {
+      animation: bob infinite 2s;
+      animation-direction: alternate;
+    }
+
+    #orange {
+      display: inline-block;
+      /* font-size: 10vw; */
+    }
+
+    .welcome {
+      display: none;
+    }
+
+    .welcome.alive {
+      display: inline-block;
+    }
+
+  </style>
+  <link rel="icon" type="image/png" href="imgs/lemon/favicon.ico" />
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-52650052-6"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'UA-52650052-6');
+  </script>
+</head>
+
+<body>
+
+  <div id="console" class="center">
+    <div id="orange">🍊</div> <div class="welcome">welcome to fruitful.school... <div class="carat"></div></div>
+
+    <!-- it’s a six week virtual workshop...<br><br>
+
+    for creating 🍋 fruitful websites<br><br>
+
+    jan 1 - feb 8, 2020 - ✓ complete<br><br>
+
+    july 8 – august 16, 2020 - 🍓 apply here -->
+  </div>
+
+  <audio src="sounds/rain-sound-and-rainforest.mp3" id="rain" autoplay loop></audio>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.5/vue.min.js"></script>
+  <script src="js/jquery.min.js"></script>
+  <script>
+
+    $(function(){
+
+      var rain = document.getElementById('rain');
+      $('#rain').prop("volume", 0.0);
+
+      $('#console.center').click(function(){
+        $('#console').removeClass('center');
+        rain.play();
+        $('#rain').animate({volume: 1}, 1500);
+        $('.welcome').addClass('alive');
+      });
+
+    });
+
+  </script>
+
+
+</main>
+
+</html>

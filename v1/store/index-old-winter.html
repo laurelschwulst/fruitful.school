@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>fruitful store</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, intial-scale=1.0" />
+  <link rel="icon" href="../imgs/strawberry/favicon.ico" />
+  <link rel="stylesheet" href="store.css?2938723" />
+  <style>
+
+  form, small {
+    display: inline-block;
+    font-family: monospace;
+    font-size: 12px;
+    font-family: helvetica, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: .25px;
+    color: #000;
+    padding-top: 10px;
+  }
+
+  footer {
+    margin-top: 20vh;
+  }
+
+
+  </style>
+</head>
+
+<body>
+
+  <div id="back">
+    <a href="../index.html">𝒻𝓇𝓊𝒾𝓉𝒻𝓊𝓁.𝓈𝒸𝒽𝑜𝑜𝓁 ’𝓈</a>
+  </div>
+
+  <!-- <div id="background"></div> -->
+  <div class="store-icon">
+    <img src="imgs/rupee.png">
+  </div>
+
+  <!-- <div class="title">
+    𝒻𝓇𝓊𝒾𝓉𝒻𝓊𝓁 𝔰𝔱𝔬𝔯𝔢<br>
+  </div> -->
+
+<header>
+  <span id="message" class="closing">Our winter 𝔰𝔱𝔬𝔯𝔢 is open until the first day of spring...</span><br><br>
+    <div>🍓 <span id="time" class="closing"></span> left 🍑</div>
+</header>
+
+  <div class="shirt-container">
+    <img src="imgs/shirt1.png" class="shirt">
+    <img src="imgs/shirt2.png" class="shirt">
+  <br>
+  <small>❄️ buy fruitful t-shirt  [ $30.00 USD ] ❄️</small>
+  <br>
+  <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+     <input type="hidden" name="cmd" value="_s-xclick">
+     <input type="hidden" name="hosted_button_id" value="V3GFVV2WA69S2">
+     <table>
+        <tr>
+           <td><input type="hidden" name="on0" value="Size">Size</td>
+        </tr>
+        <tr>
+           <td>
+              <select name="os0">
+                 <option value="S">S $30.00 USD</option>
+                 <option value="M">M $30.00 USD</option>
+                 <option value="L">L $30.00 USD</option>
+                 <option value="XL">XL $30.00 USD</option>
+              </select>
+           </td>
+        </tr>
+     </table>
+     <br>
+     <input type="hidden" name="currency_code" value="USD">
+     <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+     <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+  </form>
+  </div>
+
+  <div style="max-width: 888px; margin: 4em auto 0; text-align: center; line-height: 1.5;">
+    <img src="imgs/real-shirt-crop.jpg" style="border-radius: 47%;"><br><br>
+    <small><i>Are They Thinking about the Grape? (Pensent-ils au raisin?)</i><br>François Boucher,
+    1747</small>
+     <!-- <br><a href="https://www.artic.edu/artworks/44742/are-they-thinking-about-the-grape-pensent-ils-au-raisin">The Art Institute of Chicago</a></small> -->
+  </div>
+
+  <footer>
+    <a href="../index.html">
+      <span style="font-size: 14px;">𝒻𝓇𝓊𝒾𝓉𝒻𝓊𝓁.𝓈𝒸𝒽𝑜𝑜𝓁</span> is a website workshop for people with seeds<br><br>
+      <i style="font-size: 14px;">“&nbsp;𝓉𝒽ℯ&nbsp; 𝒻𝓇𝓊𝒾𝓉&nbsp; 𝓇𝒾𝓅ℯ𝓃𝓈&nbsp; 𝓈𝓁ℴ𝓌𝓁𝓎,&nbsp; 𝒷𝓊𝓉&nbsp; 𝒻𝒶𝓁𝓁𝓈&nbsp; 𝓆𝓊𝒾𝒸𝓀𝓁𝓎&nbsp;”</i>
+    </a>
+  </footer>
+
+  <script>
+        // Set the date we're counting down to
+        var countDownDate = new Date("2020-03-19T24:00:00").getTime();
+
+        function time() {
+
+            // Time
+            var now = new Date().getTime();
+
+            // Distance
+            var distance = countDownDate - now;
+
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // ticker
+            document.getElementById("time").innerHTML = days + " days " + hours + " hours " +
+                minutes + " minutes " + seconds + " seconds";
+
+            // after the date
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("time").innerHTML = "";
+                    document.getElementById("section").innerHTML = "";
+                    document.getElementById("message").innerHTML = "our store is now closed. 🌸 <a href=''> subscribe for updates </a>";
+
+            }
+        }
+
+        var x = setInterval(function() {
+            time()
+        }, 1000);
+
+
+        time()
+    </script>
+
+</body>
+
+</html>
