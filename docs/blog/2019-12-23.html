@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>fruitful blog</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width; initial-scale=1.0" />
+  <link rel="icon" href="../imgs/watermelon2.jpg">
+  <link rel="stylesheet" href="blog.css" />
+  <link rel="stylesheet" href="blog-permalink.css" />
+  <style>
+
+      .letter-container {
+          min-height: 100vh;
+      }
+        .clock {
+            font-family: sans-serif;
+            background-color: #77746d;
+            text-align: center;
+            border-radius: 30px;
+        }
+
+        .clockText {
+            font-size: calc(6vw + 12px);
+            padding: 20px 0 40px;
+        }
+
+
+      .back {
+          	margin-top: -400px;
+
+      }
+
+      .post-title span {
+        background: #77746d;
+      }
+
+  </style>
+</head>
+
+<body>
+
+  <div id="background"></div>
+
+  <div id="back">
+    <a href="index.html">𝒻𝓇𝓊𝒾𝓉𝒻𝓊𝓁 𝚋𝚕𝚘𝚐</a>
+  </div>
+
+
+  <div class="letter-container">
+     <div class="post letter clock">
+            <div class="post-title">
+              <span>
+          <h2>emoji clock</h2>
+          <div class="watermelon">•</div>
+          <div class="date-posted">12232019</div>
+              </div>
+      </span>
+    <div id="clock">
+        <div class="clockText">
+            <span id="hours">🍋🍋</span>:
+            <span id="minutes">🍋🍋</span>:
+            <span id="seconds">🍋🍋</span>
+        </div>
+    </div>
+      </div>
+
+
+</div>
+
+  <footer>
+    <div class="inside">
+      <a href="http://fruitful.school" style="font-size: 14px; text-decoration: none;">𝒻𝓇𝓊𝒾𝓉𝒻𝓊𝓁.𝓈𝒸𝒽𝑜𝑜𝓁</a> © 2020
+    </div>
+  </footer>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script>
+
+                    var fruit = ["🍊", "🍋", "🍒", "🍉", "🍇", "🍌", "🍎", "🍐", "🍏", "🍑", "🍈"];
+
+            function updateClock(){
+            var d = new Date();
+            var minutes =  d.getMinutes();
+            var seconds = d.getSeconds();
+            var hours =  d.getHours();
+            console.log(hours);
+
+            if (hours > 0 && hours <= 12) {
+  hours= hours;
+} else if (hours > 12) {
+  hours=(hours - 12);
+} else if (hours == 0) {
+  hours= 12;
+}
+
+              var hoursE = "";
+              var minutesE = "";
+              var secondsE = "";
+
+
+
+            for (i=0; i < hours.toString().length; i++){
+            var stringH =  hours.toString().charAt(i);
+            // convert the first digit back to an integer
+            var numberH = parseInt(stringH)
+            console.log(numberH)
+            hoursE += fruit[numberH];
+            };
+
+            for (i=0; i < minutes.toString().length; i++){
+            var stringH =  minutes.toString().charAt(i);
+            // convert the first digit back to an integer
+            var numberH = parseInt(stringH)
+            console.log(numberH)
+
+            minutesE += fruit[numberH];
+            };
+
+
+            for (i=0; i < seconds.toString().length; i++){
+            var stringH =  seconds.toString().charAt(i);
+            // convert the first digit back to an integer
+            var numberH = parseInt(stringH)
+            console.log(numberH)
+
+            secondsE += fruit[numberH];
+            };
+
+  document.getElementById("minutes").innerHTML = minutesE;
+document.getElementById("seconds").innerHTML = secondsE;
+document.getElementById("hours").innerHTML = hoursE;
+
+            }
+
+        updateClock();
+
+        setInterval(function(){
+        updateClock();
+
+        },1000)
+    </script>
+</body>
+
+</html>

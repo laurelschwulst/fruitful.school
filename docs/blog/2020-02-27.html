@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>fruitful blog</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width; initial-scale=1.0" />
+  <link rel="icon" href="../imgs/watermelon2.jpg">
+  <link rel="stylesheet" href="blog.css?8232112323" />
+  <link rel="stylesheet" href="blog-permalink.css?9221323" />
+  <style>
+
+      .letter-container {
+          min-height: 100vh;
+      }
+
+      .post-title span {
+        background: rgb(202, 228, 255);
+        background: rgb(223, 217, 216);
+        background: #e07da5;
+        background: #C5C7C4;
+      }
+
+      table, tr, td {
+        border-collapse: collapse;
+      }
+
+      table {
+        margin-bottom: 1.6em;
+      }
+
+      td {
+        border: 1px solid gray;
+        padding: 1em;
+      }
+
+  </style>
+</head>
+
+<body>
+
+  <div id="background"></div>
+
+  <div id="back">
+    <a href="index.html">𝒻𝓇𝓊𝒾𝓉𝒻𝓊𝓁 𝚋𝚕𝚘𝚐</a>
+  </div>
+
+  <div id="container">
+
+  <div class="post letter interview" style="background: #C5C7C4;">
+    <div class="post-title">
+      <span>
+      <h2>interview with ryan kuo</h2>
+      <div class="watermelon">•</div>
+      <div class="date-posted">022720</div>
+    </span>
+    </div>
+
+    <figure>
+      <!-- <img src="imgs/ryan02.png"> -->
+      <img src="imgs/ryan03.png">
+    </figure>
+    <figcaption style="text-align: center;">
+      Screenshot from “Tables of Content” (2017) — <a href="https://rkuo.net/Tables-of-Content">Link</a>
+    </figcaption>
+
+    <article>
+
+      <p class="intro" style="margin-top: 1.8em;">
+        We shared some of artist Ryan Kuo's works throughout the course of fruitful school winter 2020. Recently, Ryan was a technology resident at Pioneer Works, where fruitful school was hosted. Because of these overlaps and our curiosity about Ryan’s work, we thought it might be nice to have a conversation…
+      </p>
+      <p class="intro">
+        The following was transcribed and edited from a video chat the morning of Wednesday, February 5th.
+      </p>
+
+      <figure>
+        <img src="imgs/ryan-queens.jpg">
+      </figure>
+      <figcaption style="text-align: center;">
+        Queens Museum exterior
+      </figcaption>
+
+      <p class="question">
+        How did you come to centering your work around the HTML element  <code style="font-weight: normal;">&lt;table&gt;</code> for the <a href="https://www.queensmuseum.org/qi2018/" target="_blank">Queens International 2018</a> exhibition site?
+      </p>
+
+      <p>
+        The exhibition is called “Volumes,” and I was interested in the idea of containment. When content is surfaced on the screen, it sometimes seems like it’s materializing from thin air. But it’s always entering into a pre-existing hierarchy.
+      </p><p>
+        In any group exhibition, artists are put together and framed, whether intentionally or unintentionally. There are many overlapping acts of framing—curatorial, physical, subliminal … lateral associations between artists, works, and spaces.
+      </p><p>
+        The curatorial staff at Queens Museum had their own granular systems for keeping track of everything. They used indexical Google Sheets and many multicolored labels on their Gmail inboxes, for instance.
+      </p><p>
+        Instead of designing a new system to reflect all this organization, I wanted to offload the mental overhead onto an existing model. With an HTML <code>&lt;table&gt;</code>, everything has to sit side-by-side, fit together, and align into a consistent body on the screen. So <code>&lt;table&gt;</code> seemed like a straightforward way to organize a ton of information.
+      </p><p>
+        Because I’ve experimented a little with <code>&lt;table&gt;</code> in the past, I knew it could become something other than a default <code>&lt;table&gt;</code>.
+      </p>
+
+      <figure class="big-image">
+        <img src="imgs/ryan06.png">
+      </figure>
+      <figcaption style="text-align: center;">
+        Website for Queens International 2018: “Volumes” — <a href="https://www.queensmuseum.org/qi2018/">Link</a>
+      </figcaption>
+
+      <p>
+
+        The <code>table</code> element is inherently architectural, and one goal of mine was to do a “virtual walkthrough” of the space. Since I have a background as a video game journalist, this seemed intuitive. If you’re trying to show a really complicated space, and if you want the exhibition website to have some use value after the closing … why not have some 3D representation of what was there? So my summer intern Ted Kim and I incorporated animated GIFs. These were walkthroughs and gestures performed within <a href="https://en.wikipedia.org/wiki/SketchUp">SketchUp</a>, using the museum’s 3D model used to plan the exhibition.
+
+    </p>
+
+    <table>
+      <tr>
+        <td>
+          <img src="imgs/ryan-animated1.gif">
+        </td>
+        <td>
+          <img src="imgs/ryan-animated2.gif">
+        </td>
+      </tr>
+    </table>
+
+    <p>
+      The text that appears at the top of the website is generated from a Markov chain that processes the content on each page. It rearranges the text incorrectly on purpose—the idea is that an institution will always frame you, as an artist, somewhat incorrectly. There is always unintentional slippage or mistranslation happening when an institution frames an artist’s intentions or statements. Then there is this process of realignment in both directions.
+    </p>
+
+    <p>
+      The formal style of this generated text is uppercase, similar to the official, bureaucratic-feeling “QUEENS MUSEUM” signage on the actual building.
+    </p>
+
+    <p class="question">
+    How did you make the website? And is it true there is no CMS?
+  </p>
+
+  <p>
+    I coded the website from the ground up (with just HTML, CSS, and some JavaScript) in <a href="https://en.wikipedia.org/wiki/Sublime_Text">Sublime Text</a>. This was my first time building a website from scratch. (My <a href="https://rkuo.net/">portfolio site</a> is a heavily modified Cargo.)
+</p><p>
+And that’s right, there is no CMS. I didn’t know that most people use a CMS to update websites. With the museum, we had a couple rounds of updates… I would just build new parts onto the site.
+</p><p>
+While I did create a few starter templates, every page was crafted around the content. I would copy and paste text, like the artist interviews, into the template. But there would often be something a little off… so I would tweak the <code>&lt;table&gt;</code> cells to fit together in a better way. So there both is and isn’t a site template… it was an interesting combination of streamlined and very manual.
+  </p>
+
+<figure class="big-image">
+<style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://player.vimeo.com/video/380861739?color=ffffff&title=0&byline=0&portrait=0' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div>
+<figcaption style="text-align: center;">“Family Maker,” Mac Application (2017-2018) — <a href="https://left.gallery/family-maker">Available at left.gallery</a></figcaption>
+</figure>
+
+  <p class="question" style="margin-top: 1.8em;">
+    It seems like you make a lot of websites or apps to use as tools within performances or presentations, but you also often allow the tools to be viewed by themselves. Can you say more about these two?
+  </p>
+
+  <p>
+    People either think I have to “be there” to perform the work, or that I have to make the work perform itself. But I never want to settle for either.
+  </p>
+
+  <p>
+  If I take you through my work in person, and it becomes a live thing that you can’t separate from me, that is the way it should be. It’s my work. Conversely, I don’t want to have to be there. Anyone who spends a little time with the work could get the feeling of it. I’ve never differentiated between work that is self-contained and work that is a performance object.
+</p>
+
+<p>
+  For instance, when I perform my hyperlinked artist talk “<a href="https://rkuo.net/Example-1">Example</a>,” it reflects exactly my thinking and feeling at the time I was making it. I made it using <a href="https://en.wikipedia.org/wiki/Twine_(software)">Twine</a>. I knew that the live performance of the website would be scripted. So I wanted to lean on the website I created to bring me back to that time I was making it.
+</p>
+
+<p>
+  To be convincing in public space in America means that there is always a script behind how I present myself. When people are looking, I need to know exactly where I am in the present moment. Otherwise I’d be lost. So the works literally direct what I’m thinking about in the moment they are performed. They help me to be present in future scripted encounters.
+</p>
+
+<p>
+  There’s a nice feedback loop when making websites… you do some writing, plug it into the code, and then read it through on the screen. You make adjustments and do it again.
+</p>
+
+<p class="question">
+  How do you know when a performance object you’ve made is complete?
+</p>
+
+<p>
+  It’s when the system or world I put together starts to feel like it’s repeating, stuttering, circling… it’s actively revising itself. Maybe it feels stuck… it’s going back and forth… it’s heading in the direction of being successful, but never resolving clearly. This feels true to me. Just through its being, it conveys the way I feel about it.
+</p>
+
+      <hr style="border-bottom: 2px outset #e8e8e8;">
+
+      <p class="outro">
+        <a href="https://rkuo.net">Ryan Kuo</a> lives and works in New York City. His works are process-based and often invoke a person arguing and taking up white space out of resentment and necessity.
+      </p>
+
+    </article>
+
+  </div>
+
+</div>
+
+
+</div>
+
+  <footer>
+    <div class="inside">
+      <a href="http://fruitful.school" style="font-size: 14px; text-decoration: none;">𝒻𝓇𝓊𝒾𝓉𝒻𝓊𝓁.𝓈𝒸𝒽𝑜𝑜𝓁</a> © 2020
+    </div>
+  </footer>
+</body>
+
+</html>
