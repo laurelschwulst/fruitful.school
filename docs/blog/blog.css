@@ -63,6 +63,18 @@ figure.big-image figcaption {
 	z-index: -1;
 }
 
+#background.season2 {
+	background: url('imgs/season2.jpg');
+	background-size: cover;
+	background-position: center bottom;
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	z-index: -1;
+}
+
 .title {
 	font-size: 5em;
 	/* color: #707070;
@@ -633,6 +645,77 @@ table {
 td {
 	border: 1px solid gray;
 	padding: 1em;
+}
+
+.choose-your-season,
+.select-season,
+.season-label {
+	text-align: center;
+	position: static;
+}
+
+.choose-your-season,
+.season-label {
+	font-family: "Helvetica Neue", sans-serif;
+	font-size: 12px;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+}
+
+.season-label {
+	opacity: 0.4;
+	margin-top: 0.25em;
+}
+
+.choose-your-season {
+	margin-bottom: 12em;
+}
+
+.choose-your-season a.button {
+	text-decoration: none;
+	padding: 0.5em;
+	color: black;
+	border: 2px solid rgb(163, 154, 143);
+	border-right-color: #5c5a53;
+	border-bottom-color: #5c5a53;
+	display: inline-block;
+	margin-top: 0.6em;
+}
+
+.choose-your-season a.button:active,
+.choose-your-season a.button:focus {
+	text-decoration: none;
+	padding: 0.5em;
+	color: #5c5a53;
+	border: 2px solid #5c5a53;
+	border-right-color: rgb(163, 154, 143);
+	border-bottom-color: rgb(163, 154, 143);
+	display: inline-block;
+	margin-top: 0.6em;
+}
+
+.select-season {
+	margin-top: 2.5em;
+}
+
+select {
+	-moz-appearance: none;
+	position: relative;
+	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='16' height='17' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M15 0H0v16h1V1h14V0z' fill='%23DFDFDF'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M2 1H1v14h1V2h12V1H2z' fill='%23fff'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M16 17H0v-1h15V0h1v17z' fill='%23000'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M15 1h-1v14H1v1h14V1z' fill='gray'/%3E%3Cpath fill='silver' d='M2 2h12v13H2z'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M11 6H4v1h1v1h1v1h1v1h1V9h1V8h1V7h1V6z' fill='%23000'/%3E%3C/svg%3E");
+	background-position: top 2px right 2px;
+	background-repeat: no-repeat;
+	border-radius: 0;
+	height: 21px;
+	border: none;
+	padding: 3px 4px;
+	padding-right: 4px;
+	padding-right: 32px;
+	box-shadow: inset -1px -1px #A19A90,inset 1px 1px grey,inset -2px -2px #A19A90,inset 2px 2px #0a0a0a;
+	background-color: #fff;
+	box-sizing: border-box;
+	font-family: "Helvetica Neue", sans-serif;
+	-webkit-font-smoothing: none;
+	font-size: 11px;
 }
 
 
