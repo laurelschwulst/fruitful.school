@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>fruitful blog</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width; initial-scale=1.0" />
+  <link rel="icon" href="../imgs/watermelon2.jpg">
+  <link rel="stylesheet" href="blog.css" />
+  <link rel="stylesheet" href="blog-permalink.css" />
+  <style>
+
+  .post-title span {
+    background: #fff6ae;
+  }
+
+  </style>
+</head>
+
+<body>
+
+  <div id="background"></div>
+
+  <div id="back">
+    <a href="index.html">𝒻𝓇𝓊𝒾𝓉𝒻𝓊𝓁 𝚋𝚕𝚘𝚐</a>
+  </div>
+
+  <div class="letter-container">
+
+  <div class="post letter process">
+    <div class="post-title">
+      <span>
+      <h2>apache microblog</h2>
+      <div class="watermelon">•</div>
+      <div class="date-posted">122219</div>
+    </span>
+    </div>
+
+    <article>
+      <p>
+        The other day I saw Elliott tweet...
+      </p>
+      <blockquote class="twitter-tweet" style="width: 100%;"><p lang="en" dir="ltr">websites that we need in 2020:<br>- small community social networks<br>- video sites that feel like vimeo/youtube 1.0<br>- music sites that feel like &lt;audio&gt;<br>- micro blogging website that feels like .txt</p>&mdash; elliott&#39;s company 2 (@elliottsphone) <a href="https://twitter.com/elliottsphone/status/1208231374391562240?ref_src=twsrc%5Etfw">December 21, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+       <p>
+         And found myself thinking that a great solution to “micro blogging .txt” might be simply displaying the files on your website via Apache DirectoryIndex.
+       </p>
+       <p>
+         In fact, right now, Elliott (<a href="https://elliott.computer/">http://elliott.computer</a>) has something like this going on...
+       </p>
+       <p class="big-image">
+         <img src="imgs/elliott-site.png">
+       </p>
+       <p>
+         To tell your Apache server to display your files, you need to create a special <code>.htaccess</code> file. (Note that it has a dot in front of its name, meaning it is typically invisible.) You will tell it something like this. This tells your webserver to display its files...
+       </p>
+       <script src="https://gist.github.com/laurelschwulst/f3962c3a2641b669b4e5eb11923c5105.js"></script>
+       <p style="margin-top: 1.5em;">
+         Then you place this <code>.htaccess</code> in your server’s root directory, letting visitors see and browse your website’s files. I like this because it highlights what a website is... simply a collection of files.
+       </p>
+       <p>
+         We are currently in progress with something similar, a simple file directory. Some snippets...
+       </p>
+       <p>
+         <figure style="margin: 0.5em 0;">
+           <img src="imgs/portal1.png" style="border: 1px solid #CEC493;">
+           <figcaption>
+             Home
+           </figcaption>
+         </figure>
+       </p>
+       <p>
+         <figure>
+           <img src="imgs/portal3.png" style="border: 1px solid #CEC493;">
+         <figcaption>
+           Inside our library/ directory... cherries are pdfs, grapes are videos...
+         </figcaption>
+       </figure>
+       </p>
+       <p>
+         As you can tell, we styled our index! We added yellow background and some custom icons. Here is a peek into our <code>.htaccess</code>:
+       </p>
+       <script src="https://gist.github.com/laurelschwulst/9b9cca2a1eae5521f4f78f5c0a97dc4e.js"></script>
+       <p>
+         In addition to telling our server to display the index (line 1) we also told it to do this in a “fancy” way... displaying of additional file information than is default (line 2), and after that, we specify a header and footer file that are inside of a (not-shown) folder that we named <code>_</code> (underscore). The header has a little CSS inside, which is giving the page the yellow background. And line 14 onwards is specifying custom icons, overriding the defaults! Of course we chose fruit...
+       </p>
+       <p>
+         We learned all this from a very helpful <a href="https://perishablepress.com/better-default-directory-views-with-htaccess/">blog post</a>.
+       </p>
+    </article>
+
+  </div>
+
+</div>
+
+  <footer>
+    <div class="inside">
+      <a href="http://fruitful.school" style="font-size: 14px; text-decoration: none;">𝒻𝓇𝓊𝒾𝓉𝒻𝓊𝓁.𝓈𝒸𝒽𝑜𝑜𝓁</a> © 2020
+    </div>
+  </footer>
+
+</body>
+
+</html>
