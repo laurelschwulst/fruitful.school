@@ -197,8 +197,7 @@ h2.hidden {
 }
 
 #offerings div.offering:hover   {
-    color: rgb(163, 154, 143);
-        text-shadow: #5c5a53 1px 1px 1px;
+        text-shadow: rgb(163, 154, 143) 1px 1px 1px;
 
     
 }
