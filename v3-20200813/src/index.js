@@ -169,3 +169,11 @@ $('.press').click(function(){
 
                 if (hasRowspans) $(this).trigger("update");
             });
+
+
+// permalinks
+
+var hash = window.location.hash;
+if (hash != '') {
+  $('a[href="'+hash+'"]').click();
+}

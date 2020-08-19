@@ -173,7 +173,7 @@ td {
     border-top-color: #5c5a53;
     border-left-color: #5c5a53;
     max-width: 588px;
-    margin: 1em auto;
+    margin: .5em auto;
     padding: 15px 15px 20px 25px;
     text-transform: lowercase;
 }
@@ -196,10 +196,28 @@ h2.hidden {
     margin: 0 auto;
 }
 
-#offerings div.offering:hover {
-    background: url('../images/giovanni_stanchi_scattered_flowers_and_fruit_on_a_ledge_1_small.jpg');
-    background-size: cover;
+#offerings div.offering:hover   {
+    color: rgb(163, 154, 143);
+        text-shadow: #5c5a53 1px 1px 1px;
 
+    
+}
+
+#offerings div.offering:nth-child(1):hover {
+    background: url('../images/giovanni_stanchi_scattered_flowers_and_fruit_on_a_ledge_1_small.jpg');
+    background-size: auto 330px;
+    background-position: 0% 0%;
+}
+
+#offerings div.offering:nth-child(2):hover {
+    background: url('../images/giovanni_stanchi_scattered_flowers_and_fruit_on_a_ledge_1_small.jpg');
+    background-size: auto 330px;
+    background-position: -350px 0%;
+}
+#offerings div.offering:nth-child(3):hover {
+    background: url('../images/giovanni_stanchi_scattered_flowers_and_fruit_on_a_ledge_1_small.jpg');
+    background-size: auto 330px;
+    background-position: -630px 0%;
 }
 
 #offerings div.offering {
@@ -213,7 +231,7 @@ h2.hidden {
 }
 
 div.offering.inactive {
-    opacity: 0.5;
+    opacity: 1;
 }
 
 #offerings h3 {
@@ -221,7 +239,7 @@ div.offering.inactive {
     font-size: 1em;
     font-weight: normal;
     margin: 0;
-    border-bottom: 1px solid #5C5A54;
+    border-bottom: 2px solid #5C5A54;
     padding: 15px 20px 20px 20px;
     position: relative;
 }
