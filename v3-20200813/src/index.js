@@ -66,3 +66,106 @@
 	    updateClock();
 
 	}, 1000)
+
+
+
+
+
+
+	$('.about').click(function (e) {
+	    e.preventDefault()
+	    $('.topnav').removeClass('current')
+	    $(this).addClass('current')
+	    $('.toggle').css('display', 'none')
+	    $('#about').css('display', 'block')
+	});
+
+
+	$('.fruitful').click(function (e) {
+	    e.preventDefault()
+	    $('.topnav').removeClass('current')
+	    $(this).addClass('current')
+	    $('.toggle').css('display', 'none')
+	    $('#fruitful').css('display', 'block')
+	});
+
+
+	$('.people').click(function (e) {
+	    e.preventDefault()
+	    $('.topnav').removeClass('current')
+	    $(this).addClass('current')
+	    $('.toggle').css('display', 'none')
+	    $('#people').css('display', 'block')
+	});
+
+
+	$('.faq').click(function (e) {
+	    e.preventDefault()
+	    $('.topnav').removeClass('current')
+	    $(this).addClass('current')
+	    $('.toggle').css('display', 'none')
+	    $('#faq').css('display', 'block')
+	});
+
+
+	$('.conduct').click(function (e) {
+	    e.preventDefault()
+	    $('.topnav').removeClass('current')
+	    $(this).addClass('current')
+	    $('.toggle').css('display', 'none')
+	    $('#conduct').css('display', 'block')
+	});
+
+$('.press').click(function(){
+    $(this).find( ".answer" ).toggle();
+    $(this).find( ".expand" ).toggle();
+    $(this).find( ".disband" ).toggle();
+
+})
+
+
+
+
+//table sorting
+
+        $("table")
+            .tablesorter()
+            .bind("sortStart", function() {
+                var hasRowspans = false;
+
+                $("[rowspan]", this).each(function() {
+                    hasRowspans = true;
+
+                    var rowspan = parseInt($(this).attr("rowspan"));
+
+                    // remove the rowspan attribute
+                    $(this).removeAttr("rowspan");
+
+                    var trIndex = $(this)
+                        .parentsUntil("table")
+                        .children("tr")
+                        .index($(this).parent());
+
+                    var tdIndex = $(this)
+                        .parent()
+                        .children("td")
+                        .index(this);
+
+                    // traverse each row, and repopulate / reclone the values for rows with rowspan
+                    for (var tr = trIndex + 1; tr < trIndex + rowspan; ++tr) {
+                        var $row = $(this)
+                            .parentsUntil("table")
+                            .children("tr")
+                            .eq(tr);
+
+                        if (tdIndex == 0) $row.prepend($(this).clone());
+                        else
+                            $row
+                            .children("td")
+                            .eq(tdIndex - 1)
+                            .after($(this).clone());
+                    }
+                });
+
+                if (hasRowspans) $(this).trigger("update");
+            });

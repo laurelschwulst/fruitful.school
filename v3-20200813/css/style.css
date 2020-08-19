@@ -1,8 +1,8 @@
 @font-face {
-	font-family: "Trattatello";
-	src: url('../fonts/trattatello.ttf') format('truetype');
-	font-weight: normal;
-	font-style: normal;
+    font-family: "Trattatello";
+    src: url('../fonts/trattatello.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 body {
@@ -43,7 +43,8 @@ main {
     text-align: center;
 }
 
-.small {
+.small,
+th {
     font-family: "Helvetica", sans-serif;
     font-size: 12px;
     letter-spacing: 0.4px;
@@ -52,7 +53,8 @@ main {
 
 
 
-.medium {
+.medium,
+table {
     font-family: "Times New Roman", serif;
     font-size: 22px;
     letter-spacing: .3px;
@@ -126,7 +128,12 @@ nav#main a span.fruit {
 
 }
 
-nav#main a.current span.fruit, .selected {
+.toggle {
+    display: none;
+    display: none;
+}
+
+nav#main a.current span.fruit {
     border: 2px solid rgb(163, 154, 143);
     border-top-color: #5c5a53;
     border-left-color: #5c5a53;
@@ -140,15 +147,16 @@ nav#main span.section {
     margin-top: 1em;
 }
 
-span.fruit {
+span.fruit,
+.press {
     transition: background-color 1s ease;
 }
-span.fruit:hover {
-    border: 2px solid rgb(163, 154, 143);
-    border-top-color: #5c5a53;
-    border-left-color: #5c5a53;
+
+span.fruit:hover,
+.press:hover {
     background: #6F6C64;
 }
+
 section {
     margin-top: 1.75em;
 }
@@ -157,7 +165,8 @@ section {
     display: none;
 }
 
-#info p {
+#info p,
+td {
     text-align: left;
     border-radius: 20px;
     border: 2px solid rgb(163, 154, 143);
@@ -165,8 +174,15 @@ section {
     border-left-color: #5c5a53;
     max-width: 588px;
     margin: 1em auto;
-    padding: 15px 10px 20px 25px;
+    padding: 15px 15px 20px 25px;
     text-transform: lowercase;
+}
+
+#info .press {
+    border: 2px solid rgb(163, 154, 143);
+    border-bottom-color: #5c5a53;
+    border-right-color: #5c5a53;
+    cursor: pointer;
 }
 
 h2.hidden {
@@ -181,9 +197,9 @@ h2.hidden {
 }
 
 #offerings div.offering:hover {
-        background: url('../images/giovanni_stanchi_scattered_flowers_and_fruit_on_a_ledge_1_small.jpg');
+    background: url('../images/giovanni_stanchi_scattered_flowers_and_fruit_on_a_ledge_1_small.jpg');
     background-size: cover;
-    
+
 }
 
 #offerings div.offering {
@@ -246,7 +262,8 @@ footer {
     display: inline-block;
     transition: 5s ease;
     border-radius: 100%;
-    padding: 150px 100px;
+    width: 100%;
+    padding: 400px 0;
     font-size: .8em;
     margin-bottom: 50px;
     left: 0;
@@ -264,6 +281,60 @@ footer {
     justify-content: center;
     height: 100%;
 }
+
+.answer {
+    display: none;
+    font-style: italic;
+}
+
+/* table container */
+table {
+    max-width: 100%;
+    border-spacing: .5em;
+    border-collapse: separate;
+}
+
+/* head of table */
+thead {
+    font-family: helvetica, sans-serif;
+}
+
+/* individual elements of the head of table */
+th {
+    padding: 0px;
+}
+
+.cellFruit {
+    border-radius: 100%;
+    text-align: center;
+}
+
+tbody {}
+
+/* individual elements of the body of table */
+
+td {
+    border-radius: 5px;
+    margin: 10px;
+
+
+}
+
+td,
+th {
+    padding: 5px 20px;
+    font-weight: 500;
+    text-align: left;
+
+}
+
+
+tr {
+    text-align: center;
+}
+
+.red {}
+
 
 @media (prefers-color-scheme: dark) {
 
@@ -311,6 +382,6 @@ footer {
         border-left-color: #48433A;
         background: #2C271E;
     } */
-    
+
 
 }
