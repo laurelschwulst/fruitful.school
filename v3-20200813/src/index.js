@@ -177,3 +177,10 @@ var hash = window.location.hash;
 if (hash != '') {
   $('a[href="'+hash+'"]').click();
 }
+
+if (location.hash) {
+  setTimeout(function() {
+
+    window.scrollTo(0, 0);
+  }, 0);
+}

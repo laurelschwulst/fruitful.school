@@ -195,7 +195,7 @@ h2.hidden {
     max-width: 1000px;
     margin: 0 auto;
 }
-
+/*
 #offerings div.offering:hover   {
         text-shadow: rgb(163, 154, 143) 1px 1px 1px;
 
@@ -218,7 +218,7 @@ h2.hidden {
     background-size: auto 330px;
     background-position: -630px 0%;
 }
-
+*/
 #offerings div.offering {
     border: 2px solid rgb(163, 154, 143);
     border-top-color: #5c5a53;
