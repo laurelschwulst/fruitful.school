@@ -8,7 +8,7 @@
 body {
     background-color: #77746D;
     font-family: serif;
-    margin: 20px;
+    margin: 10px 20px;
 }
 
 img {
@@ -22,12 +22,12 @@ a {
 a.button {
     text-decoration: none;
     border-radius: 4px;
-    padding: 9px 13px 6px;
+    padding: 8px 13px 7px;
     border: 2px solid #5c5a53;
     border-top-color: rgb(163, 154, 143);
     border-left-color: rgb(163, 154, 143);
     display: inline-block;
-    margin: 0 1em;
+    margin: 1em .5em;
 }
 
 a.button:focus,
@@ -49,9 +49,12 @@ th {
     font-size: 12px;
     letter-spacing: 0.4px;
     text-transform: uppercase;
+
 }
 
-
+.small {
+    margin: 0;
+}
 
 .medium,
 table {
@@ -195,6 +198,7 @@ h2.hidden {
     max-width: 1000px;
     margin: 0 auto;
 }
+
 /*
 #offerings div.offering:hover   {
         text-shadow: rgb(163, 154, 143) 1px 1px 1px;
@@ -225,7 +229,7 @@ h2.hidden {
     border-left-color: #5c5a53;
     background: #6F6C64;
     border-radius: 4px;
-    margin: 0 0.5em;
+    margin: 1em 0.5em 0.5em;
     position: relative;
 }
 
@@ -400,5 +404,50 @@ tr {
         background: #2C271E;
     } */
 
+
+}
+
+@media only screen and (max-width: 800px) {
+    body {}
+
+    #offerings {
+        grid-template-columns: inherit;
+        display: block;
+        max-width: 100%;
+    }
+
+    .extralarge {
+        font-size: 3.5em;
+
+    }
+
+    h1.extralarge,
+    h2.extralarge {
+        margin: .5em;
+    }
+
+    nav#main a span.fruit {
+
+        margin: 8px 4px;
+        height: 80px;
+        width: 80px;
+        font-size: 3em;
+
+
+    }
+
+    #fruit {
+
+        padding: 200px 0;
+
+    }
+
+    .m {
+        display: none;
+    }
+
+    table {
+        min-width: 100%;
+    }
 
 }

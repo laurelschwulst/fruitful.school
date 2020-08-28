@@ -74,113 +74,113 @@
 
 	$('.about').click(function (e) {
 	    e.preventDefault()
-	    $('.topnav').removeClass('current')
-	    $(this).addClass('current')
-	    $('.toggle').css('display', 'none')
-	    $('#about').css('display', 'block')
+	    //$('.topnav').removeClass('current')
+	    $(this).toggleClass('current')
+	    //$('.toggle').css('display', 'none')
+	    $('#about').toggle();
 	});
 
 
 	$('.fruitful').click(function (e) {
 	    e.preventDefault()
-	    $('.topnav').removeClass('current')
-	    $(this).addClass('current')
-	    $('.toggle').css('display', 'none')
-	    $('#fruitful').css('display', 'block')
+	    //$('.topnav').removeClass('current')
+	    $(this).toggleClass('current')
+	    //$('.toggle').css('display', 'none')
+	    $('#fruitful').toggle();
 	});
 
 
 	$('.people').click(function (e) {
 	    e.preventDefault()
-	    $('.topnav').removeClass('current')
-	    $(this).addClass('current')
-	    $('.toggle').css('display', 'none')
-	    $('#people').css('display', 'block')
+	    //$('.topnav').removeClass('current')
+	    $(this).toggleClass('current')
+	    //$('.toggle').css('display', 'none')
+	    $('#people').toggle();
 	});
 
 
 	$('.faq').click(function (e) {
 	    e.preventDefault()
-	    $('.topnav').removeClass('current')
-	    $(this).addClass('current')
-	    $('.toggle').css('display', 'none')
-	    $('#faq').css('display', 'block')
+	    //$('.topnav').removeClass('current')
+	    $(this).toggleClass('current')
+	    //$('.toggle').css('display', 'none')
+	    $('#faq').toggle();
 	});
 
 
 	$('.conduct').click(function (e) {
 	    e.preventDefault()
-	    $('.topnav').removeClass('current')
-	    $(this).addClass('current')
-	    $('.toggle').css('display', 'none')
-	    $('#conduct').css('display', 'block')
+	    //$('.topnav').removeClass('current')
+	    $(this).toggleClass('current')
+	    //$('.toggle').css('display', 'none')
+	    $('#conduct').toggle();
 	});
 
-$('.press').click(function(){
-    $(this).find( ".answer" ).toggle();
-    $(this).find( ".expand" ).toggle();
-    $(this).find( ".disband" ).toggle();
+	$('.press').click(function () {
+	    $(this).find(".answer").toggle();
+	    $(this).find(".expand").toggle();
+	    $(this).find(".disband").toggle();
 
-})
-
-
+	})
 
 
-//table sorting
-
-        $("table")
-            .tablesorter()
-            .bind("sortStart", function() {
-                var hasRowspans = false;
-
-                $("[rowspan]", this).each(function() {
-                    hasRowspans = true;
-
-                    var rowspan = parseInt($(this).attr("rowspan"));
-
-                    // remove the rowspan attribute
-                    $(this).removeAttr("rowspan");
-
-                    var trIndex = $(this)
-                        .parentsUntil("table")
-                        .children("tr")
-                        .index($(this).parent());
-
-                    var tdIndex = $(this)
-                        .parent()
-                        .children("td")
-                        .index(this);
-
-                    // traverse each row, and repopulate / reclone the values for rows with rowspan
-                    for (var tr = trIndex + 1; tr < trIndex + rowspan; ++tr) {
-                        var $row = $(this)
-                            .parentsUntil("table")
-                            .children("tr")
-                            .eq(tr);
-
-                        if (tdIndex == 0) $row.prepend($(this).clone());
-                        else
-                            $row
-                            .children("td")
-                            .eq(tdIndex - 1)
-                            .after($(this).clone());
-                    }
-                });
-
-                if (hasRowspans) $(this).trigger("update");
-            });
 
 
-// permalinks
+	//table sorting
 
-var hash = window.location.hash;
-if (hash != '') {
-  $('a[href="'+hash+'"]').click();
-}
+	$("table")
+	    .tablesorter()
+	    .bind("sortStart", function () {
+	        var hasRowspans = false;
 
-if (location.hash) {
-  setTimeout(function() {
+	        $("[rowspan]", this).each(function () {
+	            hasRowspans = true;
 
-    window.scrollTo(0, 0);
-  }, 0);
-}
+	            var rowspan = parseInt($(this).attr("rowspan"));
+
+	            // remove the rowspan attribute
+	            $(this).removeAttr("rowspan");
+
+	            var trIndex = $(this)
+	                .parentsUntil("table")
+	                .children("tr")
+	                .index($(this).parent());
+
+	            var tdIndex = $(this)
+	                .parent()
+	                .children("td")
+	                .index(this);
+
+	            // traverse each row, and repopulate / reclone the values for rows with rowspan
+	            for (var tr = trIndex + 1; tr < trIndex + rowspan; ++tr) {
+	                var $row = $(this)
+	                    .parentsUntil("table")
+	                    .children("tr")
+	                    .eq(tr);
+
+	                if (tdIndex == 0) $row.prepend($(this).clone());
+	                else
+	                    $row
+	                    .children("td")
+	                    .eq(tdIndex - 1)
+	                    .after($(this).clone());
+	            }
+	        });
+
+	        if (hasRowspans) $(this).trigger("update");
+	    });
+
+
+	// permalinks
+
+	var hash = window.location.hash;
+	if (hash != '') {
+	    $('a[href="' + hash + '"]').click();
+	}
+
+	if (location.hash) {
+	    setTimeout(function () {
+
+	        window.scrollTo(0, 0);
+	    }, 0);
+	}
