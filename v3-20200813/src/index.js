@@ -116,6 +116,12 @@
 	    $('#conduct').toggle();
 	});
 
+	$('a.button.apply').click(function (e) {
+	    e.preventDefault();
+		$(this).toggleClass('pressed');
+	    $('#apply').toggle();
+	});
+
     function none(){
       $('#conduct').css('display', 'none');
       $('#conduct').css('display', 'none');

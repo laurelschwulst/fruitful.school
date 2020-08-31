@@ -31,7 +31,8 @@ a.button {
 }
 
 a.button:focus,
-a.button:active {
+a.button:active,
+a.button.pressed {
     border: 2px solid rgb(163, 154, 143);
     border-top-color: #5c5a53;
     border-left-color: #5c5a53;
@@ -237,10 +238,17 @@ div.offering.inactive {
     opacity: 1;
 }
 
+div.offering.inactive a.button {
+    pointer-events: none;
+    border-color: #5C5A54;
+    border: 2px dotted #5C5A54;
+    background: transparent;
+}
+
 #offerings h3 {
     text-transform: lowercase;
     font-size: 1em;
-    font-weight: normal;
+    font-weight: bold;
     margin: 0;
     border-bottom: 2px solid #5C5A54;
     padding: 15px 20px 20px 20px;
