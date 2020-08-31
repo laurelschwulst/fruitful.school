@@ -21,7 +21,7 @@ a {
 
 a.button {
     text-decoration: none;
-    border-radius: 4px;
+    border-radius: 5px;
     padding: 8px 13px 7px;
     border: 2px solid #5c5a53;
     border-top-color: rgb(163, 154, 143);
@@ -228,7 +228,7 @@ h2.hidden {
     border-top-color: #5c5a53;
     border-left-color: #5c5a53;
     background: #6F6C64;
-    border-radius: 4px;
+    border-radius: 5px;
     margin: .5em 0.5em 0.5em;
     position: relative;
 }
@@ -253,6 +253,10 @@ div.offering.inactive {
     padding: 15px 20px 20px 20px;
     text-align: left;
     text-transform: lowercase;
+}
+
+#about {
+    display: block;
 }
 
 .button-container {
@@ -424,6 +428,13 @@ tr {
     h1.extralarge,
     h2.extralarge {
         margin: .5em;
+        margin-bottom: 0em;
+    }
+    
+        h2.extralarge {
+        margin: .75em;
+        margin-bottom: .25em;
+
     }
 
     nav#main a span.fruit {
@@ -437,6 +448,7 @@ tr {
     }
 
     #fruit {
+        font-size: .85em;
 
         padding: 200px 0;
 

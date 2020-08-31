@@ -74,47 +74,57 @@
 
 	$('.about').click(function (e) {
 	    e.preventDefault()
-	    //$('.topnav').removeClass('current')
-	    $(this).toggleClass('current')
-	    //$('.toggle').css('display', 'none')
+	    $('.topnav').removeClass('current')
+	    $(this).addClass('current')
+	    $('.toggle').css('display','none');
 	    $('#about').toggle();
 	});
 
 
 	$('.fruitful').click(function (e) {
 	    e.preventDefault()
-	    //$('.topnav').removeClass('current')
-	    $(this).toggleClass('current')
-	    //$('.toggle').css('display', 'none')
+	    $('.topnav').removeClass('current')
+	    $(this).addClass('current')
+	    $('.toggle').css('display','none');
 	    $('#fruitful').toggle();
 	});
 
 
 	$('.people').click(function (e) {
 	    e.preventDefault()
-	    //$('.topnav').removeClass('current')
-	    $(this).toggleClass('current')
-	    //$('.toggle').css('display', 'none')
-	    $('#people').toggle();
+	    $('.topnav').removeClass('current')
+	    $(this).addClass('current')
+	    $('.toggle').css('display','none');
+	    $('#people').css('display','block');
 	});
 
 
 	$('.faq').click(function (e) {
 	    e.preventDefault()
-	    //$('.topnav').removeClass('current')
-	    $(this).toggleClass('current')
-	    //$('.toggle').css('display', 'none')
+	    $('.topnav').removeClass('current')
+	    $(this).addClass('current')
+	    $('.toggle').css('display','none');
 	    $('#faq').toggle();
 	});
 
 
 	$('.conduct').click(function (e) {
 	    e.preventDefault()
-	    //$('.topnav').removeClass('current')
-	    $(this).toggleClass('current')
-	    //$('.toggle').css('display', 'none')
+	    $('.topnav').removeClass('current')
+	    $(this).addClass('current')
+	    $('.toggle').css('display','none');
 	    $('#conduct').toggle();
 	});
+
+    function none(){
+      $('#conduct').css('display', 'none');
+      $('#conduct').css('display', 'none');
+      $('#conduct').css('display', 'none');
+      $('#conduct').css('display', 'none');
+      $('#conduct').css('display', 'none');
+      $('#conduct').css('display', 'none');
+
+    }
 
 	$('.press').click(function () {
 	    $(this).find(".answer").toggle();
