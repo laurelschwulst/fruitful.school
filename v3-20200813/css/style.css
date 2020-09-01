@@ -138,6 +138,12 @@ nav#main a span.fruit {
 
 }
 
+/* nav#main a.blog {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+} */
+
 nav#main a.blog span.fruit {
     background: url('../images/giovanni_stanchi_scattered_flowers_and_fruit_on_a_ledge_1_small.jpg');
     background-size: auto 100%;
