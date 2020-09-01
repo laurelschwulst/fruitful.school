@@ -315,6 +315,7 @@ footer {
     height: 100%;
 }
 
+blockquote.answer,
 .answer {
     display: none;
     font-style: italic;
