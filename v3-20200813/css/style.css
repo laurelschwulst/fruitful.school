@@ -170,7 +170,8 @@ section {
 }
 
 #info p,
-td {
+td,
+.box {
     text-align: left;
     border-radius: 20px;
     border: 2px solid rgb(163, 154, 143);
@@ -180,6 +181,20 @@ td {
     margin: .5em auto;
     padding: 15px 15px 20px 25px;
     text-transform: lowercase;
+}
+
+.box ul {
+    margin-bottom: 1.5em;
+    padding-left: 1em;
+}
+
+.box ul:last-of-type {
+    margin-bottom: 0;
+}
+
+.box li {
+    margin-bottom: 0.35em;
+    padding-left: 0.25em;
 }
 
 #info .press {
@@ -370,55 +385,65 @@ tr {
 .red {}
 
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) { */
 
-    /* body {
+    body.night {
         background: #000000;
         color: #A0A0A0;
     }
 
-    a {
+    body.night a {
         color: #A0A0A0;
     }
 
-    a.button {
+    body.night a.button,
+    body.night .button-container a.button {
         border-color: #998f8f;
         border-right-color: #48433A;
         border-bottom-color: #48433A;
+        background: transparent;
     }
 
-    a.button:focus,
-    a.button:active {
+    body.night a.button:focus,
+    body.night a.button:active {
         background: #2C271E;
     }
 
-    .extralarge {
+    body.night .extralarge {
         color: #A0A0A0;
         text-shadow: #5c5a53 0 -1px 0;
     }
 
-    .portal {
+    body.night .portal {
         width: 440px;
         height: 142px;
         background: url('../images/giovanni_stanchi_scattered_flowers_and_fruit_on_a_ledge_2_small.jpg');
         background-size: 100% 100%;
     } 
 
-    nav#main a span.fruit {
+    body.night nav#main a span.fruit {
         border: 2px solid #48433A;
         border-top-color: #998f8f;
         border-left-color: #998f8f;
     }
     
-    nav#main a.current span.fruit {
+    body.night nav#main a.current span.fruit {
         border: 2px solid #998f8f;
         border-top-color: #48433A;
         border-left-color: #48433A;
         background: #2C271E;
-    } */
+    }
+
+    body.night #offerings div.offering {
+        background: #000000;
+    }
+
+    body.night #fruit {
+        background: #2C271E;
+    }
 
 
-}
+/* } */
 
 @media only screen and (max-width: 800px) {
     body {}
