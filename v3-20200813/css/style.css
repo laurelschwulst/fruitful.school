@@ -57,6 +57,12 @@ th {
     margin: 0;
 }
 
+.blog-portal {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
 .medium,
 table {
     font-family: "Times New Roman", serif;
@@ -131,6 +137,24 @@ nav#main a span.fruit {
     justify-content: center;
 
 }
+
+nav#main a.blog span.fruit {
+    background: url('../images/giovanni_stanchi_scattered_flowers_and_fruit_on_a_ledge_1_small.jpg');
+    background-size: auto 100%;
+    background-position-x: center;
+    border-radius: 50%;
+    border-color: #998f8f;
+    border-right-color: #48433A;
+    border-bottom-color: #48433A;
+}
+
+nav#main a.blog:active span.fruit,
+nav#main a.blog:focus span.fruit {
+    border-color: #48433A;
+    border-right-color: #998f8f;
+    border-bottom-color: #998f8f;
+}
+
 
 .toggle {
     display: none;
