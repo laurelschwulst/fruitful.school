@@ -274,9 +274,17 @@ h2.hidden {
     border-top-color: #5c5a53;
     border-left-color: #5c5a53;
     background: #6F6C64;
+    background-image: url(../test.png);
+    background-size: cover;
+    background-blend-mode: screen;
     border-radius: 5px;
     margin: .5em 0.5em 0.5em;
     position: relative;
+}
+
+
+svg {
+    height: 22px;
 }
 
 div.offering.inactive {
@@ -290,14 +298,20 @@ div.offering.inactive a.button {
     background: transparent;
 }
 
-#offerings h3 {
+#offerings h3, b {
+            font-family: "Trattatello";
+    font-weight: normal;
+    
     text-transform: lowercase;
-    font-size: 1em;
-    font-weight: bold;
+    font-size: 1.25em;
     margin: 0;
     border-bottom: 2px solid #5C5A54;
-    padding: 15px 20px 20px 20px;
+    padding: 7px 15px 7px 15px;
     position: relative;
+}
+b {
+    border: none;
+    padding: 0;
 }
 
 #offerings p {
@@ -414,6 +428,16 @@ tr {
 
 .red {}
 
+
+#apply {
+    width: 100%;
+    z-index: 10001;
+}
+#apply iframe {
+        box-shadow: 10px 10px 50px #000;
+    max-width:  95%;
+
+}
 
 /* @media (prefers-color-scheme: dark) { */
 
