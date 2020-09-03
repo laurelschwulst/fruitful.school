@@ -613,6 +613,10 @@ td {
 	padding: 1em;
 }
 
+.gist td {
+    border: 0;
+}
+
 .choose-your-season,
 .select-season,
 .season-label {
