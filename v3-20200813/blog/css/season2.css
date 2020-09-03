@@ -80,13 +80,39 @@ a.button.pressed {
     text-shadow: #5c5a53 0 -1px 0;
 }
 
-.portal {
+.portal,
+.portal.light {
+    cursor: pointer;
     display: inline-block;
     margin: 2.5em 0 1em;
     width: 440px;
     height: 142px;
     border-radius: 25px;
+    border: 2px solid #998f8f;
+
+    border-left-color: #998f8f;
+    border-top-color: #998f8f;
+    border-right-color: #48433A;
+    border-bottom-color: #48433A;
+}
+
+.portal:active,
+.portal:focus {
+    border: 2px solid #998f8f;
+
+    border-left-color: #48433A;
+    border-top-color: #48433A;
+    border-right-color: #998f8f;
+    border-bottom-color: #998f8f;
+}
+
+.portal {
     background: url('../../images/giovanni_stanchi_scattered_flowers_and_fruit_on_a_ledge_1_small.jpg');
+    background-size: 100% 100%;
+}
+
+.portal.light {
+    background: url('../../images/giovanni_stanchi_scattered_flowers_and_fruit_on_a_ledge_2_small.jpg');
     background-size: 100% 100%;
 }
 
@@ -202,6 +228,26 @@ footer img {
     position: absolute;
     right: 18px;
     top: 10px;
+}
+
+body.light {
+    background: #77746D;
+    color: #000000;
+}
+
+body.light article a,
+body.light a.button {
+    color: #000000;
+}
+
+body.light .extralarge {
+    color: #5c5a53;
+    text-shadow: rgb(163, 154, 143) 1px 2px 0;
+}
+
+body.light a.button:active,
+body.light a.button:focus {
+    background: #6F6C64;
 }
 
 @media only screen and (max-width: 800px) {

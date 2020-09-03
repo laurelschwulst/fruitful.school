@@ -20,7 +20,7 @@
 
   </head>
 
-  <body>
+  <body class="dog">
 
     <header>
         <p class="small">
@@ -30,9 +30,10 @@
 
     <main>
 
-        <a href="../images/giovanni_stanchi_scattered_flowers_and_fruit_on_a_ledge_1.jpg">
-          <div class="portal"></div>
-        </a>
+        <div class="portal"></div>
+        <div class="small mode">
+          <span>light</span> mode
+        </div><br>
 
         <h1 class="extralarge">fruitful blog</h1>
 
@@ -97,12 +98,39 @@
 
     <footer class="small">
       <img src="../images/giovanni_stanchi_scattered_flowers_and_fruit_on_a_ledge_1_pear.jpg">
-      <!-- <img src="../images/giovanni_stanchi_scattered_flowers_and_fruit_on_a_ledge_1_cherry.jpg"> -->
-      <!-- <img src="../images/giovanni_stanchi_scattered_flowers_and_fruit_on_a_ledge_1_peaches.jpg"> -->
+      <img src="../images/giovanni_stanchi_scattered_flowers_and_fruit_on_a_ledge_1_cherry.jpg">
+      <img src="../images/giovanni_stanchi_scattered_flowers_and_fruit_on_a_ledge_1_peaches.jpg">
       <div style="margin-top: 4em;">© 2020 fruitful.school</div>
     </footer>
 
-<script src="src/index.js"></script>
+<script src="js/jquery.min.js"></script>
+<script>
+  
+  $(function(){
+
+    // localStorage.clear(); 
+
+    $('body').toggleClass(localStorage.toggled);
+
+    function darkLight() {
+      if (localStorage.toggled != 'light') {
+          $('body, .portal').toggleClass('light', true);
+          $('.mode span').html('dark');
+          localStorage.toggled = "light";
+      } else {
+          $('body, .portal').toggleClass('light', false);
+          $('.mode span').html('light');
+          localStorage.toggled = "";
+      }
+    }
+
+    $('.portal').click(function(){
+      darkLight();
+    });
+
+  });
+
+</script>
 
 </body>
 
