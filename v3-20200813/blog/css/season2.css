@@ -102,19 +102,33 @@ article {
     border-top-color: #48433A;
     border-radius: 20px;
     position: relative;
+
+    font-family: "Times New Roman", serif;
+    font-size: 22px;
+    letter-spacing: .3px;
+    padding: 40px;
+    max-width: 700px;
+
+}
+
+article h2 {
+    margin-bottom: 1em;
+    margin-top: -0.25em;
+    font-size: 1.25em;
+    font-family: 'trattatello', 'normalschrift', 'wiegel-latein', cursive;
 }
 
 article.letter {
     font-family: 'trattatello', 'normalschrift', 'wiegel-latein', cursive;
 }
 
-article *:last-of-type {
+article p:last-of-type {
     margin-bottom: 0;
 }
 
-article *:first-of-type {
+/* article *:first-of-type {
     margin-top: 0;
-}
+} */
 
 h2 {
     font-size: 1em;
@@ -175,4 +189,16 @@ footer img {
     border: 2px solid #998f8f;
     border-right-color: #48433A;
     border-bottom-color: #48433A;
+}
+
+.metadata time {
+    position: absolute;
+    left: 18px;
+    top: 12px;
+}
+
+.metadata .fruit {
+    position: absolute;
+    right: 18px;
+    top: 6px;
 }

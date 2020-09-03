@@ -13,6 +13,7 @@ article {
     border-left-color: #5c5a53;
     border-radius: 20px;
     position: relative;
+    /* text-transform: lowercase; */
     /* color: #262626; */
 }
 
