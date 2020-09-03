@@ -115,6 +115,7 @@ article h2 {
     margin-bottom: 1em;
     margin-top: -0.25em;
     font-size: 1.25em;
+    line-height: 1.3;
     font-family: 'trattatello', 'normalschrift', 'wiegel-latein', cursive;
 }
 
@@ -200,5 +201,18 @@ footer img {
 .metadata .fruit {
     position: absolute;
     right: 18px;
-    top: 6px;
+    top: 10px;
+}
+
+@media only screen and (max-width: 800px) {
+
+    article {
+        padding: 26px 24px;
+        line-height: 1.3;
+    }
+
+    article h2 {
+        margin-top: 0;
+    }
+
 }
