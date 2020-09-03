@@ -112,6 +112,10 @@
 
     $('body').toggleClass(localStorage.toggled);
 
+    if(localStorage.toggled == 'light'){
+      $('.mode span').html('dark');
+    }
+
     function darkLight() {
       if (localStorage.toggled != 'light') {
           $('body, .portal').toggleClass('light', true);
