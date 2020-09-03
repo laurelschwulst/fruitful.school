@@ -250,6 +250,10 @@ body.light a.button:focus {
     background: #6F6C64;
 }
 
+.mode span {
+    text-decoration: underline;
+}
+
 @media only screen and (max-width: 800px) {
 
     article {
