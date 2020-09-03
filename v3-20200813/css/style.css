@@ -50,7 +50,6 @@ th {
     font-size: 12px;
     letter-spacing: 0.4px;
     text-transform: uppercase;
-
 }
 
 .small {
@@ -421,13 +420,11 @@ th {
 
 }
 
-
 tr {
     text-align: center;
 }
 
-.red {}
-
+.red { }
 
 #apply {
     width: 100%;
@@ -500,6 +497,7 @@ tr {
 /* } */
 
 @media only screen and (max-width: 800px) {
+
     body {}
 
     #offerings {

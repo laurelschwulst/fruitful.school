@@ -1,0 +1,269 @@
+@font-face {
+    font-family: "Trattatello";
+    src: url('../../fonts/trattatello.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background: #000000;
+    color: #A0A0A0;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    color: #A0A0A0;
+}
+
+header,
+main {
+    text-align: center;
+}
+
+.extralarge {
+    font-family: "Trattatello", cursive;
+    font-size: 5em;
+    color: #5c5a53;
+    text-shadow: rgb(163, 154, 143) 1px 2px 0;
+    text-transform: lowercase;
+    letter-spacing: 0;
+}
+
+h1.extralarge {
+    font-weight: normal;
+    margin-top: 0.3em;
+    margin-bottom: 0.3em;
+}
+
+h1.extralarge a {
+    text-decoration: none;
+}
+
+h2.extralarge {
+    font-weight: normal;
+    margin-top: .6em;
+    margin-bottom: 0.4em;
+}
+
+.small {
+    font-family: "Helvetica", sans-serif;
+    font-size: 12px;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+}
+
+a.button {
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 8px 13px 7px;
+    border: 2px solid #998f8f;
+    border-right-color: #48433A;
+    border-bottom-color: #48433A;
+    display: inline-block;
+    margin: 1em .5em;
+}
+
+a.button:focus,
+a.button:active,
+a.button.pressed {
+    border: 2px solid rgb(163, 154, 143);
+    border-top-color: #5c5a53;
+    border-left-color: #5c5a53;
+    background: #2C271E;
+}
+
+.extralarge {
+    color: #A0A0A0;
+    text-shadow: #5c5a53 0 -1px 0;
+}
+
+.portal,
+.portal.light {
+    cursor: pointer;
+    display: inline-block;
+    margin: 2.5em 0 1em;
+    width: 440px;
+    height: 142px;
+    border-radius: 25px;
+    border: 2px solid #998f8f;
+
+    border-left-color: #998f8f;
+    border-top-color: #998f8f;
+    border-right-color: #48433A;
+    border-bottom-color: #48433A;
+}
+
+.portal:active,
+.portal:focus {
+    border: 2px solid #998f8f;
+
+    border-left-color: #48433A;
+    border-top-color: #48433A;
+    border-right-color: #998f8f;
+    border-bottom-color: #998f8f;
+}
+
+.portal {
+    background: url('../../images/giovanni_stanchi_scattered_flowers_and_fruit_on_a_ledge_1_small.jpg');
+    background-size: 100% 100%;
+}
+
+.portal.light {
+    background: url('../../images/giovanni_stanchi_scattered_flowers_and_fruit_on_a_ledge_2_small.jpg');
+    background-size: 100% 100%;
+}
+
+article {
+    text-align: left;
+    font-size: 2em;
+    line-height: 1.4;
+    padding: 1.75em 1.75em 1.6em;
+    max-width: 25em;
+    margin: 4em auto 5em;
+    border: 2px solid #998f8f;
+    border-left-color: #48433A;
+    border-top-color: #48433A;
+    border-radius: 20px;
+    position: relative;
+
+    font-family: "Times New Roman", serif;
+    font-size: 22px;
+    letter-spacing: .3px;
+    padding: 40px;
+    max-width: 700px;
+
+}
+
+article h2 {
+    margin-bottom: 1em;
+    margin-top: -0.25em;
+    font-size: 1.25em;
+    line-height: 1.3;
+    font-family: 'trattatello', 'normalschrift', 'wiegel-latein', cursive;
+}
+
+article.letter {
+    font-family: 'trattatello', 'normalschrift', 'wiegel-latein', cursive;
+}
+
+article p:last-of-type {
+    margin-bottom: 0;
+}
+
+/* article *:first-of-type {
+    margin-top: 0;
+} */
+
+h2 {
+    font-size: 1em;
+    font-weight: normal;
+}
+
+article a {
+    color: white;
+}
+
+.metadata {
+    position: absolute;
+    top: -3.5em;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.metadata *,
+.metadata a * {
+    display: inline-block;
+}
+
+.metadata a {
+    text-decoration: none;
+    color: #A0A0A0;
+}
+
+/* .metadata a:hover .fruit {
+    filter: grayscale(0%)
+} */
+
+.metadata .fruit {
+    margin-left: 0.15em;
+    font-size: 1.45em;
+    vertical-align: -0.1em;
+    filter: grayscale(100%);
+    transition: 0.5s ease all;
+}
+
+.metadata .bullet {
+    margin: 0 0.5em;
+}
+
+h3 {
+    font-family: "Trattatello", cursive;
+    font-weight: normal;
+    font-size: 2em;
+}
+
+footer {
+    text-align: center;
+    margin: 6em 0 2em;
+}
+
+footer img {
+    border-radius: 50%;
+    border: 2px solid #998f8f;
+    border-right-color: #48433A;
+    border-bottom-color: #48433A;
+}
+
+.metadata time {
+    position: absolute;
+    left: 18px;
+    top: 12px;
+}
+
+.metadata .fruit {
+    position: absolute;
+    right: 18px;
+    top: 10px;
+}
+
+body.light {
+    background: #77746D;
+    color: #000000;
+}
+
+body.light article a,
+body.light a.button {
+    color: #000000;
+}
+
+body.light .extralarge,
+body.light .extralarge a {
+    color: #5c5a53;
+    text-shadow: rgb(163, 154, 143) 1px 2px 0;
+}
+
+body.light a.button:active,
+body.light a.button:focus {
+    background: #6F6C64;
+}
+
+.mode span {
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 800px) {
+
+    article {
+        padding: 26px 24px;
+        line-height: 1.3;
+    }
+
+    article h2 {
+        margin-top: 0;
+    }
+
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>fruitful blog</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width; initial-scale=1.0" />
+  <link rel="icon" href="../imgs/watermelon2.jpg">
+  <link rel="stylesheet" href="css/season1.css?8123" />
+  <link rel="stylesheet" href="css/season1-permalink.css?9182" />
+  <style>
+
+  .post-title span {
+    background: #c7c729;
+  }
+
+
+      .back {
+          	margin-top: -400px;
+
+      }
+  </style>
+</head>
+
+<body>
+
+  <div id="background"></div>
+
+  <div id="back">
+    <a href="index.html">𝒻𝓇𝓊𝒾𝓉𝒻𝓊𝓁 𝚋𝚕𝚘𝚐</a>
+  </div>
+
+  <div class="letter-container">
+
+        <div class="post letter greetings">
+            <div class="post-title">
+              <span>
+          <h2>seasons greetings</h2>
+          <div class="watermelon">•</div>
+          <div class="date-posted">122119</div>
+        </span>
+              </div>
+
+        <div class="container">
+            <div id="white"></div>
+            <div class="text"> <p>🍐 seasons greetings, scroll up.</p> </div>
+            <div class="circle"></div>
+         </div>
+      </div>
+            <div class="post letter back">
+                <div class="half">fruitful.school would like to wish everyone a wonderful holiday season. Our deadline for applications is december 23, 2019.</div>
+                <div class="half">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+                <div class="stamp">december 21st, 2019, fruitful.school</div>
+  </div>
+
+
+</div>
+
+  <footer>
+    <div class="inside">
+      <a href="http://fruitful.school" style="font-size: 14px; text-decoration: none;">𝒻𝓇𝓊𝒾𝓉𝒻𝓊𝓁.𝓈𝒸𝒽𝑜𝑜𝓁</a> © 2020
+    </div>
+  </footer>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script>
+
+        var div = '<div class="circle"></div>'
+        for(i=0; i<2000 ; i++){
+            var css = Math.random()*100 + "px"
+            $('.container').append(div);
+            $( ".circle" ).last().css( "width", css);
+            $( ".circle" ).last().css( "height", css);
+        }
+$('.container').scrollTop($('.container')[0].scrollHeight);
+
+  	$('.container').click(function(){
+        $('.container').scrollTop($('.container')[0].scrollHeight);
+
+		$('.container').animate({scrollTop : 0},7000);
+	});
+    </script>
+</body>
+
+</html>
