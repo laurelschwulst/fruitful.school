@@ -1,103 +1,198 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
-<head>
-  <title>fruitful blog</title>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, intial-scale=1.0" />
-  <link rel="icon" href="../imgs/watermelon2.jpg" />
-  <link rel="stylesheet" href="blog.css?891233" />
-  <link rel="stylesheet" href="css/jquery.fancybox.min.css" />
-</head>
+  <head>
+    <title>Blog of Fruitful School</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
 
-<body class="blog current">
+    <!-- Tags for social media links -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://fruitful.school">
+    <meta property="og:title" content="Fruitful School">
+    <meta property="og:image" content="#">
+    <meta property="og:description" content="#">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://fruitful.school">
+    <meta name="twitter:title" content="Fruitful School">
 
-  <div id="back">
-    <a href="../index.html">𝒻𝓇𝓊𝒾𝓉𝒻𝓊𝓁.𝓈𝒸𝒽𝑜𝑜𝓁 ’𝓈</a>
-  </div>
+    <style>
+      .avatar {
+        width: 100px;
+        height: 100px;
+        float: left;
+        margin-right: 1em;
+        border-radius: 20px;
+      }
 
-  <div class="title-image">
-    <a href="../index.html">
-      <img src="imgs/season2-small.jpg" alt="TK Giovanni Stanchi (Rome c. 1645-1672). Oil on canvas, 38 5/8 x 52½ in. (Christie's Images Ltd.)" />
-    </a>
-    <div class="season-label">
-      SEASON 2<br>
-      FALL 2020
-    </div>
-  </div>
+      .avatar.john {
+        background:url('images/fruitful-john.jpg');
+        background-size: 100% 100%;
+      }
 
-  <!-- <div id="background"></div> -->
+      .message {
+        float: left;
+        max-width: 500px;
+      }
 
-  <div class="title">
-    𝒻𝓇𝓊𝒾𝓉𝒻𝓊𝓁 𝚋𝚕𝚘𝚐<br>
-  </div>
+      .clear {
+        clear: both;
+      }
 
-  <nav class="select-season">
-    <select onchange="location = this.value;">
-      <option selected value="index.html">Season 2</option>
-      <option value="season1.html">Season 1</option>
-    </select>
-  </nav>
+      li {
+        margin-bottom: 1em;
+      }
+    </style>
 
-  <div class="post letter" style="background: #C5C7C4;">
-    <div class="post-title">
-      <span>
-      <h2>fall 2020 survey</h2>
-      <div class="watermelon">•</div>
-      <div class="date-posted">071420</div>
-    </span>
-    </div>
-    <a href="2020-07-14.html" class="permalink">
-      🍊
-    </a>
+  </head>
 
-    <article>
+  <body class="dog">
 
-      <p>
-        hi everyone,
-      </p>
-      <p>
-        how are you?
-      </p>
-      <p>
-        we're currently working on the 2nd season of our fruitful workshop ( + more! ) for fall 2020
-      </p>
-      <p>
-        we're not accepting applications yet ... but help us plan our session by answering a few questions <a href="https://airtable.com/shrj5vhZkWquN1XIb">in this survey 🍋</a>
-      </p>
-      <p>
-        thank you,<br>
-        J + L<br><br>
-      </p>
-      <!-- <p>
-        <div style="max-width: 400px;">
-          <a href="imgs/season2-chat.png">
-            <img src="imgs/season2-chat.png">
-          </a>
-        </div>
-      </p> -->
-    </article>
+    <header>
+        <p class="small">
+          <a href="../index.html" class="button">fruitful.school</a>
+        </p>
+        <div class="dark-switch small button">☀</div>
+    </header>
 
-  </div>
+    <main>
 
-  <div class="choose-your-season">
-    You are currently on Season 2.<br><br>
-    <a href="season1.html" class="button">Go back to Season 1</a>
-  </div>
+        <div class="portal"></div>
 
-  <center>
-    <a href="rss.rss" class="rss">RSS</a>
-  </center>
+        <h1 class="extralarge">fruitful blog</h1>
 
-  <footer>
-    <a href="../index.html">
-      <span style="font-size: 14px;">𝒻𝓇𝓊𝒾𝓉𝒻𝓊𝓁.𝓈𝒸𝒽𝑜𝑜𝓁</span> is a website workshop for people with seeds<br><br>
-      <i style="font-size: 14px;">“&nbsp;𝓉𝒽ℯ&nbsp; 𝒻𝓇𝓊𝒾𝓉&nbsp; 𝓇𝒾𝓅ℯ𝓃𝓈&nbsp; 𝓈𝓁ℴ𝓌𝓁𝓎,&nbsp; 𝒷𝓊𝓉&nbsp; 𝒻𝒶𝓁𝓁𝓈&nbsp; 𝓆𝓊𝒾𝒸𝓀𝓁𝓎&nbsp;”</i>
-    </a>
-  </footer>
+        <article>
 
-  <script src="js/jquery.min.js"></script>
-  <script src="js/jquery.fancybox.min.js"></script>
+          <div class="metadata small">
+            <a href="2020-09-04.html">
+              <time datetime="2020-09-04 11:11">September 4, 2020</time>
+              <span class="fruit">🍒</span>
+            </a>
+          </div>
+      
+          <h2>Learning Online?</h2>
+      
+          <figure style="max-width: 500px;">
+            <img src="images/learning-comic.gif" alt="This is a comic or meme in which a father in a hat says, ‘ARE YA learning SON??’ and his son who is laying on the ground surrounded by papers, pens, and his computer while crying says ‘NO.’">
+          </figure>
+          
+          <p>
+            We saw this photo on Instagram the other day and thought, “Wow, this is a perfect encapsulation of what learning in the fall of 2020 can easily look like.” With many schools and institutions going completely virtual due to the global pandemic, there is a lot of pressure and expectation to continue the school year as normal.
+          </p>
+          <p>
+            This meme is quite refreshing and clear to us: <i>Yes, learning remotely is HARD.</i> But there are some things we've learned so far:
+          </p>
+          <h3>Learning online is completely different than in person</h3>
+          <p>
+            This might seem obvious, but having students glued to a screen 100% of class-time does not make sense. Not all the learning has to happen from class-time and there will be very little required screen time ... Screen time should be reserced to mostly be to engage with each other. 
+          </p>
+          <h3>Not all learning has to come from the teacher</h3>
+          <p>
+            We view teaching as creating and maintaining a healthy learning environment, so not all learning should come from directly the teacher. Learning happens many ways. Yes, teachers will share a wealth of relative knowledge that will be curated, assigned, or suggested over time. But you also have a community going through the same experience as you. We think online can be an very intimate social format for the 1-on-1 or small groups and a great environment to meet likeminded friends!
+          </p>
+          <h3>Slowness should be prioritized for our mental health</h3>
+          <p>
+            Going at the same pace as normal circumstances would be a recipe for burnout. There should be goals, deadlines and other requirements in the learning environment but above all our mental health should be a priority.
+          </p>
+          <hr>
+          <h2>What does this mean for Fruitful School... ?</h2>
+
+          <figure style="max-width: 100%; margin-bottom: 0;">
+            <a href="2020-02-16.html">
+              <img src="images/fruitful-documentation-group.jpg" alt="A group of mostly smiling people pose with various fruits and a projection of a renaissance painting of fruit. In the foreground, there's an Apple laptop next to a few bananas on a wooden table and a cable charging trails off to the right.">
+            </a>
+          </figure>
+
+          <p>
+            <i>Where we were:</i> Earlier this year (January–February 2020), we did our first 6-week workshop IRL in Brooklyn, NY at Pioneer Works. It was so <a href="2020-02-16.html">fun</a>! We met every Sunday afternoon. This feels like so long ago now, however...
+          </p>
+          <div style="font-size: 4em; text-align:center">🍉</div>
+
+          <figure style="max-width: 100%; margin-bottom: 0;">
+            <img src="images/whereby.png" alt="A screenshot of two people video chatting while holding fruits on the Whereby platform. Laurel appears in a larger frame than the other, and she presents a mango. John Provencher is in the smaller frame, and he covers his face with a clementine.">
+          </figure>
+          <p>
+            <i>Where we are:</i> This coming fall (October–November, 2020) we will do another 6-week workshop, this time online / virtual. What does our POV on learning online mean in the context of Fruitful School, specifically?
+          </p>
+          <div style="font-size: 4em; text-align:center">🥭</div><br>
+
+
+          <h3>Our workshop is all virtual — could it be an opportunity?</h3>
+          <p>
+            <i>Yes, learning remotely is HARD, but could it not only be a setback but also an opportunity for those of us working with the web?</i>
+          </p>
+          <p>
+            We see a “portal” to some new world, as now we are finally able to truly live and breathe the medium (websites!) in new and important ways with more people around the world. As stated above, this doesn’t mean that we’ll be glued to our screens all the time, but it does mean we are interested in experimenting to evolve these web mediums in ways that truly work for us.
+          </p>
+          <p>
+            We hope this workshop can be a place to start experimenting around new ways be online and how we engage with others. Since physical interaction is limited, we've been inspired by what people have been <a href="https://darkblueheaven.com/spatialinterfaces/" target="_blank">doing</a> with the web. How can we playfully integrate spatial concepts and co-presence?
+          </p>
+          <p>
+            We are excited to explore these concepts and realms with you all, and we hope you are too.
+          </p>
+
+          <h3>Our workshop needs all participants’ ideas to create a healthy learning environment, especially now that we’re fully online</h3>
+          <p>
+            This workshop is interested in what it means to learn. We view learning as a lifelong pursuit, not just something that happens within the context of an intentional learning environment like this one. However, spaces like Fruitful School can be great for “learning how to learn” with others just as enthusiastic.
+          </p>
+          <p>
+            As we said before, not all learning has to come from the teacher. We think learning can happen in many ways, and it isn’t only teacher → student, but student ↔ student, and student ↔ teacher. We consider learning more like a landscape of possible discoveries and less of a prescribed A → B journey.*
+          </p>
+          <p>
+            So as teachers, our role is creating a healthy learning environment in which this can happen. And as participants, we hope you'll see yourself as an agent in this e</a>nvironment. We also ask that you follow and provide any suggestions you might have for our “<a href="http://fruitful.school/#conduct">Code of Conduct</a>” which suggests good ways to be in a respectful and healthy learning environment together.
+          </p>
+
+          <h3>Our workshop is happening during a global pandemic</h3>
+          <p>
+            As a reminder, this workshop is happening during a global pandemic. That said, let’s be empathetic to each other. In this public health crisis, none of us are truly “ok.” Know that if you’re having trouble, no one at Fruitful School (teachers, students, guests) will think less of you or judge you. Please extend everyone else here this same grace. You never owe anyone at Fruitful School personal information about your health (mental or physical), or anything else. As participants, you are always welcome to talk to us (Laurel and John, teachers) about things you’re going through. If we can’t personally help you, we usually know someone who can. And if you need extra help, or you need to miss a session, or you need more time with something, just ask. We will work with you!
+          </p>
+
+          <hr>
+
+          <h2>Fall 2020 application is due October 1</h2>
+
+          <p>
+            <a href="https://airtable.com/shruAfCtuTa0VS8zR">Application Link</a>
+          </p>
+
+          <hr>
+
+          <i>* This is sometimes called “horizontal learning,” as recently described by <a href="https://www.melaniehoff.com/">Melanie Hoff</a> during her <a href="https://sfpc.io/">School for Poetic Computation</a> course.</i>
+
+        </article>
+
+        <h3>Posted previously...</h3>
+
+        <section class="previous-posts small">
+          Season 2 &bull; Fall 2020<br><br>
+          <a href="2020-07-14.html" class="button">Fall 2020 Survey</a><br><br><br><br>
+          Season 1 &bull; Winter 2020<br><br>
+          <a href="2020-02-27.html" class="button">Interview with Ryan Kuo</a><br>
+          <a href="2020-02-16.html" class="button">Fruitful Slideshow</a><br>
+          <a href="2020-02-06.html" class="button">Fruitful Happy Hour</a><br>
+          <a href="2020-01-26.html" class="button">Generative Lemon</a><br>
+          <a href="2020-01-17.html" class="button">Interview with Melanie Hoff</a><br>
+          <a href="2020-01-15.html" class="button">Fruitful Conduct</a><br>
+          <a href="2019-12-23.html" class="button">Emoji Clock</a><br>
+          <a href="2019-12-22.html" class="button">Apache Microblog</a><br>
+          <a href="2019-12-21.html" class="button">Seasons Greetings</a><br>
+          <a href="2019-12-19.html" class="button">Interview with Min Guhong</a><br>
+          <a href="2019-12-02.html" class="button">First Letter</a>
+        </section>
+
+    </main>
+
+    <footer class="small blog">
+      <img src="../images/giovanni_stanchi_scattered_flowers_and_fruit_on_a_ledge_1_pear.jpg">
+      <img src="../images/giovanni_stanchi_scattered_flowers_and_fruit_on_a_ledge_1_cherry.jpg">
+      <img src="../images/giovanni_stanchi_scattered_flowers_and_fruit_on_a_ledge_1_peaches.jpg">
+      <div style="margin-top: 4em;">© 2020 fruitful.school</div>
+    </footer>
+
+<script src="js/jquery.min.js"></script>
+<script src="../js/darklight.js"></script>
 
 </body>
 
