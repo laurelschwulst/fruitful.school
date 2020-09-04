@@ -212,7 +212,14 @@ by John Provencher & Laurel Schwulst
                 </p>
 
                 <table id="people-table" align="center" class="medium" style="margin-top: 2em;">
-                    
+                   <thead>
+                        <tr>
+                            <th style="text-align:center">Fruit</th>
+                            <th>First name</th>
+                            <th class="m">ID</th>
+                            <th class="m">Link</th>
+                        </tr>
+                    </thead>
                     
                     <tr class="person" v-for="record in records" v-bind:class="fruitfulClasses(record)" >
                         
