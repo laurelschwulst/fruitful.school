@@ -215,7 +215,7 @@ jQuery.fn.center = function () {
     return this;
 }
 
-$('.button.no-style').click(function(){
+$('.no-style').click(function(){
 
 	console.log('no style please');
 
