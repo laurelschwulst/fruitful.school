@@ -19,6 +19,14 @@ a {
     color: black;
 }
 
+figure {
+    margin: 2em 0;
+}
+
+hr {
+    margin: 2.5em 0;
+}
+
 a.button,
 .button {
     text-decoration: none;
@@ -418,15 +426,12 @@ th {
     text-decoration: none;
 }
 
-tbody {}
 
 /* individual elements of the body of table */
 
 td {
     border-radius: 5px;
     margin: 10px;
-
-
 }
 
 td,
@@ -440,8 +445,6 @@ th {
 tr {
     text-align: center;
 }
-
-.red { }
 
 #apply {
     width: 100%;
@@ -524,8 +527,6 @@ body.dark .previous-posts a:visited.button {
 
 
 @media only screen and (max-width: 800px) {
-
-    body {}
 
     #offerings {
         grid-template-columns: inherit;
@@ -632,12 +633,30 @@ article {
 
 }
 
-article h2 {
+article p {
+    margin: 1.2em 0;
+}
+
+article p:last-of-type {
+    margin-bottom: 0 !important;
+}
+
+article h2,
+article h3 {
     margin-bottom: 1em;
     margin-top: -0.25em;
     font-size: 1.25em;
     line-height: 1.3;
     font-family: 'trattatello', 'normalschrift', 'wiegel-latein', cursive;
+}
+
+article h2 {
+    font-size: 1.75em;
+}
+
+article h3 {
+    margin-top: 2em;
+    text-decoration: underline;
 }
 
 article.letter {
