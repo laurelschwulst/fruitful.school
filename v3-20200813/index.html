@@ -214,9 +214,9 @@ by John Provencher & Laurel Schwulst
                    <thead>
                         <tr>
                             <th style="text-align:center">Fruit</th>
-                            <th>First name</th>
+                            <th>Name</th>
                             <th class="m">ID</th>
-                            <th class="m">Link</th>
+                            <!-- <th class="m">Link</th> -->
                         </tr>
                     </thead>
                     
@@ -231,20 +231,17 @@ by John Provencher & Laurel Schwulst
                             <span v-if="record.fields['Favorite fruit']"> {{ record.fields['Favorite fruit'][0] }} </span>
                           </td>
                           <td>
-                            {{ record.fields['First name'] }}
-                          </td>
-                          <td>
-                            {{ record.fields['Last name'] }}
+                            {{ record.fields['First name'] }} {{ record.fields['Last name'] }}
                           </td>
                           <td class="m">
                             {{ record.fields['Role'][0] }}
                           </td>
-                        <td v-if="record.fields['Link 1 (visible)']" class="m press">
+                        <!-- <td v-if="record.fields['Link 1 (visible)']" class="m press">
                             <a v-bind:href="record.fields['Link 1 (visible)']" target="_blank">
                                 {{ record.fields['Link 1 (visible)'] }}
                             </a>
-                        </td>
-                        <td v-else></td>
+                        </td> -->
+                        <!-- <td v-else></td> -->
                     </tr>
               
                   </table>
@@ -430,7 +427,7 @@ by John Provencher & Laurel Schwulst
                         Updates
                     </h3>
                     <p>
-                        We've decided to use social media sparingly. We'll be using our email newsletter for updates.
+                        We’ve decided to use social media sparingly. We'll be using our email newsletter for updates.
                         <div class="button-container">
                             <a href="https://tinyletter.com/fruitful-school" target="_blank" class="button small">Subscribe</a>
                         </div>
