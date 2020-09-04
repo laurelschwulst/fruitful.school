@@ -144,6 +144,8 @@
 
 	//table sorting
 
+	jQuery(window).load(function () {
+
 	$("table")
 	    .tablesorter()
 	    .bind("sortStart", function () {
@@ -186,7 +188,9 @@
 	        if (hasRowspans) $(this).trigger("update");
 	    });
 
-
+	
+	});
+	
 	// permalinks
 
 	var hash = window.location.hash;
@@ -210,5 +214,31 @@ jQuery.fn.center = function () {
         $(window).scrollLeft()) + "px");
     return this;
 }
+
+$('.button.no-style').click(function(){
+
+	console.log('no style please');
+
+	function no_style(){
+
+		var links = document.querySelectorAll('link');
+
+		document.querySelectorAll('link, style').forEach(function(node){
+			node.parentNode.removeChild(node);
+		});
+		
+		document.querySelectorAll('*').forEach(function(node){
+			node.removeAttribute('style');
+		});
+
+		console.log('there are no styles');
+
+		$('html,body').scrollTop(0);
+
+	}
+
+	no_style();
+
+});
 
 //$('#apply').center();
