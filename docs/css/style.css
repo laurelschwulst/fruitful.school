@@ -445,6 +445,9 @@ th {
 tr {
     text-align: center;
 }
+.d {
+    display: none;
+}
 
 #apply {
     width: 100%;
@@ -570,6 +573,10 @@ body.dark .previous-posts a:visited.button {
 
     .m {
         display: none;
+    }
+    
+    .d {
+        display: inline-block;
     }
 
     table {
@@ -755,6 +762,9 @@ footer.blog img:focus {
 .previous-posts a:visited.button {
     color: #2d2c2a;
 }
+a.no-style {
+    text-decoration: none;
+}
 
 @media only screen and (max-width: 800px) {
 
@@ -769,6 +779,3 @@ footer.blog img:focus {
 
 }
 
-a.no-style {
-    text-decoration: none;
-}
