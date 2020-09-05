@@ -794,6 +794,7 @@ a.no-style {
     article {
         padding: 26px 24px;
         line-height: 1.3;
+        font-size: 20px;
     }
 
     article h2 {
