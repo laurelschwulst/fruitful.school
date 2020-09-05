@@ -809,13 +809,13 @@ a.no-style {
     }
 
     .portal {
-        width: 300px;
-        height: 100px;
+        width: 285px;
+        height: 95px;
     }
 
     .dark-switch.desktop {
         display: none;
     }
-    
+
 }
 
