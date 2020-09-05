@@ -558,7 +558,8 @@ body.dark .previous-posts a:visited.button {
         font-size: 11px;
     }
 
-    .medium {
+    .medium,
+    article {
         font-size: 20px;
     }
 
