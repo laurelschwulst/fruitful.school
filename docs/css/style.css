@@ -120,7 +120,7 @@ h2.extralarge {
     margin: 1em 0;
     width: 440px;
     height: 142px;
-    border-radius: 25px;
+    /* border-radius: 25px; */
     background: url('../images/giovanni_stanchi_scattered_flowers_and_fruit_on_a_ledge_1_small.jpg');
     background-size: 100% 100%;
 }
@@ -496,17 +496,9 @@ body.dark .extralarge {
 }
 
 body.dark .portal {
-    width: 440px;
-    max-width: 100%;
-    height: auto;
-    overflow: hidden;
+    background: url('../images/giovanni_stanchi_scattered_flowers_and_fruit_on_a_ledge_2_small.jpg');
     background-size: 100% 100%;
 } 
-.portal img {
-    margin: 0;
-    padding: 0;
-    transform: scale(1.1)
-}
 
 body.dark nav#main a span.fruit {
     border: 2px solid #48433A;
@@ -628,18 +620,18 @@ body.dark .previous-posts a:visited.button {
 
 .portal,
 .portal.light {
-    cursor: pointer;
+    /* cursor: pointer; */
     display: inline-block;
     margin: 2.5em 0 1em;
-    width: 440px;
-    height: 142px;
-    border-radius: 25px;
+    width: 450px;
+    height: 145px;
+    /* border-radius: 25px;
     border: 2px solid #998f8f;
 
     border-left-color: #998f8f;
     border-top-color: #998f8f;
     border-right-color: #48433A;
-    border-bottom-color: #48433A;
+    border-bottom-color: #48433A; */
 }
 
 /***
@@ -816,5 +808,9 @@ a.no-style {
         margin-top: 0;
     }
 
+    .portal {
+        width: 300px;
+        height: 100px;
+    }
 }
 
