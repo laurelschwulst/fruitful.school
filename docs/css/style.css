@@ -582,6 +582,13 @@ body.dark .previous-posts a:visited.button {
     table {
         min-width: 100%;
     }
+    .dark-switch {
+    cursor: pointer;
+    position: inherit;
+    top: inherit;
+    right: inherit;
+        margin-bottom: 20px;
+}
 
 }
 
