@@ -562,6 +562,11 @@ body.dark .previous-posts a:visited.button {
         font-size: 20px;
     }
 
+    #offerings div.offering {
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 1em;
+    }
     nav#main a span.fruit {
 
         margin: 8px 4px;
