@@ -538,7 +538,7 @@ body.dark .previous-posts a:visited.button {
     }
 
     .extralarge {
-        font-size: 3.25em;
+        font-size: 3em;
 
     }
 
@@ -554,11 +554,19 @@ body.dark .previous-posts a:visited.button {
 
     }
 
+    .small {
+        font-size: 11px;
+    }
+
+    .medium {
+        font-size: 20px;
+    }
+
     nav#main a span.fruit {
 
         margin: 8px 4px;
-        height: 80px;
-        width: 80px;
+        height: 76px;
+        width: 76px;
         font-size: 3em;
 
 
