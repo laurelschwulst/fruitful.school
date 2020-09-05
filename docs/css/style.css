@@ -105,6 +105,10 @@ h1.extralarge a {
     text-shadow: rgb(163, 154, 143) 1px 2px 0;
 }
 
+h1.extralarge a.title {
+    text-decoration: none;
+}
+
 h2.extralarge {
     font-weight: normal;
     margin-top: .6em;
