@@ -756,8 +756,8 @@ footer.blog img {
     border: 2px solid #998f8f;
     border-right-color: #48433A;
     border-bottom-color: #48433A;
-    cursor: pointer;
 }
+/***************************
 
 footer.blog img:active,
 footer.blog img:focus {
@@ -765,6 +765,8 @@ footer.blog img:focus {
     border-left-color: #48433A;
     border-top-color: #48433A;
 }
+
+*****************************/
 
 .previous-posts a:visited.button {
     color: #2d2c2a;
