@@ -4,7 +4,7 @@
 	document.getElementById("fruit").style.borderBottomLeftRadius = Math.random() * 60 + 40 + "%";
 
 
-	var fruit = ["🍊 ", "🍋 ", "🍒 ", "🍉 ", "🍇 ", "🥭 ", "🍎 ", "🍐 ", "🍏 ", "🍑 ", "🍈 "];
+	var fruit = ["🍊","🍋","🍒","🍉","🍇","🥭","🍎","🍐","🍏","🍑","🍈"];
 
 	function updateClock() {
 	    var d = new Date();
