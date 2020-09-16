@@ -336,7 +336,7 @@ div.offering.inactive a.button {
     background: transparent;
 }
 
-#offerings h3, b {
+#offerings h3, h3.regular, b {
             font-family: "Trattatello";
     font-weight: normal;
     
