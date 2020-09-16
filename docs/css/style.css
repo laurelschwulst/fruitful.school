@@ -23,6 +23,19 @@ figure {
     margin: 2em 0;
 }
 
+figure.large {
+    margin: 2.5em -4em;
+}
+
+figure.large figcaption {
+    margin: 0.5em 5.5em 0;
+}
+
+figcaption {
+    font-size: 0.76em;
+    font-style: italic;
+}
+
 hr {
     margin: 2.5em 0;
 }
@@ -337,6 +350,7 @@ div.offering.inactive a.button {
 b {
     border: none;
     padding: 0;
+    font-size: 1.08em;
 }
 
 #offerings p {
@@ -531,6 +545,10 @@ body.dark .previous-posts a:visited.button {
     color: #5E5E5E;
 }
 
+body.dark span.fruit:hover,
+body.dark .press:hover {
+    background: #171513;
+}
 
 @media only screen and (max-width: 800px) {
 
@@ -613,6 +631,14 @@ body.dark .previous-posts a:visited.button {
     text-shadow: #5c5a53 -1px -1px 0;
 }
 
+figure.large {
+    margin: 2.5em 0;
+}
+
+figure.large figcaption {
+    margin: 0.5em 0 0;
+}
+
 }
 
 
@@ -666,6 +692,21 @@ article {
     padding: 40px;
     max-width: 700px;
 
+}
+
+article blockquote {
+    /* line-height: 1.3; */
+    /* font-size: 0.9em; */
+    /* letter-spacing: 0; */
+    /* opacity: 0.75; */
+    margin-left: 0;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    /* margin: 2em 0; */
+}
+
+.footnotes {
+    font-size: 0.75em;
 }
 
 article p {
