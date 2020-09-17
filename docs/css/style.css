@@ -707,9 +707,8 @@ article blockquote {
     /* margin: 2em 0; */
 }
 
-fn {
+.footnote {
     font-size: 0.75em;
-    display: block;
 }
 
 article p {
@@ -870,3 +869,15 @@ a.no-style {
 
 }
 
+/* BLOG ON HOME */
+
+section#blog article h2 {
+    font-size: 1.75em;
+    font-weight: normal;
+    margin-top: 0;
+    text-decoration: none;
+}
+
+section#blog article h2 a {
+    text-decoration: none;
+}

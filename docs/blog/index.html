@@ -8,6 +8,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="../css/style.css?123123">
 
+    <!-- syntax highlighting -->
+  <link rel="stylesheet"
+    href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.0/build/styles/default.min.css">
+  <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.0/build/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <style>
+    pre {
+        font-size: 0.8em;
+        margin: 3.25em 0;
+    }
+    code {
+      border-radius: 6px;
+    }
+    .hljs {
+        padding: 1.5em;
+    }
+  </style>
+
     <!-- Tags for social media links -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://fruitful.school">
@@ -17,6 +35,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="https://fruitful.school">
     <meta name="twitter:title" content="Fruitful School">
+    <link rel="icon" type="image/png" href="../images/fav.png" />
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-52650052-6"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -46,113 +65,192 @@
         <h1 class="extralarge">fruitful blog</h1>
 
         <article>
+      
+          <h1>Designing Decay</h1>
 
+        <a href="2020-09-17.html">
           <div class="metadata small">
-            <a href="2020-09-04.html">
-              <time datetime="2020-09-04 11:11">September 4, 2020</time>
-              <span class="fruit">🍒</span>
-            </a>
+            <time datetime="2020-09-17 11:11">September 17, 2020</time>
+            <span class="fruit">🍇 </span>
           </div>
+        </a>
       
-          <h1>Learning Online?</h1>
-      
-        <figure style="max-width: 500px;">
-          <img src="images/learning-comic.gif" alt="This is a comic or meme in which a father in a hat says, ‘ARE YA learning SON??’ and his son who is laying on the ground surrounded by papers, pens, and his computer while crying says ‘NO.’">
-        </figure>
-        
-        <p>
-          We saw this photo on Instagram the other day and thought, “Wow, this is a perfect encapsulation of what learning in the fall of 2020 can easily look like.” With many schools and institutions going completely virtual due to the global pandemic, there is a lot of pressure and expectation to continue the school year as normal.
-        </p>
-        <p>
-          This meme is quite refreshing and clear to us: <i>Yes, learning remotely is HARD.</i> But there are some things we've learned so far:
-        </p>
-        <h2>Learning online is completely different than in person</h2>
-        <p>
-          This might seem obvious, but having students glued to a screen 100% of class-time does not make sense. Not all the learning has to happen from class-time and there will be very little required screen time ... Screen time should be reserved to mostly be to engage with each other. 
-        </p>
-        <h2>Not all learning has to come from the teacher</h2>
-        <p>
-          We view teaching as creating and maintaining a healthy learning environment, so not all learning should come from directly the teacher. Learning happens many ways. Yes, teachers will share a wealth of relative knowledge that will be curated, assigned, or suggested over time. But you also have a community going through the same experience as you. We think online can be an very intimate social format for the 1-on-1 or small groups and a great environment to meet likeminded friends!
-        </p>
-        <h2>Slowness should be prioritized for our mental health</h2>
-        <p>
-          Going at the same pace as normal circumstances would be a recipe for burnout. There should be goals, deadlines and other requirements in the learning environment but above all our mental health should be a priority.
-        </p>
-        <hr>
-        <h2>What does this mean for Fruitful School... ?</h2>
+    <p>
+        On our main fruitful.school site, we say…
+    </p>
 
-        <figure style="max-width: 100%; margin-bottom: 0;">
-          <a href="2020-02-16.html">
-            <img src="images/fruitful-documentation-group.jpg" alt="A group of mostly smiling people pose with various fruits and a projection of a renaissance painting of fruit. In the foreground, there's an Apple laptop next to a few bananas on a wooden table and a cable charging trails off to the right.">
-          </a>
-        </figure>
+    <p>
+        🍋 <i>A fruitful web can be performative. Maybe we can make sites with a purpose and life that’s brief but beautiful. We also recognize that the web is inherently a performative medium by its design.</i>
+    </p>
+    
+    <figure style="text-align: center; max-height: 200px; opacity: 0.65;">
+        <img src="images/lemon-blur.png" height="200" width="auto" alt="A blurry lemon emoji">
+    </figure>
+    
+    <p id="vcu-talk-content">
+        Recently Laurel gave a <a href="#vcu-talk">talk on Zoom *</a> about the “internet onion,” an ephemeral project she orchestrated.
+    </p>
+    <p>
+        “The Life and Death of an Internet Onion” is an anthology webzine created by Laurel's Spring 2019 interactive design class at Yale and centered around written responses to the prompt:
+    </p>
+    <blockquote style="font-style: italic;">
+        What is expressing “real” love or affirmation about? Is it about effort, thoughtfulness, generosity, something else? What might a thoughtful or generous interface feel or behave like?
+    </blockquote>
+    <p>  
+        You can visit the project here:
+    </p>
+    <p>
+        <a href="https://the-life-and-death-of-an-internet-onion.com">https://the-life-and-death-of-an-internet-onion.com</a>
+    </p>
+    <figure class="large">
+        <img src="images/decay1.png" alt="Four screencaptures of the internet onion website project, going from most legible to least. The brown decreases in saturation and the site gets blurrier with each successive screencapture.">
+        <figcaption>
+            Screencaptures of the various phases of decay, beginning on August 27, 2020
+        </figcaption>
+    </figure>
+    <p>  
+        If you don’t know about the project or haven’t seen it before, you might be wondering why it looks the way it does — very illegible and blurry. You might even wonder what you’re looking at.
+    </p>
+    <p>
+        That’s because the project has “died” or is still in the process of decaying…
+    </p>
+    <p>
+        This is a perennial webzine, meaning it will emerge once per year. It’s likely decaying now, but you can expect to see some legible version of it online again next summer 2021. When it emerges again, it will be live for 5 weeks: the average lifespan of a non-refrigerated onion. And after those 5 weeks of life, it will again begin its process of gradual decay.
+    </p>
+    <p>
+        <i>You can learn more about the internet onion in this <a href="https://www.are.na/blog/onion-and-rocks">blog post</a> and see excerpts in this <a href="https://www.are.na/laurel-schwulst/the-life-and-death-of-an-internet-onion">Are.na channel</a>.</i>
+    </p>
+    <figure class="large">
+        <img src="images/decay2.png" alt="Screencapture of a Google Spreadsheet titled 'onion decay' with gradually changing values for blur, saturation, and opacity as time goes on.">
+        <figcaption>The original plan for the decay, Spring 2019</figcaption>
+    </figure>
+    <p>
+        So much thought and energy often goes into how something we create goes up, but what about when it comes down?
+    </p>
+    <p>
+        Websites are often assumed to be up and running 100% of the time. Of course, certain websites we depend on for health and knowledge need to be. But in the case of an artistic project, the web medium is inherently performative — why not embrace it if it makes sense for the project at hand?
+    </p>
+    <p>
+        In the workshop that followed my talk about the internet onion, my group discussed how often in today’s day and age, the word “performative” often implies “not authentic” — that is, superficial and insincere. But actually, some performance is part of love. With the best love, this performance is reciprocal. So the perennial nature of this project fit the content well.
+    </p>
 
-        <p>
-          <i>Where we were:</i> Earlier this year (January–February 2020), we did our first 6-week workshop IRL in Brooklyn, NY at Pioneer Works. It was so <a href="2020-02-16.html">fun</a>! We met every Sunday afternoon. This feels like so long ago now, however...
-        </p>
-        <div style="font-size: 4em; text-align:center">🍉</div>
+<pre><code class="css">/* DECAY */
 
-        <figure style="max-width: 100%; margin-bottom: 0;">
-          <img src="images/whereby.png" alt="A screenshot of two people video chatting while holding fruits on the Whereby platform. Laurel appears in a larger frame than the other, and she presents a mango. John Provencher is in the smaller frame, and he covers his face with a clementine.">
-        </figure>
-        <p>
-          <i>Where we are:</i> This coming fall (October–November, 2020) we will do another 6-week workshop, this time online / virtual. What does our POV on learning online mean in the context of Fruitful School, specifically?
-        </p>
-        <div style="font-size: 4em; text-align:center">🥭</div><br>
+* {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
 
+/* PHASE 1 */
+     
+section,
+header nav,
+header h1,
+button.peel-button,
+.onion-container {
+    filter: blur(2px);
+    opacity: 0.95;
+}
 
-        <h2>Our workshop is all virtual — could it be an opportunity?</h2>
-        <p>
-          <i>Yes, learning remotely is HARD, but could it not only be a setback but also an opportunity for those of us working with the web?</i>
-        </p>
-        <p>
-          We see a “portal” to some new world, as now we are finally able to truly live and breathe the medium (websites!) in new and important ways with more people around the world. As stated above, this doesn’t mean that we’ll be glued to our screens all the time, but it does mean we are interested in experimenting to evolve these web mediums in ways that truly work for us.
-        </p>
-        <p>
-          We hope this workshop can be a place to start experimenting around new ways be online and how we engage with others. Since physical interaction is limited, we've been inspired by what people have been <a href="https://darkblueheaven.com/spatialinterfaces/" target="_blank">doing</a> with the web. How can we playfully integrate spatial concepts and co-presence?
-        </p>
-        <p>
-          We are excited to explore these concepts and realms with you all, and we hope you are too.
-        </p>
+/* PHASE 2 */
+    
+section,
+header nav,
+header h1,
+button.peel-button,
+.onion-container {
+    filter: blur(5px) saturate(90%);
+    opacity: 0.85;
+}
 
-        <h2>Our workshop needs all participants’ ideas to create a healthy learning environment, especially now that we’re fully online</h2>
-        <p>
-          This workshop is interested in what it means to learn. We view learning as a lifelong pursuit, not just something that happens within the context of an intentional learning environment like this one. However, spaces like Fruitful School can be great for “learning how to learn” with others just as enthusiastic.
-        </p>
-        <p id="hoff-content">
-          As we said before, not all learning has to come from the teacher. We think learning can happen in many ways, and it isn’t only teacher → student, but student ↔ student, and student ↔ teacher. We consider learning more like a landscape of possible discoveries and less of a prescribed <a href="#hoff">A → B journey.*</a>
-        </p>
-        <p>
-          So as teachers, our role is creating a healthy learning environment in which this can happen. And as participants, we hope you'll see yourself as an agent in this e</a>nvironment. We also ask that you follow and provide any suggestions you might have for our “<a href="http://fruitful.school/#conduct">Code of Conduct</a>” which suggests good ways to be in a respectful and healthy learning environment together.
-        </p>
+/* PHASE 3 */
 
-        <h2>Our workshop is happening during a global pandemic</h2>
-        <p>
-          As a reminder, this workshop is happening during a global pandemic. That said, let’s be empathetic to each other. In this public health crisis, <a href="https://twitter.com/ProfChrisMJones/status/1282036533562834944">none of us is truly “ok.”</a> Know that if you’re having trouble, no one at Fruitful School (teachers, students, guests) will think less of you or judge you. Please extend everyone else here this same grace. You never owe anyone at Fruitful School personal information about your health (mental or physical), or anything else. As participants, you are always welcome to talk to us (Laurel and John, teachers) about things you’re going through. If we can’t personally help you, we usually know someone who can. And if you need extra help, or you need to miss a session, or you need more time with something, just ask. We will work with you!
-        </p>
+section,
+header nav,
+header h1,
+button.peel-button,
+.onion-container {
+    filter: blur(12px) saturate(70%);
+    opacity: 0.6;
+}
 
-        <hr>
+/* PHASE 4 */
 
-        <h2>Fall 2020 application is due October 1</h2>
+section,
+header nav,
+header h1,
+button.peel-button,
+.onion-container {
+    filter: blur(18px) saturate(60%);
+    opacity: 0.5;
+}
 
-        <p>
-          <a href="https://airtable.com/shruAfCtuTa0VS8zR">Application Link</a>
-        </p>
+/* PHASE 5 */
 
-        <hr>
+section,
+header nav,
+header h1,
+button.peel-button,
+.onion-container {
+    filter: blur(24px) saturate(50%);
+    opacity: 0.45;
+}
+</code></pre>
 
-        <fn id="hoff">
-          * This is sometimes called “horizontal learning,” as recently described by <a href="https://www.melaniehoff.com/">Melanie Hoff</a> during her <a href="https://sfpc.io/">School for Poetic Computation</a> course. <a href="#hoff-content">↩</a>
-        </fn>
+<p>
+    The internet onion is decaying by phases because it has to be, given the basic hand-coding HTML and CSS we are using. We could write a script, but we are lazy, and there won’t be that many more phases of decay than this, Laurel thinks to herself. (Although down the line, Laurel would like to also degrade the content itself and source code, but that will be in Late Decay.)
+</p>
+<p>
+    But what if more thought and energy were put into tools and interfaces for decay and subtraction in the digital platforms we use more regularly?
+</p>
+<p>
+    In his podcast episode, “<a href="https://breakingsmart.substack.com/p/towards-subtractive-social-media">Towards Subtractive Social Media</a>,” Venkatesh Rao summarizes, “The set of positive, additive operations you can do on your feed — posting, liking, following is large, rich, powerful, and thoughtfully designed, but the set of negative operations is a wasteland.” He goes on to say that the negative operations, like block or mute, are “<b>painfully manual</b>.”
+</p>
+<p>
+    This reminds me of a feature we have dreamed of on both Twitter and Instagram: a softer, more conditional mute. That is, what if you don’t want to hide someone forever? You just need a break for a little while; you don’t want to forget them entirely. Maybe this button could be called “time-out with a fade-in” because it would hard mute their posts for a set amount of time and then gradually sprinkle their content back into the feed. You don't need to manually give them another chance, by default they re-appear.
+</p>
+
+<hr>
+
+<p>
+    In Laurel's writing from a couple years ago about <a href="https://thecreativeindependent.com/people/laurel-schwulst-my-website-is-a-shifting-house-next-to-a-river-of-knowledge-what-could-yours-be/">what websites can be</a>, she cycled through a handful of potential metaphors. One was “puddle.” She wrote, “Puddles evaporate slowly over time. It might be difficult, but I would love to see a website evaporate slowly, too.”
+</p>
+<p>
+    Not long after Laurel published her writing, she learned about Anny Li’s <a href="https://volume-1.org/Triple-Canopy-How-to-Encounter-a-Puddle">meditation on puddles</a>. Li asks:
+</p>
+<blockquote style="color: navy;">
+    What can be learned from the humble puddle? I wonder how they could present new models for publication. To this end I think too of Jack Halberstam’s “low theory” in <i>The Queer Art of Failure</i>, where he outlines inroads to non-dominant and resistant modes of being, knowing, and learning, recuperating failure as a practice and locating sites of “more creative, more cooperative, more surprising ways of being in the world.” Similarly, the puddle may lead a precarious existence, but it thrives in these very same in-between, overlooked spaces. A puddle infiltrates, interferes, and ultimately vanishes, only to replenish itself anew.
+</blockquote>
+<p>
+    We would love to see more designers putting energy into decay. Enter, designers of decay & subtraction!
+</p>
+<p>
+    If it makes sense for the project, let’s consider decay just as equally along with growth. And if we’re working on a tool, can we create features to allow participants to expertly & gracefully embrace their subtractive powers?
+</p>
+<p>
+    How about an “evaporate” button?
+</p>
+
+<hr>
+
+<p id="vcu-talk" class="footnote">
+    * Laurel gave this talk at Virgnia Commonwealth University (VCU) on Thursday, September 10, 2020. She explored the internet onion project and her teaching practice more holistically. The talk wasn’t recorded, but you can see some of the materials here: <a href="https://www.are.na/laurel-schwulst/circular-learning">https://www.are.na/laurel-schwulst/circular-learning</a>. Thanks to Nontsikelelo Mutiti, Aidan Quinlan, Julia Dann, and everyone else at VCU who made this possible. <a href="#vcu-talk-content">↩</a>
+</p>
         
         </article>
 
-        RSS feed coming soon!<br><br><br><br>
+        RSS feed is currently in beta:<br><br>
+        <a href="feed.xml">feed.xml</a><br><br><br><br>
 
         <h3>Posted previously...</h3>
 
         <section class="previous-posts small">
           Season 2 &bull; Fall 2020<br><br>
+          <a href="2020-09-04.html" class="button">Learning Online?</a><br>
           <a href="2020-07-14.html" class="button">Fall 2020 Survey</a><br><br><br><br>
           Season 1 &bull; Winter 2020<br><br>
           <a href="2020-02-27.html" class="button">Interview with Ryan Kuo</a><br>
