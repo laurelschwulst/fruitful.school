@@ -240,7 +240,7 @@ $('.no-style').click(function(){
 
 //countdown
 
-var countDownDate = new Date("October 1, 2020 00:00:00").getTime();
+var countDownDate = new Date("October 1, 2020 23:59:59").getTime();
 
 
   var now = new Date().getTime();
@@ -256,7 +256,7 @@ var countDownDate = new Date("October 1, 2020 00:00:00").getTime();
     var fruitHTML = "🍇 ";
     for(i=0;i<hours;i++){
         var random = fruit[Math.floor(Math.random()*fruit.length)];
-        fruitHTML += random + " ";
+        fruitHTML += " " + random ;
         document.getElementById("loader").innerHTML = fruitHTML + "<br> <span class='small'> ( " + hours +  "  hours left to apply ) </span>"
 
     }
