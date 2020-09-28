@@ -17,6 +17,8 @@ img {
 
 #loader {
     margin: 0;
+    display: inline-block;
+    max-width: calc(100% - 100px);
 }
 a {
     color: black;
