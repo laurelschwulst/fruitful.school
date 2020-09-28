@@ -253,7 +253,7 @@ var countDownDate = new Date("October 1, 2020 00:00:00").getTime();
     
     
 
-    var fruitHTML = "🍇";
+    var fruitHTML = "🍇 ";
     for(i=0;i<hours;i++){
         var random = fruit[Math.floor(Math.random()*fruit.length)];
         fruitHTML += random + " ";
