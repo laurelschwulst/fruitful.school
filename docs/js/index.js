@@ -11,7 +11,6 @@
 	    var minutes = d.getMinutes();
 	    var seconds = d.getSeconds();
 	    var hours = d.getHours();
-	    console.log(hours);
 
 	    if (hours > 0 && hours <= 12) {
 	        hours = hours;
@@ -31,7 +30,6 @@
 	        var stringH = hours.toString().charAt(i);
 	        // convert the first digit back to an integer
 	        var numberH = parseInt(stringH)
-	        console.log(numberH)
 	        hoursE += fruit[numberH];
 	    };
 
@@ -39,7 +37,6 @@
 	        var stringH = minutes.toString().charAt(i);
 	        // convert the first digit back to an integer
 	        var numberH = parseInt(stringH)
-	        console.log(numberH)
 
 	        minutesE += fruit[numberH];
 	    };
@@ -49,7 +46,6 @@
 	        var stringH = seconds.toString().charAt(i);
 	        // convert the first digit back to an integer
 	        var numberH = parseInt(stringH)
-	        console.log(numberH)
 
 	        secondsE += fruit[numberH];
 	    };
@@ -241,4 +237,27 @@ $('.no-style').click(function(){
 
 });
 
-//$('#apply').center();
+
+//countdown
+
+var countDownDate = new Date("October 1, 2020 00:00:00").getTime();
+
+
+  var now = new Date().getTime();
+
+  var distance = countDownDate - now;
+
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+     hours = (days * 24) + hours;
+    
+    
+
+    var fruitHTML = "🍇";
+    for(i=0;i<hours;i++){
+        var random = fruit[Math.floor(Math.random()*fruit.length)];
+        fruitHTML += random + " ";
+        document.getElementById("loader").innerHTML = fruitHTML + "<br> <span class='small'> ( " + hours +  "  hours left to apply ) </span>"
+
+    }
+    
