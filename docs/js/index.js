@@ -240,24 +240,24 @@ $('.no-style').click(function(){
 
 //countdown
 
-var countDownDate = new Date("October 1, 2020 23:59:59").getTime();
+// var countDownDate = new Date("October 1, 2020 23:59:59").getTime();
 
 
-  var now = new Date().getTime();
+//   var now = new Date().getTime();
 
-  var distance = countDownDate - now;
+//   var distance = countDownDate - now;
 
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-     hours = (days * 24) + hours;
+//   var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+//   var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+//      hours = (days * 24) + hours;
     
     
 
-    var fruitHTML = "🍇 ";
-    for(i=0;i<hours;i++){
-        var random = fruit[Math.floor(Math.random()*fruit.length)];
-        fruitHTML += " " + random ;
-        document.getElementById("loader").innerHTML = fruitHTML + "<br> <span class='small'> ( " + hours +  "  hours left to apply ) </span>"
+//     var fruitHTML = "🍇 ";
+//     for(i=0;i<hours;i++){
+//         var random = fruit[Math.floor(Math.random()*fruit.length)];
+//         fruitHTML += " " + random ;
+//         document.getElementById("loader").innerHTML = fruitHTML + "<br> <span class='small'> ( " + hours +  "  hours left to apply ) </span>"
 
-    }
+//     }
     
