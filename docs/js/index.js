@@ -184,9 +184,9 @@
 	        if (hasRowspans) $(this).trigger("update");
 	    });
 
-	
+
 	});
-	
+
 	// permalinks
 
 	var hash = window.location.hash;
@@ -222,7 +222,7 @@ $('.no-style').click(function(){
 		document.querySelectorAll('link, style').forEach(function(node){
 			node.parentNode.removeChild(node);
 		});
-		
+
 		document.querySelectorAll('*').forEach(function(node){
 			node.removeAttribute('style');
 		});
@@ -250,14 +250,13 @@ $('.no-style').click(function(){
 //   var days = Math.floor(distance / (1000 * 60 * 60 * 24));
 //   var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
 //      hours = (days * 24) + hours;
-    
-    
 
-//     var fruitHTML = "🍇 ";
-//     for(i=0;i<hours;i++){
-//         var random = fruit[Math.floor(Math.random()*fruit.length)];
-//         fruitHTML += " " + random ;
-//         document.getElementById("loader").innerHTML = fruitHTML + "<br> <span class='small'> ( " + hours +  "  hours left to apply ) </span>"
+
+
+    var fruitHTML = " ";
+    for(i=0;i<hours;i++){
+        var random = fruit[Math.floor(Math.random()*fruit.length)];
+        fruitHTML += " " + random ;
+        document.getElementById("loader").innerHTML = fruitHTML + "<br> <span class='small'> ( " + hours +  "  hours left to apply ) </span>"
 
 //     }
-    

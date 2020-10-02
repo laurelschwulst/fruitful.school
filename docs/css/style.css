@@ -874,6 +874,12 @@ a.no-style {
     .dark-switch.desktop {
         display: none;
     }
+    
+    #loader {
+    margin: 0;
+    display: inline-block;
+    max-width: calc(100% - 5px);
+}
 
 }
 
