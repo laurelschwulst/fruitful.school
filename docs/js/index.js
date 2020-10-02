@@ -240,7 +240,7 @@ $('.no-style').click(function(){
 
 //countdown
 
-var countDownDate = new Date("October 1, 2020 23:59:59").getTime();
+var countDownDate = new Date("October 1, 2020 24:00:00").getTime();
 
 
   var now = new Date().getTime();
