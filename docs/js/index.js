@@ -259,4 +259,4 @@ $('.no-style').click(function(){
         fruitHTML += " " + random ;
         document.getElementById("loader").innerHTML = fruitHTML + "<br> <span class='small'> ( " + hours +  "  hours left to apply ) </span>"
 
-//     }
+    }
