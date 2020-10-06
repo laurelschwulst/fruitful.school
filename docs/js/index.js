@@ -257,6 +257,6 @@ $('.no-style').click(function(){
     for(i=0;i<hours;i++){
         var random = fruit[Math.floor(Math.random()*fruit.length)];
         fruitHTML += " " + random ;
-        document.getElementById("loader").innerHTML = fruitHTML + "<br> <span class='small'> ( " + hours +  "  hours left to apply ) </span>"
+      //  document.getElementById("loader").innerHTML = fruitHTML + "<br> <span class='small'> ( " + hours +  "  hours left to apply ) </span>"
 
     }
