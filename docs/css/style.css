@@ -557,6 +557,12 @@ body.dark .press:hover {
     background: #171513;
 }
 
+body.dark h1.extralarge a,
+body.dark .extralarge a {
+    color: #5c5a53;
+    text-shadow: #5c5a53 -1px -2px 0;
+}
+
 @media only screen and (max-width: 800px) {
 
     #offerings {
