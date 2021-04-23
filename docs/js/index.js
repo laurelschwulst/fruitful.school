@@ -83,6 +83,7 @@ $(".people").click(function (e) {
   $(this).addClass("current");
   $(".toggle").css("display", "none");
   $("#people").css("display", "block");
+  swap();
 });
 
 $(".faq").click(function (e) {
