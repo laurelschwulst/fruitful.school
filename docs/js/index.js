@@ -79,11 +79,11 @@ $(".fruitful").click(function (e) {
 
 $(".people").click(function (e) {
   e.preventDefault();
+  swap();
   $(".topnav").removeClass("current");
   $(this).addClass("current");
   $(".toggle").css("display", "none");
   $("#people").css("display", "block");
-  swap();
 });
 
 $(".faq").click(function (e) {
