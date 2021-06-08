@@ -689,6 +689,50 @@ article {
   max-width: 700px;
 }
 
+article.twenty-one {
+  border: 0;
+  border-radius: 0;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2), 0px 10px 20px rgba(0, 0, 0, 0.15),
+    0px 20px 20px rgba(0, 0, 0, 0.15), 0px 30px 20px rgba(0, 0, 0, 0.15);
+  font-family: "Times New Roman", Times, serif;
+  max-width: 22.5em;
+  font-size: 1.5em;
+  padding: 2.25em 2em;
+}
+
+article.twenty-one figure.large {
+  margin: 3em -4em 3.5em;
+  width: calc(100% + 8em);
+}
+
+article.twenty-one h1 {
+  margin-bottom: 0;
+}
+
+article.twenty-one h2 {
+  margin-top: 1em;
+  font-size: 1em;
+  opacity: 0.6;
+  /* font-family: "Times New Roman";
+  font-weight: normal;
+  font-style: italic; */
+  text-decoration: none;
+}
+
+article.twenty-one .outro,
+article.twenty-one .series {
+  font-size: 0.7em;
+}
+
+article.twenty-one figcaption {
+  text-align: center;
+  display: block;
+  font-family: monospace;
+  opacity: 0.6;
+  font-style: normal;
+  font-size: 0.7em;
+}
+
 article blockquote {
   /* line-height: 1.3; */
   /* font-size: 0.9em; */
