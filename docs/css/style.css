@@ -733,6 +733,24 @@ article.twenty-one figcaption {
   font-size: 0.7em;
 }
 
+section#blog article.twenty-one h2 {
+  opacity: 1;
+  margin-bottom: 0;
+}
+
+section#blog article.twenty-one h3 {
+  opacity: 1;
+  margin-top: 1em;
+  font-size: 1em;
+  opacity: 0.6;
+  text-decoration: none;
+}
+
+body.dark article.twenty-one,
+body.dark article.twenty-one a {
+  color: #000;
+}
+
 article blockquote {
   /* line-height: 1.3; */
   /* font-size: 0.9em; */
