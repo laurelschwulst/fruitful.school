@@ -557,10 +557,11 @@ body.dark .extralarge a {
 }
 
 @media only screen and (max-width: 800px) {
-  #offerings {
-    grid-template-columns: inherit;
-    display: block;
-    max-width: 100%;
+  #offerings,
+  section#blog.special-interviews {
+    grid-template-columns: inherit !important;
+    display: block !important;
+    max-width: 100% !important;
   }
 
   .extralarge {
@@ -731,6 +732,62 @@ article.twenty-one figcaption {
   opacity: 0.6;
   font-style: normal;
   font-size: 0.7em;
+}
+
+section#blog.special-interviews {
+  grid-template-columns: 1fr 1fr 1fr;
+  display: grid;
+  max-width: 1000px;
+  margin: 0 auto;
+  grid-gap: 20px;
+}
+
+section#blog.special-interviews article {
+  padding: 15px 20px 20px 20px;
+  font-family: "Times New Roman", serif;
+  font-size: 22px;
+  letter-spacing: 0.3px;
+}
+
+section#blog.special-interviews article h2 {
+  font-size: 1.5em;
+}
+
+section#blog.special-interviews article h3 {
+  font-size: 0.75em !important;
+}
+
+section#blog.special-interviews article p {
+  font-size: 0.7em;
+  font-style: italic;
+}
+
+section#blog.special-interviews figure.large {
+  margin: 0;
+  width: 100%;
+}
+
+section#blog.special-interviews figure.large img {
+  border-radius: 12px;
+}
+
+section#blog.special-interviews figure.large figcaption {
+  margin: 1em 2.5em 0em;
+}
+
+section#blog.special-interviews a.button {
+  display: inline-block;
+  margin-top: 2em;
+  border: 2px solid rgba(0, 0, 0, 0.4);
+  border-bottom-color: rgba(0, 0, 0, 0.7);
+  border-right-color: rgba(0, 0, 0, 0.7);
+}
+
+section#blog.special-interviews a:active.button {
+  border-color: rgba(0, 0, 0, 0.7);
+  border-bottom-color: rgba(0, 0, 0, 0.4);
+  border-right-color: rgba(0, 0, 0, 0.4);
+  background: transparent;
 }
 
 section#blog article.twenty-one h2 {
@@ -956,7 +1013,8 @@ a.no-style {
   a.student-site {
     float: none;
     display: inline-block;
-    margin-bottom: 1em;
+    margin-top: 0.5em;
+    margin-bottom: 1.5em;
   }
 
   article {
@@ -967,6 +1025,20 @@ a.no-style {
 
   article h2 {
     margin-top: 0;
+  }
+
+  article.twenty-one {
+    font-size: 1em;
+    padding: 0.75em 1em;
+  }
+
+  article.twenty-one figure.large {
+    margin: 1em -2em 1.5em;
+    width: calc(100% + 4em);
+  }
+
+  article.twenty-one figure.large figcaption {
+    margin: 1em 2.5em 0em;
   }
 
   .portal {
