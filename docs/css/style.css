@@ -564,6 +564,10 @@ body.dark .extralarge a {
     max-width: 100% !important;
   }
 
+  section#blog.special-interviews article {
+    margin-bottom: 3.5em !important;
+  }
+
   .extralarge {
     text-shadow: rgb(163, 154, 143) 1px 1px 0;
     font-size: 3.5em;
@@ -775,18 +779,25 @@ section#blog.special-interviews figure.large figcaption {
   margin: 1em 2.5em 0em;
 }
 
+.series-description {
+  font-family: "trattatello", "normalschrift", "wiegel-latein", cursive;
+  font-size: 1.25em;
+  margin: 2em;
+  color: rgba(0, 0, 0, 0.6);
+}
+
 section#blog.special-interviews a.button {
   display: inline-block;
   margin-top: 2em;
-  border: 2px solid rgba(0, 0, 0, 0.4);
-  border-bottom-color: rgba(0, 0, 0, 0.7);
-  border-right-color: rgba(0, 0, 0, 0.7);
+  border: 2px solid rgba(0, 0, 0, 0.25);
+  border-bottom-color: rgba(0, 0, 0, 0.6);
+  border-right-color: rgba(0, 0, 0, 0.6);
 }
 
 section#blog.special-interviews a:active.button {
-  border-color: rgba(0, 0, 0, 0.7);
-  border-bottom-color: rgba(0, 0, 0, 0.4);
-  border-right-color: rgba(0, 0, 0, 0.4);
+  border-color: rgba(0, 0, 0, 0.6);
+  border-bottom-color: rgba(0, 0, 0, 0.25);
+  border-right-color: rgba(0, 0, 0, 0.25);
   background: transparent;
 }
 
