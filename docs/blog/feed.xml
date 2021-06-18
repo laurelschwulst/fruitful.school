@@ -8,12 +8,231 @@
     <copyright>Copyright © 2020 Fruitful School</copyright>
     <docs>http://www.rssboard.org/rss-specification</docs>
     <language>en</language>
-    <lastBuildDate>Fri, 11 Jun 2021 11:11:11 +0000</lastBuildDate>
-    <pubDate>Fri, 11 Jun 2021 11:11:11 +0000</pubDate>
+    <lastBuildDate>Fri, 18 Jun 2021 11:11:11 +0000</lastBuildDate>
+    <pubDate>Fri, 18 Jun 2021 11:11:11 +0000</pubDate>
+    
+    <!-- <item>
+      <title>First, Last, Security</title>
+      <link>https://fruitful.school/blog/2020-06-11.html</link>
+      <description><![CDATA[
+      ]]</description>
+      <guid isPermaLink="true">https://fruitful.school/blog/2021-06-11.html</guid>
+      <pubDate>Tues, 11 Jun 2021 11:11:11 +0000</pubDate>
+    </item> -->
+    
+    <item>
+      <title>Clay Corporation</title>
+      <link>https://fruitful.school/blog/2020-06-18.html</link>
+      <description><![CDATA[<h1>Clay Corporation<sup>®</sup></h1>
+      <h2>Interview with Robert Levine, Winter 2021 Participant</h2>
+
+      <div class="metadata small">
+        <time datetime="2021-06-18 11:11">June 18, 2021</time>
+        <span class="fruit">🍏 </span>
+      </div>
+
+      <div class="series">
+        This is one in a series of
+        <a href="index.html#special-interviews">interviews with participants</a>
+        from Fruitful School about the sites they created as part of our 6 week
+        workshop.
+      </div>
+
+      <figure class="large">
+        <img
+          src="http://fruitful.school/blog/images/robert-levine-clay-corp4.png"
+          alt="Screenshot of claycorporation.net, a mostly white website that greets visitors with the message, ‘Welcome to Clay Corporation, where we make clay from code. The factory is currently closed. Would you like to visit the warehouse or the generator?' The text is brown colored and in a pixelated serif font."
+        />
+        <img
+          src="http://fruitful.school/blog/images/robert-levine-clay-corp3.png"
+          alt="Screenshot of claycorporation.net on the 'Warehouse' tab, which shows various small clay sculptures and pottery in a grid with technical-looking textual metadata above each"
+        />
+        <img
+          src="http://fruitful.school/blog/images/robert-levine-clay-corp6.png"
+          alt="Screenshot of the text that appears in the 'Generator' section of claycorporation.net which reads, 'ROLL a grapefruit-sized ball of clay, DO it slower, REMOVE some clay, PINCH horizontally, ASK it a question, THROW it in the dirt, GIVE it a kiss, REPEAT the instructions in reverse.'"
+        />
+        <figcaption>
+          Clay Corporation by Robert Levine, 2021 —
+          <a href="http://claycorporation.net" target="_blank"
+            >claycorporation.net</a
+          >
+        </figcaption>
+      </figure>
+
+      <p><b>Describe the process of creating your site.</b></p>
+      <p>
+        When you plant a seed, you don't know what it will become. It might
+        emerge like the picture on the envelope but maybe it will sprout a
+        monstrous other thing. It will probably sprout a monstrous other thing.
+      </p>
+      <p>
+        <b>What did you learn through Fruitful School?</b>
+      </p>
+      <p>
+        HTML, CSS, and JavaScript are materials, and that these materials have
+        histories.
+      </p>
+      <p>
+        <b>What's something you'd like visitors to know?</b>
+      </p>
+      <p>This is make-believe.</p>
+      <p><b>What's it like to run a corporation?</b></p>
+      <p>It is no big deal.</p>
+      <p>
+        <b>What type of site would you like to see more on the www?</b>
+      </p>
+      <p>
+        Less SquareSpace, Shopify, Wix, Weebly, and Cargo. More websites
+        handmade on the QWERTY loom.
+      </p>
+
+      <hr />
+
+      <p class="outro">
+        🍓<br />
+        Robert Levine<br />
+        <a href="https://robertmorrislevine.info"
+          >http://robertmorrislevine.info</a
+        ><br /><br />
+        <img
+          src="http://fruitful.school/blog/images/robert-levine-clay-corp5.png"
+          alt="Screenshot of the 'Factory' tab of claycorporation.net, which shows a livestream from above of RL working at their desk. A spiraling white cord in the foreground, almost obscuring RL."
+        />
+      </p>
+      ]]</description>
+      <guid isPermaLink="true">https://fruitful.school/blog/2021-06-18.html</guid>
+      <pubDate>Fri, 18 Jun 2021 11:11:11 +0000</pubDate>
+    </item>
+    
+    <item>
+      <title>rite.house</title>
+      <link>https://fruitful.school/blog/2020-06-17.html</link>
+      <description><![CDATA[<a class="student-site" href="http://rite.house" target="_blank"
+        >rite.house
+      </a>
+
+      <h1>rite.house</h1>
+      <h2>Interview with Vanya Padmanabhan, Fall 2020 Participant</h2>
+
+      <div class="metadata small">
+        <time datetime="2021-06-17 11:11">June 17, 2021</time>
+        <span class="fruit">🍏 </span>
+      </div>
+
+      <div class="series">
+        This is one in a series of
+        <a href="index.html#special-interviews">interviews with participants</a>
+        from Fruitful School about the sites they created as part of our 6 week
+        workshop.
+      </div>
+
+      <figure class="large">
+        <img
+          src="http://fruitful.school/blog/images/vanya-padmanabhan-rite-house.png"
+          alt="A screenshot of www.rite.house at 11:06am. It includes an isometric exploded drawing of a house with round colored circles inhabiting it. Below, a colored key provides details around different individuals' daily quarantine rituals."
+        />
+        <figcaption>
+          rite.house by Vanya Padmanabhan, 2020 —
+          <a href="http://rite.house" target="_blank">rite.house</a>
+        </figcaption>
+      </figure>
+      <p>
+        <b>What’s it been like since launching rite.house?</b>
+      </p>
+      <p>
+        It's been really interesting to watch the site grow in a natural way. I
+        never shared it on social media, so I assume people are finding it
+        through word of mouth at this point or through the magic that is the
+        internet. Randomly, strangers are still finding it and still submitting
+        rituals through the Google form. I also think the comments section of
+        the form has been really interesting... like what strangers feel like
+        they want to share. People have submitted book recs, recipes, poems. A
+        few strangers have said that they came to the site at a low point in
+        their lives and that seeing other people's rituals helped them come up
+        with something they could be doing everyday. The fact that even one
+        person was able to find the website and take something positive away is
+        really special.
+      </p>
+      <p>
+        It's funny because I think people who have seen the site assume that I
+        must have pretty consistent rituals in my own life. But in reality, I've
+        always struggled to keep much of a routine (for better or worse lol).
+        Part of me always saw the project as a way to get ideas for how to
+        structure my own day.
+      </p>
+      <p>
+        Since making the site, I have become better about setting aside
+        intentional time away from the computer — to be outside or do something
+        with my hands — and that's been helpful.
+      </p>
+      <p>
+        <b>How was Fruitful School for you?</b>
+      </p>
+      <p>
+        Fruitful School was probably one of my favorite experiences in 2020 :')
+        It made me realize how muchIi missed learning and also how much
+        potential the internet has to be something special and handmade. I had
+        built up a lot of resentment towards my computer and really anything
+        digital (especially social media) throughout the course of the year, so
+        I was so grateful when fruitful helped restore my curiosity online.
+      </p>
+      <p>
+        The course made the act of making a site feel a lot less intimidating. I
+        think I’ve always been scared that my code would have to be “perfect” or
+        “finished” to be published? It felt freeing to publish a bunch of “in
+        progress” versions of the site and to recognize that any site will
+        always be “in progress” and never finished.
+      </p>
+      <p>
+        <b>What type of website would you like to encounter more?</b>
+      </p>
+      <p>
+        When I was younger, I felt like I had a place online and everything was
+        exciting. I kind of hope the future holds a cuter, more playful, and
+        welcoming internet... one where you really want to take up digital space
+        again. It would be nice to see websites that feel less permanent or
+        websites that make you feel more present / more connected in genuine and
+        unique ways.
+      </p>
+
+      <hr />
+
+      <p class="series">
+        You can also experience a walkthrough of
+        <i>rite.house</i> via our
+        <a href="https://youtu.be/Uj988pBqSBQ?t=2369">video recording</a>
+        of the Fall 2020 live exhibition (at the 39:29 mark)!
+      </p>
+
+      <hr />
+
+      <p class="outro">
+        🥭<br />
+        Vanya Padmanabhan<br /><br />
+        <a href="pages/vanya-padmanabhan-fruitful-id/index.html">
+          <img
+            src="http://fruitful.school/blog/images/vanya-padmanabhan-fruitful-id.png"
+            alt="Screenshot of Vanya Padmanabhan's Fruitful ID card"
+          />
+        </a>
+      </p>
+    ]]</description>
+      <guid isPermaLink="true">https://fruitful.school/blog/2021-06-17.html</guid>
+      <pubDate>Thurs, 17 Jun 2021 11:11:11 +0000</pubDate>
+    </item>
+    
     <item>
       <title>First, Last, Security</title>
       <link>https://fruitful.school/blog/2020-06-11.html</link>
-      <description><![CDATA[ <div class="series">
+      <description><![CDATA[ <h1>First, Last, Security</h1>
+      <h2>Interview with Raegan Bird, Fall 2020 Participant</h2>
+
+      <div class="metadata small">
+        <time datetime="2021-06-11 11:11">June 11, 2021</time>
+        <span class="fruit">🍏 </span>
+      </div>
+
+      <div class="series">
         This is one in a series of
         <a href="index.html#special-interviews">interviews with participants</a>
         from Fruitful School about the sites they created as part of our 6 week
@@ -22,21 +241,21 @@
 
       <figure class="large" style="margin-bottom: 0em">
         <img
-          src="images/raegan-bird-first-last-2.png"
+          src="http://fruitful.school/blog/images/raegan-bird-first-last-2.png"
           alt="A screenshot of First, Last, Security showing a slightly bleak and mysterious image of an apartment in desert tones with a small purple peace sign in the corner"
         />
         <!-- <img
-          src="images/raegan-bird-first-last-3.png"
+          src="http://fruitful.school/blog/images/raegan-bird-first-last-3.png"
           alt="A screenshot of Many Sceneries that contains ovals of natural scenery some which occupies the background"
         /> -->
       </figure>
       <figure style="margin-top: 0">
         <img
-          src="images/raegan-bird-first-last-1.png"
+          src="http://fruitful.school/blog/images/raegan-bird-first-last-1.png"
           alt="Image of the homepage of the website First, Last, Security, which asks you to knock to enter and says, 'Screenshots collected between Febuary 2018 and June 2019 from Craigslist, Zillow and Trulia listings for 2+ bedroom rentals, under $1000 a month, in Tucson, Arizona. Other photos taken between 2015- 2019 in places where I was a leasee or in properties where I worked as an independent contractor.'"
         />
         <figcaption>
-          First, Last, Security by Reagan Bird —
+          First, Last, Security by Reagan Bird, 2020 —
           <a href="https://first-last-security.us" target="_blank"
             >first-last-security.us</a
           >
@@ -106,7 +325,7 @@
       </p>
       <figure>
         <img
-          src="images/raegan-bird-example.png"
+          src="http://fruitful.school/blog/images/raegan-bird-example.png"
           alt="Two images of apartment listings Raegan Bird collected as part of their project First, Last, Security, one which shows a toilet with river rocks on the floor leading up to it"
         />
       </figure>
@@ -183,12 +402,20 @@
 
       <hr />
 
+      <p class="series">
+        You can also experience a walkthrough of
+        <i>First, Last, Security</i> via our
+        <a href="https://youtu.be/Uj988pBqSBQ?t=3274">video recording</a>
+        of the Fall 2020 live exhibition (at the 54:34 mark)!
+      </p>
+      <hr />
+
       <p class="outro">
         🍐<br />
         Raegan Bird<br />
         <a href="https://raeganbird.com">https://raeganbird.com</a><br /><br />
         <img
-          src="images/raegan-bird-fruitful-id.png"
+          src="http://fruitful.school/blog/images/raegan-bird-fruitful-id.png"
           alt="Screenshot of Raegan Bird's Fruitful ID card"
         />
       </p>
@@ -200,32 +427,51 @@
     <item>
       <title>Many Sceneries</title>
       <link>https://fruitful.school/blog/2020-06-09.html</link>
-      <description><![CDATA[ <div class="series">
+      <description><![CDATA[ <a class="student-site" href="https://sceneries.site" target="_blank"
+        >sceneries.site
+      </a>
+
+      <h1>Many Sceneries</h1>
+      <h2>Interview with Ji Kim, Fall 2020 Participant</h2>
+
+      <div class="metadata small">
+        <time datetime="2021-06-09 11:11" style="color: #000"
+          >June 9, 2021</time
+        >
+        <span class="fruit">🍏 </span>
+      </div>
+
+      <div class="series">
         This is one in a series of
-        <a href="index.html#special-interviews">interviews with participants</a>
+        <a href="index.html#special-interviews" style="color: #a0a0a0"
+          >interviews with participants</a
+        >
         from Fruitful School about the sites they created as part of our 6 week
         workshop.
       </div>
 
       <figure class="large">
         <img
-          src="images/ji-kim-many-sceneries-1.png"
+          src="http://fruitful.school/blog/images/ji-kim-many-sceneries-1.png"
           alt="A screenshot of Many Sceneries that contains ovals of natural scenery some which occupies the background"
           style="border-radius: 20px"
         />
         <img
-          src="images/ji-kim-many-sceneries-2.png"
+          src="http://fruitful.school/blog/images/ji-kim-many-sceneries-2.png"
           alt="A screenshot of Many Sceneries that contains ovals of natural scenery some which occupies the background"
           style="border-radius: 20px"
         />
         <img
-          src="images/ji-kim-many-sceneries-3.png"
+          src="http://fruitful.school/blog/images/ji-kim-many-sceneries-3.png"
           alt="A screenshot of Many Sceneries that contains ovals of natural scenery some which occupies the background"
           style="border-radius: 20px"
         />
         <figcaption>
           Many Sceneries by Ji Kim, 2020 —
-          <a href="https://sceneries.site" target="_blank"
+          <a
+            href="https://sceneries.site"
+            target="_blank"
+            style="color: #a0a0a0"
             >https://sceneries.site</a
           >
         </figcaption>
@@ -280,9 +526,6 @@
         and aesthetics but also in site structure and interactions, was fun and
         inspiring.
       </p>
-      <!-- <figure class="large">
-        <img src="images/ji-kim-in-fruitful-school-2.png" />
-      </figure> -->
       <p>
         <b
           >Since some time has passed now, have you had any new reflections
@@ -322,10 +565,12 @@
       <p class="outro">
         🍑<br />
         Ji Kim<br />
-        <a href="https://ji-kim.net/">https://ji-kim.net</a><br /><br />
+        <a href="https://ji-kim.net" style="color: #a0a0a0"
+          >https://ji-kim.net</a
+        ><br /><br />
         <span style="max-width: 250px; display: inline-block">
           <img
-            src="images/ji-kim-in-fruitful-school-1.png"
+            src="http://fruitful.school/blog/images/ji-kim-in-fruitful-school-1.png"
             alt="Screenshot of Ji Kim on video chat smiling as part of Fruitful School"
           />
         </span>
@@ -338,7 +583,22 @@
     <item>
       <title>Pensée Sauvage</title>
       <link>https://fruitful.school/blog/2020-06-08.html</link>
-      <description><![CDATA[<div class="series">
+      <description><![CDATA[<a
+        class="student-site"
+        href="http://kiyel.care/pensee_sauvage"
+        target="_blank"
+        >kiyel.care/pensee-sauvage
+      </a>
+
+      <h1>Pensée Sauvage</h1>
+      <h2>Interview with Yelim Ki, Winter 2021 Participant</h2>
+
+      <div class="metadata small">
+        <time datetime="2021-06-08 11:11">June 8, 2021</time>
+        <span class="fruit">🍏 </span>
+      </div>
+
+      <div class="series">
         This is one in a series of
         <a href="index.html#special-interviews">interviews with participants</a>
         from Fruitful School about the sites they created as part of our 6 week
@@ -347,7 +607,7 @@
 
       <figure class="large">
         <img
-          src="images/yelim-ki-pensee-sauvage.png"
+          src="http://fruitful.school/blog/images/yelim-ki-pensee-sauvage.png"
           alt="A screenshot of a chat-based website that has an angled image of the pansy flower in the background, messages on the right hand side, and a blueish purple background"
           style="border-radius: 20px"
         />
@@ -479,11 +739,10 @@
         🥥<br />
         Yelim Ki<br />
         <a href="http://kiyel.care">http://kiyel.care</a><br /><br />
-        <!-- Fruitful Student v3.2021.winter <br /> -->
 
         <a href="http://kiyel.care/hello/credit/">
           <img
-            src="images/yelim-ki-card.png"
+            src="http://fruitful.school/blog/images/yelim-ki-card.png"
             alt="Yelim Ki's Fruitful Student ID card"
             style="border-radius: 20px"
           />
@@ -596,7 +855,7 @@
     </p>
     
     <figure style="text-align: center; max-height: 200px; opacity: 0.65;">
-        <img src="images/lemon-blur.png" height="200" width="auto" alt="">
+        <img src="http://fruitful.school/blog/images/lemon-blur.png" height="200" width="auto" alt="">
     </figure>
     
     <p id="vcu-talk-content">
@@ -615,7 +874,7 @@
         <a href="https://the-life-and-death-of-an-internet-onion.com">https://the-life-and-death-of-an-internet-onion.com</a>
     </p>
     <figure class="large">
-        <img src="images/decay1.png" alt="">
+        <img src="http://fruitful.school/blog/images/decay1.png" alt="">
         <figcaption>
             Screencaptures of the various phases of decay, beginning on August 27, 2020
         </figcaption>
@@ -633,7 +892,7 @@
         <i>You can learn more about the internet onion in this <a href="https://www.are.na/blog/onion-and-rocks">blog post</a> and see excerpts in this <a href="https://www.are.na/laurel-schwulst/the-life-and-death-of-an-internet-onion">Are.na channel</a>.</i>
     </p>
     <figure class="large">
-        <img src="images/decay2.png" alt="">
+        <img src="http://fruitful.school/blog/images/decay2.png" alt="">
         <figcaption>The original plan for the decay, Spring 2019</figcaption>
     </figure>
     <p>
@@ -744,7 +1003,7 @@ button.peel-button,
     If it makes sense for the project, let’s consider decay just as equally along with growth. And if we’re working on a tool, can we create features to allow participants to expertly & gracefully embrace their subtractive powers?
 </p>
 <figure>
-    <img src="images/puddle-from-wikipedia.jpg" alt="A puddle with reflection of a tree" width="200">
+    <img src="http://fruitful.school/blog/images/puddle-from-wikipedia.jpg" alt="A puddle with reflection of a tree" width="200">
 </figure>
 <p>
     How about an “evaporate” button?
@@ -762,7 +1021,7 @@ button.peel-button,
       <title>Learning Online?</title>
       <link>https://fruitful.school/blog/2020-09-04.html</link>
       <description><![CDATA[<figure style="max-width: 500px;">
-          <img src="images/learning-comic.gif" alt="This is a comic or meme in which a father in a hat says, ‘ARE YA learning SON??’ and his son who is laying on the ground surrounded by papers, pens, and his computer while crying says ‘NO.’">
+          <img src="http://fruitful.school/blog/images/learning-comic.gif" alt="This is a comic or meme in which a father in a hat says, ‘ARE YA learning SON??’ and his son who is laying on the ground surrounded by papers, pens, and his computer while crying says ‘NO.’">
         </figure>
         
         <p>
@@ -788,7 +1047,7 @@ button.peel-button,
 
         <figure style="max-width: 100%; margin-bottom: 0;">
           <a href="2020-02-16.html">
-            <img src="images/fruitful-documentation-group.jpg" alt="A group of mostly smiling people pose with various fruits and a projection of a renaissance painting of fruit. In the foreground, there's an Apple laptop next to a few bananas on a wooden table and a cable charging trails off to the right.">
+            <img src="http://fruitful.school/blog/images/fruitful-documentation-group.jpg" alt="A group of mostly smiling people pose with various fruits and a projection of a renaissance painting of fruit. In the foreground, there's an Apple laptop next to a few bananas on a wooden table and a cable charging trails off to the right.">
           </a>
         </figure>
 
@@ -798,7 +1057,7 @@ button.peel-button,
         <div style="font-size: 4em; text-align:center">🍉</div>
 
         <figure style="max-width: 100%; margin-bottom: 0;">
-          <img src="images/whereby.png" alt="A screenshot of two people video chatting while holding fruits on the Whereby platform. Laurel appears in a larger frame than the other, and she presents a mango. John Provencher is in the smaller frame, and he covers his face with a clementine.">
+          <img src="http://fruitful.school/blog/images/whereby.png" alt="A screenshot of two people video chatting while holding fruits on the Whereby platform. Laurel appears in a larger frame than the other, and she presents a mango. John Provencher is in the smaller frame, and he covers his face with a clementine.">
         </figure>
         <p>
           <i>Where we are:</i> This coming fall (October–November, 2020) we will do another 6-week workshop, this time online / virtual. What does our POV on learning online mean in the context of Fruitful School, specifically?
