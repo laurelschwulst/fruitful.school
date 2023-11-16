@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>fruitful blog</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width; initial-scale=1.0" />
+  <link rel="stylesheet" href="../css/style.css?9123" />
+
+  <!-- syntax highlighting -->
+  <link rel="stylesheet"
+      href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.0/build/styles/default.min.css">
+  <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.0/build/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <style>
+      pre {
+          font-size: 0.8em;
+          margin: 3.25em 0;
+      }
+      code {
+        border-radius: 6px;
+      }
+      .hljs {
+          padding: 1.5em;
+      }
+  </style>
+
+</head>
+
+<body>
+
+  <header>
+      <p class="small">
+        <a href="../index.html" class="button">fruitful.school</a>
+      </p>
+  </header>
+
+  <main>
+
+    <div class="portal"></div>
+
+    <div class="extralarge"><a href="index.html">fruitful blog</a></div>
+
+  </main>
+
+  <article>
+
+    <h1>Designing for Decay</h1>
+
+    <div class="metadata small">
+        <time datetime="2020-09-17 11:11">September 17, 2020</time>
+        <span class="fruit">🍇 </span>
+    </div>
+      
+    <p>
+        On our main fruitful.school site, we say…
+    </p>
+
+    <p>
+        🍋 <i>A fruitful web can be performative. Maybe we can make sites with a purpose and life that’s brief but beautiful. We also recognize that the web is inherently a performative medium by its design.</i>
+    </p>
+    
+    <figure style="text-align: center; max-height: 200px; opacity: 0.65;">
+        <img src="images/lemon-blur.png" height="200" width="auto" alt="A blurry lemon emoji">
+    </figure>
+    
+    <p id="vcu-talk-content">
+        Recently Laurel gave a <a href="#vcu-talk">talk on Zoom *</a> about the “internet onion,” an ephemeral project she orchestrated.
+    </p>
+    <p>
+        “The Life and Death of an Internet Onion” is an anthology webzine created by Laurel's Spring 2019 interactive design class at Yale and centered around written responses to the prompt:
+    </p>
+    <blockquote style="font-style: italic;">
+        What is expressing “real” love or affirmation about? Is it about effort, thoughtfulness, generosity, something else? What might a thoughtful or generous interface feel or behave like?
+    </blockquote>
+    <p>  
+        You can visit the project here:
+    </p>
+    <p>
+        <a href="https://the-life-and-death-of-an-internet-onion.com">https://the-life-and-death-of-an-internet-onion.com</a>
+    </p>
+    <figure class="large">
+        <img src="images/decay1.png" alt="Four screencaptures of the internet onion website project, going from most legible to least. The brown decreases in saturation and the site gets blurrier with each successive screencapture.">
+        <figcaption>
+            Screencaptures of the various phases of decay, beginning on August 27, 2020
+        </figcaption>
+    </figure>
+    <p>  
+        If you don’t know about the project or haven’t seen it before, you might be wondering why it looks the way it does — very illegible and blurry. You might even wonder what you’re looking at.
+    </p>
+    <p>
+        That’s because the project has “died” or is still in the process of decaying…
+    </p>
+    <p>
+        This is a perennial webzine, meaning it will emerge once per year. It’s likely decaying now, but you can expect to see some legible version of it online again next summer 2021. When it emerges again, it will be live for 5 weeks: the average lifespan of a non-refrigerated onion. And after those 5 weeks of life, it will again begin its process of gradual decay.
+    </p>
+    <p>
+        <i>You can learn more about the internet onion in this <a href="https://www.are.na/blog/onion-and-rocks">blog post</a> and see excerpts in this <a href="https://www.are.na/laurel-schwulst/the-life-and-death-of-an-internet-onion">Are.na channel</a>.</i>
+    </p>
+    <figure class="large">
+        <img src="images/decay2.png" alt="Screencapture of a Google Spreadsheet titled 'onion decay' with gradually changing values for blur, saturation, and opacity as time goes on.">
+        <figcaption>The original plan for the decay, Spring 2019</figcaption>
+    </figure>
+    <p>
+        So much thought and energy often goes into how something we create goes up, but what about when it comes down?
+    </p>
+    <p>
+        Websites are often assumed to be up and running 100% of the time. Of course, certain websites we depend on for health and knowledge need to be. But in the case of an artistic project, the web medium is inherently performative — why not embrace it if it makes sense for the project at hand?
+    </p>
+    <p>
+        In the workshop that followed my talk about the internet onion, my group discussed how often in today’s day and age, the word “performative” often implies “not authentic” — that is, superficial and insincere. But actually, some performance is part of love. With the best love, this performance is reciprocal. So the perennial nature of this project fit the content well.
+    </p>
+
+<pre><code class="css">/* DECAY */
+
+* {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* PHASE 1 */
+     
+section,
+header nav,
+header h1,
+button.peel-button,
+.onion-container {
+    filter: blur(2px);
+    opacity: 0.95;
+}
+
+/* PHASE 2 */
+    
+section,
+header nav,
+header h1,
+button.peel-button,
+.onion-container {
+    filter: blur(5px) saturate(90%);
+    opacity: 0.85;
+}
+
+/* PHASE 3 */
+
+section,
+header nav,
+header h1,
+button.peel-button,
+.onion-container {
+    filter: blur(12px) saturate(70%);
+    opacity: 0.6;
+}
+
+/* PHASE 4 */
+
+section,
+header nav,
+header h1,
+button.peel-button,
+.onion-container {
+    filter: blur(18px) saturate(60%);
+    opacity: 0.5;
+}
+
+/* PHASE 5 */
+
+section,
+header nav,
+header h1,
+button.peel-button,
+.onion-container {
+    filter: blur(24px) saturate(50%);
+    opacity: 0.45;
+}
+</code></pre>
+
+<p>
+    The internet onion is decaying by phases because it has to be, given the basic hand-coding HTML and CSS we are using. We could write a script, but we are lazy, and there won’t be that many more phases of decay than this, Laurel thinks to herself. (Although down the line, Laurel would like to also degrade the content itself and source code, but that will be in Late Decay.)
+</p>
+<p>
+    But what if more thought and energy were put into tools and interfaces for decay and subtraction in the digital platforms we use more regularly?
+</p>
+<p>
+    In his podcast episode, “<a href="https://breakingsmart.substack.com/p/towards-subtractive-social-media">Towards Subtractive Social Media</a>,” Venkatesh Rao summarizes, “The set of positive, additive operations you can do on your feed — posting, liking, following is large, rich, powerful, and thoughtfully designed, but the set of negative operations is a wasteland.” He goes on to say that the negative operations, like block or mute, are “<b>painfully manual</b>.”
+</p>
+<p>
+    This reminds us of a feature we have dreamed of on both Twitter and Instagram: a softer, more conditional mute. That is, what if you don’t want to hide someone forever? You just need a break for a little while; you don’t want to forget them entirely. Maybe this button could be called “time-out with a fade-in” because it would hard mute their posts for a set amount of time and then gradually sprinkle their content back into the feed. You don't need to manually give them another chance, by default they re-appear.
+</p>
+
+<hr>
+
+<p>
+    In Laurel's writing from a couple years ago about <a href="https://thecreativeindependent.com/people/laurel-schwulst-my-website-is-a-shifting-house-next-to-a-river-of-knowledge-what-could-yours-be/">what websites can be</a>, she cycled through a handful of potential metaphors. One was “puddle.” She wrote, “Puddles evaporate slowly over time. It might be difficult, but I would love to see a website evaporate slowly, too.”
+</p>
+<p>
+    Not long after Laurel published her writing, she learned about Anny Li’s <a href="https://volume-1.org/Triple-Canopy-How-to-Encounter-a-Puddle">meditation on puddles</a>. Li asks:
+</p>
+<blockquote>
+    What can be learned from the humble puddle? I wonder how they could present new models for publication. To this end I think too of Jack Halberstam’s “low theory” in <i>The Queer Art of Failure</i>, where he outlines inroads to non-dominant and resistant modes of being, knowing, and learning, recuperating failure as a practice and locating sites of “more creative, more cooperative, more surprising ways of being in the world.” Similarly, the puddle may lead a precarious existence, but it thrives in these very same in-between, overlooked spaces. A puddle infiltrates, interferes, and ultimately vanishes, only to replenish itself anew.
+</blockquote>
+<p>
+    We would love to see more designers putting energy into decay. Enter, designers of decay & subtraction!
+</p>
+<p>
+    If it makes sense for the project, let’s consider decay just as equally along with growth. And if we’re working on a tool, can we create features to allow participants to expertly & gracefully embrace their subtractive powers?
+</p>
+<figure>
+    <img src="images/puddle-from-wikipedia.jpg" alt="A puddle with reflection of a tree" width="200">
+</figure>
+<p>
+    How about an “evaporate” button?
+</p>
+
+<hr>
+
+<p id="vcu-talk" class="footnote">
+    * Laurel gave this talk at Virgnia Commonwealth University (VCU) on Thursday, September 10, 2020. She explored the internet onion project and her teaching practice more holistically. The talk wasn’t recorded, but you can see some of the materials here: <a href="https://www.are.na/laurel-schwulst/circular-learning">https://www.are.na/laurel-schwulst/circular-learning</a>. Thanks to Nontsikelelo Mutiti, Aidan Quinlan, Julia Dann, and everyone else at VCU who made this possible. <a href="#vcu-talk-content">↩</a>
+</p>
+
+      </article>
+
+  <footer class="blog">
+    <a href="index.html" class="button small">Back to the blog home</a>
+  </footer>
+
+  <script src="js/jquery.min.js"></script>
+  <script src="../js/darklight.js"></script>
+
+</body>
+
+</html>
