@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>fruitful store</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, intial-scale=1.0" />
+  <link rel="icon" href="../imgs/strawberry/favicon.ico" />
+  <link rel="stylesheet" href="store.css?2938723" />
+  <style>
+
+  form, small {
+    display: inline-block;
+    font-family: monospace;
+    font-size: 12px;
+    font-family: helvetica, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: .25px;
+    color: #000;
+    padding-top: 10px;
+  }
+
+  footer {
+    margin-top: 20vh;
+  }
+
+
+  </style>
+</head>
+
+<body>
+
+  <div id="back">
+    <a href="../index.html">𝒻𝓇𝓊𝒾𝓉𝒻𝓊𝓁.𝓈𝒸𝒽𝑜𝑜𝓁</a>
+  </div>
+
+  <!-- <div id="background"></div> -->
+  <div class="store-icon">
+    <img src="imgs/rupee.png">
+  </div>
+
+  <!-- <div class="title">
+    𝒻𝓇𝓊𝒾𝓉𝒻𝓊𝓁 𝔰𝔱𝔬𝔯𝔢<br>
+  </div> -->
+
+<header>
+  <span id="message" class="closing">The fruitful 𝔰𝔱𝔬𝔯𝔢 is empty. Please check back soon.</span><br><br>
+</header>
+
+  <footer>
+    <a href="../index.html">
+      <span style="font-size: 14px;">𝒻𝓇𝓊𝒾𝓉𝒻𝓊𝓁.𝓈𝒸𝒽𝑜𝑜𝓁</span> is a website workshop for people with seeds<br><br>
+      <i style="font-size: 14px;">“&nbsp;𝓉𝒽ℯ&nbsp; 𝒻𝓇𝓊𝒾𝓉&nbsp; 𝓇𝒾𝓅ℯ𝓃𝓈&nbsp; 𝓈𝓁ℴ𝓌𝓁𝓎,&nbsp; 𝒷𝓊𝓉&nbsp; 𝒻𝒶𝓁𝓁𝓈&nbsp; 𝓆𝓊𝒾𝒸𝓀𝓁𝓎&nbsp;”</i>
+    </a>
+  </footer>
+
+  <script>
+        // Set the date we're counting down to
+        var countDownDate = new Date("2020-03-19T24:00:00").getTime();
+
+        function time() {
+
+            // Time
+            var now = new Date().getTime();
+
+            // Distance
+            var distance = countDownDate - now;
+
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // ticker
+            document.getElementById("time").innerHTML = days + " days " + hours + " hours " +
+                minutes + " minutes " + seconds + " seconds";
+
+            // after the date
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("time").innerHTML = "";
+                    document.getElementById("section").innerHTML = "";
+                    document.getElementById("message").innerHTML = "our store is now closed. 🌸 <a href=''> subscribe for updates </a>";
+
+            }
+        }
+
+        var x = setInterval(function() {
+            time()
+        }, 1000);
+
+
+        time()
+    </script>
+
+</body>
+
+</html>
