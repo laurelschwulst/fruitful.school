@@ -1,133 +1,304 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Clay Corporation ®</title>
+
+<head>
+    <title>Ultralight</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width; initial-scale=1.0" />
     <link rel="icon" type="image/png" href="../images/fav.png" />
     <link rel="stylesheet" href="../../css/style.css?12021.06.08" />
-    <meta
-      property="og:image"
-      content="https://fruitful.school/blog/images/robert-levine-clay-corp4.png"
-    />
+    <meta property="og:image" content="" />
     <style>
-      /* hi */
-      ul,
-      ol {
+        body {
+            margin-top: 0px;
+        }
+        /* hi */
+    ul,
+    ol {
         font-size: 18px;
         padding-left: 1.25em;
-      }
-      li {
+    }
+
+    .portal {}
+
+    canvas {
+        display: inline-block;
+        padding: 0px;
+        margin: 0px;
+        image-rendering: pixelated;
+        /* or 'crisp-edges' */
+        border: 3px solid #5c5a53;
+        border-top-color: rgb(163, 154, 143);
+        border-left-color: rgb(163, 154, 143);
+        z-index: 100;
+        position: relative;
+        margin: 8px 0px;
+    }
+
+    #smallCanvas {
+        left: -202px;
+        border-radius: 100%;
+    }
+
+    li {
         padding-left: 0.5em;
-      }
-      @media (max-width: 500px) {
-        ul,
-        ol {
-          font-size: 16px;
-        }
-      }
+    }
+
+    img {
+        width: 100%;
+
+    }
+
+
+    .extralarge {
+        text-decoration: none;
+        max-width: 48%;
+        display: inline-block;
+        line-height: 1.2;
+        font-size: 5vw;
+    }
+
+    #npc {
+        filter: drop-shadow(3px 1px 0 rgb(163, 154, 143));
+        fill: #5c5a53;
+        display: inline-block;
+        width: 570px;
+        height: auto;
+        margin-top: -70px;
+        z-index: -10;
+    }
+
+    td, tr {
+        border-top: none;
+        border-right: none;
+        border-color: black;
+        border-width: 1px;
+        border-radius: 0px;
+        margin: 0;
+
+    }
+    td {
+        float: left;
+    }
+    tr td:first-child {
+        float: left;
+
+    }
+
+
+    .fruit {
+        mix-blend-mode: overlay;
+    }
+    table {
+        margin: 0;
+        font-size: 16px;
+        width: 100%;
+    }
+
+    figcaption, table span {
+        text-transform: uppercase;
+    }
+     table span {
+        display: block;
+
+    }
+
+    .apply {
+    font-size: 0.8em;
+    font-size: 30px;
+    text-transform: lowercase;
+    font-family: monospace;
+    font-family: "trattatello", "normalschrift", "wiegel-latein", cursive;
+    color: rgba(0, 0, 0, 0.75);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    background-image: -webkit-gradient( linear, left bottom, left top, color-stop(0.16, rgb(207, 207, 207)), color-stop(0.79, rgb(252, 252, 252)) );
+    background-image: -moz-linear-gradient( center bottom, rgb(207, 207, 207) 16%, rgb(252, 252, 252) 79% );
+    background-image: linear-gradient( to top, rgb(207, 207, 207) 16%, rgb(252, 252, 252) 79% );
+    padding: 3px 8px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    /* color: black; */
+    text-decoration: none;
+    }
+
+    video {
+        max-width: 100%;
+    }
     </style>
-  </head>
+</head>
 
-  <body>
+<body>
     <header>
-      <p class="small">
-        <a href="../index.html" class="button">fruitful.school</a>
-      </p>
+        <img src="imgs/ultralight-website.png" style="mix-blend-mode: multiply;">
     </header>
-
-    <main>
-      <div class="portal"></div>
-
-      <div class="extralarge"><a href="index.html">fruitful blog</a></div>
-    </main>
-
-    <article class="twenty-one interview" style="background: #dcd2cc">
-      <a class="student-site" href="http://claycorporation.net" target="_blank"
-        >claycorporation.net
-      </a>
-
-      <h1>Clay Corporation<sup>®</sup></h1>
-      <h2>Interview with Robert Morris Levine, Winter 2021 Participant</h2>
-
-      <div class="metadata small">
-        <time datetime="2021-06-18 11:11">June 18, 2021</time>
-        <span class="fruit">🍏 </span>
-      </div>
-
-      <div class="series">
-        This is one in a series of
-        <a href="index.html#special-interviews">interviews with participants</a>
-        from Fruitful School about the sites they created as part of our 6 week
-        workshop.
-      </div>
-
-      <figure class="large">
-        <img
-          src="images/robert-levine-clay-corp4.png"
-          alt="Screenshot of claycorporation.net, a mostly white website that greets visitors with the message, ‘Welcome to Clay Corporation, where we make clay from code. The factory is currently closed. Would you like to visit the warehouse or the generator?' The text is brown colored and in a pixelated serif font."
-        />
-        <img
-          src="images/robert-levine-clay-corp3.png"
-          alt="Screenshot of claycorporation.net on the 'Warehouse' tab, which shows various small clay sculptures and pottery in a grid with technical-looking textual metadata above each"
-        />
-        <img
-          src="images/robert-levine-clay-corp6.png"
-          alt="Screenshot of the text that appears in the 'Generator' section of claycorporation.net which reads, 'ROLL a grapefruit-sized ball of clay, DO it slower, REMOVE some clay, PINCH horizontally, ASK it a question, THROW it in the dirt, GIVE it a kiss, REPEAT the instructions in reverse.'"
-        />
-        <figcaption>
-          Clay Corporation by Robert Levine, 2021 —
-          <a href="http://claycorporation.net" target="_blank"
-            >claycorporation.net</a
-          >
-        </figcaption>
-      </figure>
-
-      <p><b>Describe the process of creating your site.</b></p>
-      <p>
-        When you plant a seed, you don't know what it will become. It might
-        emerge like the picture on the envelope but maybe it will sprout a
-        monstrous other thing. It will probably sprout a monstrous other thing.
-      </p>
-      <p>
-        <b>What did you learn through Fruitful School?</b>
-      </p>
-      <p>
-        HTML, CSS, and JavaScript are materials, and that these materials have
-        histories.
-      </p>
-      <p>
-        <b>What's something you'd like visitors to know?</b>
-      </p>
-      <p>This is make-believe.</p>
-      <p><b>What's it like to run a corporation?</b></p>
-      <p>It is no big deal.</p>
-      <p>
-        <b>What type of site would you like to see more on the www?</b>
-      </p>
-      <p>
-        Less SquareSpace, Shopify, Wix, Weebly, and Cargo. More websites
-        handmade on the QWERTY loom.
-      </p>
-
-      <hr />
-
-      <p class="outro">
-        🍓<br />
-        Robert Morris Levine<br />
-        <a href="https://rmorrisl.info">https://rmorrisl.info</a><br /><br />
-        <img
-          src="images/robert-levine-clay-corp5.png"
-          alt="Screenshot of the 'Factory' tab of claycorporation.net, which shows a livestream from above of RL working at their desk. A spiraling white cord in the foreground, almost obscuring RL."
-        />
-      </p>
+    <article class="twenty-one interview" style="background: transparent;">
+        <a class="student-site" href="#" target="_blank">apply
+        </a>
+        <h1 style="line-height: 0; margin-top: 10px;">Ultralight<sup></sup></h1>
+        <h2>Websites, Formats, Methods, etc.</h2>
+        <div class="metadata small">
+            <time datetime="2021-06-18 11:11">Ultralight — CLASSES: WINTER 2024</time>
+            <span class="fruit">🍋 </span>
+        </div>
+        <table class="small">
+            <thead>
+            </thead>
+            <tr>
+                <td>
+                    <span> instructor </span>
+                </td>
+                <td>
+                    <span> laurel schwulst </span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span> guests </span>
+                </td>
+                <td>
+                    <span>marie otsuka</span>
+                    <span>benjamin earl</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span> dates </span>
+                </td>
+                <td>
+                    <span> January 4th, <br>January 21st, <br>January 28th<br>( 2024 ) </span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span> time </span>
+                </td>
+                <td>
+                    <span> 1PM-5PM EST </span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span> Location </span>
+                </td>
+                <td>
+                    <span> Index Space <br>
+                        120 Walker St,<br> New York, NY<br>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span> Price </span>
+                </td>
+                <td>
+                    <span> $900
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span> App Deadline </span>
+                </td>
+                <td>
+                    <span> December 22, 2023
+                    </span>
+                </td>
+            </tr>
+        </table>
+        <p>
+            I need to translate this (<a href="https://ultralight.veryinteractive.net">Ultralight Hamburg Workshop</a>) into this format. Sorry I am slow! Having meeting with Ben and Marie soon...
+        </p>
+        <blockquote>
+            “Whenever humanity seems condemned to heaviness, I think I should fly like Perseus into a different space. I don’t mean escaping into dreams or into the irrational. I mean that I have to <span>change my approach</span>, <span>look at the world from a different perspective</span>, with a different logic and with <span>fresh methods of cognition</span> and verification. The images of lightness that I seek should not fade away like dreams dissolved by the realities of present and future...”
+        </blockquote>
+        <cite>
+            Italo Calvino<br>
+            <i>Six Memos for the Next Millennium</i>, 1. “Lightness”
+        </cite>
+        <figure class="large">
+            <video playsinline autoplay loop muted>
+                <source src="imgs/atap-1.mp4" type="video/mp4">
+            </video>
+            <video playsinline autoplay loop muted>
+                <source src="imgs/atap-4.mp4" type="video/mp4">
+            </video>
+            <video playsinline autoplay loop muted>
+                <source src="imgs/atap-7.mp4" type="video/mp4">
+            </video>
+            <video playsinline autoplay loop muted>
+                <source src="imgs/bird-kite-1.mp4" type="video/mp4">
+            </video>
+            <video playsinline autoplay loop muted>
+                <source src="imgs/bird-kite-2.mp4" type="video/mp4">
+            </video>
+            <img src="imgs/atap.png" alt="TK">
+            <figcaption>
+                Testing Videos and Images from Laurel TKTK
+            </figcaption>
+        </figure>
+        <p>
+            TK
+        </p>
+        <p>
+            Led by Laurel Schwulst and supported by guest instructors <a href="https://motsuka.com" target="_blank">Marie Otsuka</a> and <a href="https://www.bnjmnearl.eu" target="_blank">Benjamin Earl</a>, this workshop includes ...
+        </p>
+        <p>
+            Laurel - Concept Websites<br>
+            Ben - Coding in Situ<br>
+            Marie - ???
+        </p>
+        <figure class="large">
+            <img src="imgs/solar.png" alt="TK">
+            <figcaption>
+                Image from Marie TK
+            </figcaption>
+        </figure>
+        <figure class="large">
+            <img src="" alt="TK">
+            <figcaption>
+                Image from Ben TK
+            </figcaption>
+        </figure>
+        <p><b>What topics are covered?</b></p>
+        <p>
+            TK
+        </p>
+        <p>
+            <b>What is the expected workload over the 3 weeks?</b>
+        </p>
+        <p>
+            TK
+        </p>
+        <p>
+            <b>Do I need any technical experience to join?</b>
+        </p>
+        <p>
+            TK
+        </p>
+        <p>
+            <b>What materials are required?</b>
+        </p>
+        <p>
+            TK
+        </p>
+            <b>Who is the ideal candidate?</b>
+        </p>
+        <p>
+            TK
+        </p>
+        <hr />
+        <p class="outro">
+            🍓<br />
+            posted by Laurel Schwulst<br />
+            11/29/2023
+        </p>
     </article>
-
     <footer class="blog">
-      <a href="index.html" class="button small">Back to the blog home</a>
+        <a href="index.html" class="button apply small">APPLY NOW</a>
     </footer>
-
     <script src="js/jquery.min.js"></script>
     <script src="../js/darklight.js"></script>
-  </body>
+</body>
+
 </html>
