@@ -279,7 +279,7 @@ h2.hidden {
 }
 
 #offerings {
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   display: grid;
   max-width: 1000px;
   margin: 0 auto;
@@ -694,6 +694,20 @@ article {
   max-width: 700px;
 }
 
+article.twenty-three-letter {
+  border: 0;
+  border-radius: 0;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2), 0px 10px 20px rgba(0, 0, 0, 0.15),
+    0px 20px 20px rgba(0, 0, 0, 0.15), 0px 30px 20px rgba(0, 0, 0, 0.15);
+  font-family: "Times New Roman", Times, serif;
+  max-width: 25em;
+  font-size: 2em;
+  line-height: 1.45;
+  padding: 2.25em 2em;
+  background: white;
+  font-family: "trattatello", "normalschrift", "wiegel-latein", cursive;
+}
+
 article.twenty-one {
   border: 0;
   border-radius: 0;
@@ -978,7 +992,18 @@ h3 {
   font-size: 2em;
 }
 
-.metadata time {
+/* .metadata:first-child {
+  position: absolute;
+  left: 18px;
+  top: 12px;
+} */
+
+.metadata {
+  width: 100%;
+}
+
+.metadata time,
+.metadata .info {
   position: absolute;
   left: 18px;
   top: 12px;

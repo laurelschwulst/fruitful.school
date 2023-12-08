@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<!---
+hi
+               *%%%%%&%/
+         %#  (#%%%%%%%%%%%&.
+         ,(#*,,,,,,,,,****,
+      ,%#,/(.............,,,**,
+    #%%%*,*(,...............,,,*,
+  /####/**/#*.................,,**
+ /#####***(#*,.................,,**,
+ #####(/*(##/,.................,,***,
+ #####///#(#/*,,..............,,,,***
+ ####((((###/**,,,,,,,,,,,,,,,,,,,****
+ .###(((#(((//**,,,,,,,,,,,,,,,,******
+  *##(((//((//****,,,,,,,,,,*******//*
+   (((. *//////*****************/////*
+   ..    *////////*********//////////,
+          .*///////////////////((((//
+            .///(((((((((((((((((((/
+               *//(((((((((#####((/
+                   *//((((((((((//
+
+by John Provencher & Laurel Schwulst
+
+--->
+
+<html lang="en">
+
+<head>
+    <title>Alumni of Fruitful School</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/style.css?20210611">
+
+    <!-- Tags for social media links -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://fruitful.school">
+    <meta property="og:title" content="Fruitful School">
+    <meta property="og:image" content="https://fruitful.school/images/giovanni_stanchi_scattered_flowers_and_fruit_on_a_ledge_1_medium.jpg">
+    <meta property="og:description" content="fruitful.school is an independently-run learning initiative for making 'fruitful websites' founded in 2020 by Laurel Schwulst and John Provencher and is dedicated to exploring new ways of publishing together using the www. For our Fall 2020 workshop, participants will hang out and work together online to self-publish a piece to the www over the course of 6 weeks.">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://fruitful.school">
+    <meta name="twitter:title" content="Fruitful School">
+    <link rel="icon" type="image/png" href="images/fav.png" />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-52650052-6"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'UA-52650052-6');
+    </script>
+</head>
+
+<body>
+
+    <header>
+        <p class="small">
+          <a href="index.html" class="button">fruitful.school</a>
+        </p>
+        <div class="dark-switch desktop small button">☀</div>
+      </header>
+
+    <h1 class="extralarge" style="text-align: center;">
+        Fruitful Alumni
+    </h1>
+
+    <table id="people-table" align="center" class="medium" style="margin-top: 2em;">
+        <thead>
+             <tr>
+                 <th style="text-align:center">Fruit</th>
+                 <th>Name</th>
+                 <th class="m">ID</th>
+                 <!-- <th class="m">Link</th> -->
+             </tr>
+         </thead>
+
+         <tr class="person" v-for="record in records" v-bind:class="fruitfulClasses(record)" >
+
+               <td v-if="record.fields['Link 2 (easter egg)']" class="cellFruit">
+                 <a v-bind:href="record.fields['Link 2 (easter egg)']" target="_blank">
+                     <span v-if="record.fields['Favorite fruit']"> {{ record.fields['Favorite fruit'][0] }} </span>
+                 </a>
+               </td>
+               <td v-else class="cellFruit">
+                 <span v-if="record.fields['Favorite fruit']"> {{ record.fields['Favorite fruit'][0] }} </span>
+               </td>
+               <td>
+                 {{ record.fields['First name'] }} {{ record.fields['Last name'] }}
+               </td>
+               <td class="m">
+                 {{ record.fields['Role'][0] }}
+               </td>
+             <!-- <td v-if="record.fields['Link 1 (visible)']" class="m press">
+                 <a v-bind:href="record.fields['Link 1 (visible)']" target="_blank">
+                     {{ record.fields['Link 1 (visible)'] }}
+                 </a>
+             </td> -->
+             <!-- <td v-else></td> -->
+         </tr>
+
+       </table>
+
+       <footer>
+        <div class="small"><span style="font-size:14px"><span class="no-style">©</span> <a href="index.html" style="text-decoration: none;">𝒻𝓇𝓊𝒾𝓉𝒻𝓊𝓁.𝓈𝒸𝒽𝑜𝑜𝓁</a></span><br><br>
+        </div>
+
+    </footer>
+
+
+    
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.tablesorter.min.js"></script>
+    <script src="js/darklight.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.5/vue.min.js"></script>
+    <script src="js/index.js"></script>
+
+    <script>
+
+    /* airtable vue */
+
+    Vue.config.devtools = true;
+
+    var apiURL = "https://api.airtable.com/v0/appqXzKPJH35X5rp1/People?api_key=keyTeRltpx9W8Qwjd";
+    app = new Vue({
+      el: '#people-table',
+      data: {
+        records: null,
+        timer: null
+      },
+      created: function () {
+        this.fetchData();
+      },
+      beforeDestroy: function() {
+        clearInterval(this.timer)
+      },
+      methods: {
+        fruitfulClasses: function(record) {
+          return {
+          }
+        },
+        fetchData: function () {
+          var xhr = new XMLHttpRequest()
+          var self = this
+          xhr.open('GET', apiURL)
+          xhr.onload = function () {
+            self.records = JSON.parse(xhr.responseText).records
+            console.log("Fetched data.");
+          }
+          xhr.send()
+        }
+      }
+    })
+
+    </script>
