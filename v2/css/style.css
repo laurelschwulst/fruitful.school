@@ -279,7 +279,7 @@ h2.hidden {
 }
 
 #offerings {
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   display: grid;
   max-width: 1000px;
   margin: 0 auto;
