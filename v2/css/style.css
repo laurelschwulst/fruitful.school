@@ -322,6 +322,15 @@ h2.hidden {
   position: relative;
 }
 
+/* #offerings div.offering.page {
+  border: 0;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2), 0px 10px 20px rgba(0, 0, 0, 0.15),
+    0px 20px 20px rgba(0, 0, 0, 0.15), 0px 30px 20px rgba(0, 0, 0, 0.15);
+  font-family: "Times New Roman", Times, serif;
+  background: rgb(163, 154, 143);
+  border-radius: 0;
+} */
+
 svg {
   height: 22px;
 }
@@ -1104,4 +1113,29 @@ section#blog article h2 {
 
 section#blog article h2 a {
   text-decoration: none;
+}
+
+/* CLASSES */
+
+.apply {
+  font-size: 0.8em;
+  font-size: 30px;
+  text-transform: lowercase;
+  font-family: monospace;
+  font-family: "trattatello", "normalschrift", "wiegel-latein", cursive;
+  color: rgba(0, 0, 0, 0.75);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background-image: -webkit-gradient( linear, left bottom, left top, color-stop(0.16, rgb(207, 207, 207)), color-stop(0.79, rgb(252, 252, 252)) );
+  background-image: -moz-linear-gradient( center bottom, rgb(207, 207, 207) 16%, rgb(252, 252, 252) 79% );
+  background-image: linear-gradient( to top, rgb(207, 207, 207) 16%, rgb(252, 252, 252) 79% );
+  padding: 3px 8px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  /* color: black; */
+  text-decoration: none;
+}
+
+video {
+    max-width: 100%;
 }

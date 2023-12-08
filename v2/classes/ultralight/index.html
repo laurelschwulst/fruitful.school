@@ -1,328 +1,300 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <title>Ultralight</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width; initial-scale=1.0" />
-    <link rel="icon" type="image/png" href="../images/fav.png" />
-    <link rel="stylesheet" href="../../css/style.css?12021.06.08" />
-    <meta property="og:image" content="" />
-    <style>
-        body {
-            margin-top: 0px;
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../../css/style.css?20210611">
+
+    <!-- Tags for social media links -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://fruitful.school">
+    <meta property="og:title" content="Fruitful School">
+    <meta property="og:image" content="https://fruitful.school/images/giovanni_stanchi_scattered_flowers_and_fruit_on_a_ledge_1_medium.jpg">
+    <meta property="og:description" content="fruitful.school is an independently-run learning initiative for making 'fruitful websites' founded in 2020 by Laurel Schwulst and John Provencher and is dedicated to exploring new ways of publishing together using the www. For our Fall 2020 workshop, participants will hang out and work together online to self-publish a piece to the www over the course of 6 weeks.">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://fruitful.school">
+    <meta name="twitter:title" content="Fruitful School">
+    <link rel="icon" type="image/png" href="images/fav.png" />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-52650052-6"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
         }
-        /* hi */
-    ul,
-    ol {
-        font-size: 18px;
-        padding-left: 1.25em;
-    }
+        gtag('js', new Date());
+        gtag('config', 'UA-52650052-6');
+    </script>
+    <style>
+      .orb {
+        /* box-shadow: 0px 0px 20px lemonchiffon; */
+        border: 2px solid rgba(0,0,0,0.12);
+        /* background: lemonchiffon; */
+      }
 
-    .portal {}
-
-    canvas {
-        display: inline-block;
-        padding: 0px;
-        margin: 0px;
-        image-rendering: pixelated;
-        /* or 'crisp-edges' */
-        border: 3px solid #5c5a53;
-        border-top-color: rgb(163, 154, 143);
-        border-left-color: rgb(163, 154, 143);
-        z-index: 100;
-        position: relative;
-        margin: 8px 0px;
-    }
-
-    #smallCanvas {
-        left: -202px;
-        border-radius: 100%;
-    }
-
-    li {
-        padding-left: 0.5em;
-    }
-
-    img {
-        width: 100%;
-
-    }
-
-
-    .extralarge {
-        text-decoration: none;
-        max-width: 48%;
-        display: inline-block;
-        line-height: 1.2;
-        font-size: 5vw;
-    }
-
-    #npc {
-        filter: drop-shadow(3px 1px 0 rgb(163, 154, 143));
-        fill: #5c5a53;
-        display: inline-block;
-        width: 570px;
-        height: auto;
-        margin-top: -70px;
-        z-index: -10;
-    }
-
-    td, tr {
-        border-top: none;
-        border-right: none;
-        border-color: black;
-        border-width: 1px;
-        border-radius: 0px;
-        margin: 0;
-
-    }
-    td {
-        float: left;
-    }
-    tr td:first-child {
-        float: left;
-
-    }
-
-
-    .fruit {
-        mix-blend-mode: overlay;
-    }
-    table {
-        margin: 0;
-        font-size: 16px;
-        width: 100%;
-    }
-
-    figcaption, table span {
+      table {
+        border-spacing: 0;
+        border-collapse: collapse;
         text-transform: uppercase;
-    }
-     table span {
-        display: block;
+      }
 
-    }
+      tr, td {
+        border: 1px solid black;
+        border-radius: 0;
+        padding: 0.25em 0.5em;
+      }
 
-    .apply {
-    font-size: 0.8em;
-    font-size: 30px;
-    text-transform: lowercase;
-    font-family: monospace;
-    font-family: "trattatello", "normalschrift", "wiegel-latein", cursive;
-    color: rgba(0, 0, 0, 0.75);
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
-    background-image: -webkit-gradient( linear, left bottom, left top, color-stop(0.16, rgb(207, 207, 207)), color-stop(0.79, rgb(252, 252, 252)) );
-    background-image: -moz-linear-gradient( center bottom, rgb(207, 207, 207) 16%, rgb(252, 252, 252) 79% );
-    background-image: linear-gradient( to top, rgb(207, 207, 207) 16%, rgb(252, 252, 252) 79% );
-    padding: 3px 8px;
-    border: 1px solid rgba(0, 0, 0, 0.5);
-    /* color: black; */
-    text-decoration: none;
-    }
-
-    video {
-        max-width: 100%;
-    }
-    </style>
+      main {
+        text-align: center;
+      }
+      .metadata time {
+        position: static;
+      }
+      .metadata {
+        top: 0.5em;
+      }
+      /* .metadata .info {
+        background: lemonchiffon;
+      } */
+      .metadata .fruit {
+        filter: grayscale(0%);
+      }
+      article blockquote {
+        border-left: 2px solid rgba(0,0,0,0.12);
+      }
+</style>
 </head>
 
 <body>
+
     <header>
-        <img src="imgs/ultralight-website.png" style="mix-blend-mode: multiply;">
-    </header>
-    <article class="twenty-one interview" style="background: transparent;">
-        <a class="student-site" href="#" target="_blank">apply
-        </a>
-        <h1 style="line-height: 0; margin-top: 10px;">Ultralight<sup></sup></h1>
-        <h2>Websites, Formats, Methods, etc.</h2>
-        <div class="metadata small">
-            <time datetime="2021-06-18 11:11">Ultralight — CLASSES: WINTER 2024</time>
-            <span class="fruit">🍋 </span>
-        </div>
-        <table class="small">
-            <thead>
-            </thead>
-            <tr>
-                <td>
-                    <span> instructor </span>
-                </td>
-                <td>
-                    <span> laurel schwulst </span>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <span> guests </span>
-                </td>
-                <td>
-                    <span>marie otsuka</span>
-                    <span>benjamin earl</span>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <span> dates </span>
-                </td>
-                <td>
-                    <span> January 4th, <br>January 21st, <br>January 28th<br>( 2024 ) </span>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <span> time </span>
-                </td>
-                <td>
-                    <span> 1PM-5PM EST </span>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <span> Location </span>
-                </td>
-                <td>
-                    <span> Index Space <br>
-                        120 Walker St,<br> New York, NY<br>
-                    </span>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <span> Price </span>
-                </td>
-                <td>
-                    <span> $900
-                    </span>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <span> App Deadline </span>
-                </td>
-                <td>
-                    <span> December 22, 2023
-                    </span>
-                </td>
-            </tr>
-        </table>
-        <p>
-            I need to translate this (<a href="https://ultralight.veryinteractive.net">Ultralight Hamburg Workshop</a>) into this format. Sorry I am slow! Having meeting with Ben and Marie soon...
+        <p class="small">
+          <a href="../../index.html" class="button">fruitful.school</a>
+          <!-- <a href="../../index.html#offerings" class="button">Winter 2024 Classes</a> -->
         </p>
+        <div class="dark-switch desktop small button">☀</div>
+      </header>
+    
+    <!-- <h1 class="extralarge" style="text-align: center;">
+        <a href="../../index.html#offerings">Winter 2024 — Classes</a>
+    </h1> -->
+    <!-- <h1 class="extralarge" style="text-align: center;">
+      "Ultralight"
+    </h1> -->
+
+    <article class="twenty-three-letter" style="background: lemonchiffon;">
+
+      <div class="metadata small">
+        <span class="info">
+            <time datetime="2023-12-08 11:11" style="color: black">December 8, 2023</time>
+            &nbsp; &bull; &nbsp;
+            <a href="../../index.html#offerings">Winter 2024 Classes</a> &nbsp;&nbsp; / &nbsp;&nbsp; ULTRALIGHT
+        </span>
+        <span class="fruit">🍓</span>
+      </div>
+
+      <h1 style="text-transform: lowercase; margin-bottom: 0.25em; margin-top: 0.25em;">Ultralight</h1>
+
+      <h2 style="text-transform: lowercase; margin: 0; text-decoration: none; font-size: 1em;">
+        Lightweight Websites in Time & Space
+      </h2>
+
+      <p style="font-family: serif; font-size: 0.75em;">January 14, 21, 28 (2024) — NYC</p>
+
+      <figure class="orb" style="position: relative; border-radius: 50%; padding: 2em 0 0; max-width: 800px; margin: 2.5em auto;">
+        <img src="images/ultralight-website.png" style="mix-blend-mode: multiply; border-radius: 50%;">
+        <span style="position: absolute; right: 30%; bottom: 15%; font-size: 1.25em; pointer-events: none;">🍓</span>
+      </figure>
+
+
+
+
+      this table doesn't look good yet but here it is:<br><br>
+
+      <table class="small">
+
+        <tr>
+          <td>
+            Title
+          </td>
+          <td>
+            Ultralight
+          </td>
+        </tr>
+  
+        <tr>
+          <td>
+            Instructor
+          </td>
+          <td>
+            Laurel Schwulst
+          </td>
+        </tr>
+  
+        <tr>
+          <td>
+            Guests
+          </td>
+          <td>
+            Marie Otsuka<br> &
+            Benjamin Earl
+          </td>
+        </tr>
+  
+        <tr>
+          <td>
+            Dates & Time
+          </td>
+          <td>
+            Three consecutive Sundays:<br><br>
+            
+            January 14,<br>
+            January 21,<br>
+            January 28<br>
+            ( 2024 )<br><br>
+  
+            1-5pm each day
+          </td>
+        </tr>
+  
+        <tr>
+          <td>
+            Location
+          </td>
+          <td>
+            Index Space<br>
+            120 Walker Street, 3rd Floor<br>
+            New York, NY 10013
+          </td>
+        </tr>
+  
+        <tr>
+          <td>
+            Price
+          </td>
+          <td>
+            $900
+          </td>
+        </tr>
+  
+        <tr>
+          <td>
+            Application Deadline
+          </td>
+          <td>
+            December 22, 2023 at 11:59pm EST  
+          </td>
+        </tr>
+  
+      </table>
+
+      <div style="font-family: serif; font-size: 0.75em;">
+
+        <p>
+          “Ultralight” is a generative theme for engaging with technology because it’s both literal and metaphorical.
+        </p>
+
+        <p>
+          Some keywords:
+        </p>
+
+        <details>
+          <summary>lightweight</summary>
+          small in file size, quick to load ... or lets you see world in new way
+        </details>
+
+        <details>
+          <summary>straightforward</summary>
+          simple in concept
+        </details>
+
+        <details>
+          <summary>flexible</summary>
+          to changing conditions
+        </details>
+
+        <details>
+          <summary>sustainable</summary>
+          in terms of environment + personal practice
+        </details>
+
+        <details>
+          <summary>accessible</summary>
+          in terms of web (alt-text, screen readers) and conditions (low bandwidth)
+        </details>
+
+        <p>
+          On the literal front, there‘s a growing movement of “lightweight websites” like 512kb.club or 1mb.club that share how the web has become a “bloated mess,” with huge JavaScript libraries making sites not able to load on slow connections.
+        </p>
+
+        <p>
+          On the metaphorical side, this quote from Italo Calvino, in his book Six Memos for the Next Millennium, on the topic of Lightness (Chapter 1), feels like it situates lightness as a feeling well …
+        </p>
+
         <blockquote>
-            “Whenever humanity seems condemned to heaviness, I think I should fly like Perseus into a different space. I don’t mean escaping into dreams or into the irrational. I mean that I have to <span>change my approach</span>, <span>look at the world from a different perspective</span>, with a different logic and with <span>fresh methods of cognition</span> and verification. The images of lightness that I seek should not fade away like dreams dissolved by the realities of present and future...”
-        </blockquote>
-        <cite>
-            Italo Calvino<br>
-            <i>Six Memos for the Next Millennium</i>, 1. “Lightness”
-        </cite>
-        <figure class="large">
-            <video playsinline autoplay loop muted>
-                <source src="imgs/atap-1.mp4" type="video/mp4">
-            </video>
-            <video playsinline autoplay loop muted>
-                <source src="imgs/atap-4.mp4" type="video/mp4">
-            </video>
-            <video playsinline autoplay loop muted>
-                <source src="imgs/atap-7.mp4" type="video/mp4">
-            </video>
-            <video playsinline autoplay loop muted>
-                <source src="imgs/bird-kite-1.mp4" type="video/mp4">
-            </video>
-            <video playsinline autoplay loop muted>
-                <source src="imgs/bird-kite-2.mp4" type="video/mp4">
-            </video>
-            <img src="imgs/atap.png" alt="TK">
-            <figcaption>
-                Testing Videos and Images from Laurel TKTK
-            </figcaption>
-        </figure>
-        <p>
-            TK
-        </p>
-        <p>
-            Led by Laurel Schwulst and supported by guest instructors <a href="https://motsuka.com" target="_blank">Marie Otsuka</a> and <a href="https://www.bnjmnearl.eu" target="_blank">Benjamin Earl</a>, this workshop includes ...
-        </p>
-        <p>
-            Laurel - Concept Websites (?)<br>
-            Marie - ???<br>
-            Ben - Coding in Situ<br>
-        </p>
-        <figure class="large">
-            <img src="imgs/solar.png" alt="TK">
-            <figcaption>
-                Image from Marie TK
-            </figcaption>
-        </figure>
-        <figure class="large">
-            <img src="imgs/ben1.jpg" alt="TK">
-            <img src="imgs/ben5-hackers-and-designers.jpeg" alt="TK">
-            <img src="imgs/ben3-hackers-and-designers.jpeg" alt="TK">
-            <img src="imgs/ben4.jpeg" alt="TK">
-            <img src="imgs/ben2.jpg" alt="TK">
-            <figcaption>
-                Testing images from Ben TK
-            </figcaption>
-        </figure>
-        <p><b>What topics are covered?</b></p>
-        <p>
-            <ul>
-                <li>creating minimum viable website using many methods (code & no code)</li>
-                <li>basics of HTML & CSS</li>
-                <li>beginning principles for web accessibility</li>
-                <li>introduction to physical computing (ESP module + battery)</li>
-                <li>developing strong concepts & flexible formats</li>
-            </ul>
+          “Whenever humanity seems condemned to heaviness, I think I should fly like Perseus into a different space. I don’t mean escaping into dreams or into the irrational. I mean that I have to <span>change my approach</span>, <span>look at the world from a different perspective</span>, with a different logic and with <span>fresh methods of cognition</span> and verification. The images of lightness that I seek should not fade away like dreams dissolved by the realities of present and future...”
+      </blockquote>
+      <!-- <cite>
+          Italo Calvino<br>
+          <i>Six Memos for the Next Millennium</i>, 1. “Lightness”
+      </cite> -->
 
-            Microlectures:<br><br>
+</div>
 
-- On Formats<br>
-- On Surface Area<br>
-- On Web Accessibility<br>
-- On Coding in Situ … Ben<br>
-- On Solar Power (?) … Marie
-        </p>
-        <p>
-            <b>What is the expected workload over the 3 weeks?</b>
-        </p>
-        <p>
-            TK
-        </p>
-        <p>
-            <b>Do I need any technical experience to join?</b>
-        </p>
-        <p>
-            While there are no strict prerequisites, a basic familiarity with HTML and CSS is encouraged. You can start trying them out using the references on Laurel’s <a href="https://veryinteractive.net/tutorials/index.html">Tutorials</a> page, or any other resources you find.
-        </p>
-        <p>
-            <b>What materials are required?</b>
-        </p>
-        <p>
-            laptop with text editor, such as VS Code or Sublime Text<br><br>
-
-for the final workshop, participants should purchase the following components:<br><br>
-
-- ESP module (TK)<br>
-- special USB cable (TK)<br>
-- battery (TK)
-        </p>
-            <b>Who is the ideal candidate?</b>
-        </p>
-        <p>
-            TK
-        </p>
-        <hr />
-        <p class="outro">
-            🍓<br />
-            posted by Laurel Schwulst<br />
-            11/29/2023
-        </p>
     </article>
-    <footer class="blog">
-        <a href="index.html" class="button apply small">APPLY NOW</a>
-    </footer>
-    <script src="js/jquery.min.js"></script>
-    <script src="../js/darklight.js"></script>
-</body>
 
-</html>
+    <footer>
+        <div class="small"><span style="font-size:14px"><span class="no-style">©</span> <a href="../../index.html" style="text-decoration: none;">𝒻𝓇𝓊𝒾𝓉𝒻𝓊𝓁.𝓈𝒸𝒽𝑜𝑜𝓁</a></span><br><br>
+        </div>
+
+    </footer>
+
+
+    
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.tablesorter.min.js"></script>
+    <script src="js/darklight.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.5/vue.min.js"></script>
+    <script src="js/index.js"></script>
+
+    <script>
+
+    /* airtable vue */
+
+    Vue.config.devtools = true;
+
+    var apiURL = "https://api.airtable.com/v0/appqXzKPJH35X5rp1/People?api_key=keyTeRltpx9W8Qwjd";
+    app = new Vue({
+      el: '#people-table',
+      data: {
+        records: null,
+        timer: null
+      },
+      created: function () {
+        this.fetchData();
+      },
+      beforeDestroy: function() {
+        clearInterval(this.timer)
+      },
+      methods: {
+        fruitfulClasses: function(record) {
+          return {
+          }
+        },
+        fetchData: function () {
+          var xhr = new XMLHttpRequest()
+          var self = this
+          xhr.open('GET', apiURL)
+          xhr.onload = function () {
+            self.records = JSON.parse(xhr.responseText).records
+            console.log("Fetched data.");
+          }
+          xhr.send()
+        }
+      }
+    })
+
+    </script>
