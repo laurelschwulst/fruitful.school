@@ -125,7 +125,7 @@ $(".press").click(function () {
 
 // randomize teachers order
 
-const teachers = Array.from(document.querySelectorAll("#people p"));
+const teachers = Array.from(document.querySelectorAll("#people .teachers p"));
 
 function swap() {
   const list = teachers.map((ele) => ele.innerHTML);
