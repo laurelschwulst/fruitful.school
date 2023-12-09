@@ -69,12 +69,12 @@ $(".about").click(function (e) {
   $("#about").toggle();
 });
 
-$(".fruitful").click(function (e) {
+$(".workshops").click(function (e) {
   e.preventDefault();
   $(".topnav").removeClass("current");
   $(this).addClass("current");
   $(".toggle").css("display", "none");
-  $("#fruitful").toggle();
+  $("#workshops").toggle();
 });
 
 $(".people").click(function (e) {
@@ -123,17 +123,33 @@ $(".press").click(function () {
   $(this).find(".disband").toggle();
 });
 
-// randomize teachers order
+// randomize teachers & classes order
 
-const teachers = Array.from(document.querySelectorAll("#people .teachers p"));
+const teachers = Array.from(document.querySelectorAll(".teachers-random-order p"));
+const classes = Array.from(document.querySelectorAll(".classes-random-order p"));
+const guests = Array.from(document.querySelectorAll(".guests-random-order p"));
 
 function swap() {
-  const list = teachers.map((ele) => ele.innerHTML);
+
+  const list1 = teachers.map((ele) => ele.innerHTML);
+  const list2 = classes.map((ele) => ele.innerHTML);
+  const list3 = guests.map((ele) => ele.innerHTML);
 
   teachers.forEach((ele) => {
-    const index = Math.floor(Math.random() * list.length);
-    ele.innerHTML = list.splice(index, 1);
+    const index = Math.floor(Math.random() * list1.length);
+    ele.innerHTML = list1.splice(index, 1);
   });
+
+  classes.forEach((ele) => {
+    const index = Math.floor(Math.random() * list2.length);
+    ele.innerHTML = list2.splice(index, 1);
+  });
+
+  guests.forEach((ele) => {
+    const index = Math.floor(Math.random() * list3.length);
+    ele.innerHTML = list3.splice(index, 1);
+  });
+
 }
 
 swap();

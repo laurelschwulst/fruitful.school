@@ -35,18 +35,6 @@
         /* background: lemonchiffon; */
       }
 
-      table {
-        border-spacing: 0;
-        border-collapse: collapse;
-        text-transform: uppercase;
-      }
-
-      tr, td {
-        border: 1px solid black;
-        border-radius: 0;
-        padding: 0.25em 0.5em;
-      }
-
       main {
         text-align: center;
       }
@@ -63,20 +51,50 @@
         filter: grayscale(0%);
       }
       article blockquote {
-        border-left: 2px solid rgba(0,0,0,0.12);
+        border-left: 2px solid rgba(0,0,0,0.25);
       }
+      table.workshop {
+        border-spacing: 0;
+        border-collapse: collapse;
+        margin: 5em 0;
+        font-family: "Helvetica", sans-serif;
+        font-size: 12px;
+        letter-spacing: 0.4px;
+        text-transform: uppercase;
+      }
+
+      table.workshop tr, td {
+        border: 1px solid rgba(0,0,0,0.25);
+        border-radius: 0;
+        padding: 0.6em 0.65em 0.5em;
+      }
+
+      table.workshop td {
+        text-transform: uppercase;
+      }
+
+      figure.large figcaption {
+        font-family: monospace;
+        font-style: normal;
+        text-align: center;
+        margin-top: 1em;
+      }
+      
 </style>
 </head>
 
 <body>
 
     <header>
-        <p class="small">
-          <a href="../../index.html" class="button">fruitful.school</a>
-          <!-- <a href="../../index.html#offerings" class="button">Winter 2024 Classes</a> -->
-        </p>
-        <div class="dark-switch desktop small button">☀</div>
-      </header>
+      <p class="small">
+        <a href="../../index.html" class="button">fruitful.school</a>
+        <!-- <a href="../../index.html#offerings" class="button">Winter 2024 Classes</a> -->
+      </p>
+      <div class="dark-switch desktop small button">☀</div>
+    </header>
+
+    <img src="images/ultralight.svg">
+
     
     <!-- <h1 class="extralarge" style="text-align: center;">
         <a href="../../index.html#offerings">Winter 2024 — Classes</a>
@@ -91,7 +109,7 @@
         <span class="info">
             <time datetime="2023-12-08 11:11" style="color: black">December 8, 2023</time>
             &nbsp; &bull; &nbsp;
-            <a href="../../index.html#offerings">Winter 2024 Classes</a> &nbsp;&nbsp; / &nbsp;&nbsp; ULTRALIGHT
+            <a href="../../index.html#offerings">Winter 2024 Offerings</a> &nbsp;&nbsp; / &nbsp;&nbsp; ULTRALIGHT
         </span>
         <span class="fruit">🍓</span>
       </div>
@@ -102,19 +120,14 @@
         Lightweight Websites in Time & Space
       </h2>
 
-      <p style="font-family: serif; font-size: 0.75em;">January 14, 21, 28 (2024) — NYC</p>
+      <!-- <p style="font-family: serif; font-size: 0.75em;">January 14, 21, 28 (2024) — NYC</p> -->
 
-      <figure class="orb" style="position: relative; border-radius: 50%; padding: 2em 0 0; max-width: 800px; margin: 2.5em auto;">
+      <!-- <figure class="orb" style="position: relative; border-radius: 50%; padding: 2em 0 0; max-width: 800px; margin: 2.5em auto;">
         <img src="images/ultralight-website.png" style="mix-blend-mode: multiply; border-radius: 50%;">
         <span style="position: absolute; right: 30%; bottom: 15%; font-size: 1.25em; pointer-events: none;">🍓</span>
-      </figure>
+      </figure> -->
 
-
-
-
-      this table doesn't look good yet but here it is:<br><br>
-
-      <table class="small">
+      <table class="workshop">
 
         <tr>
           <td>
@@ -146,17 +159,22 @@
   
         <tr>
           <td>
-            Dates & Time
+            Dates
           </td>
-          <td>
-            Three consecutive Sundays:<br><br>
-            
+          <td>            
             January 14,<br>
             January 21,<br>
             January 28<br>
-            ( 2024 )<br><br>
-  
-            1-5pm each day
+            ( 2024 )
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            Time
+          </td>
+          <td>
+            1-5pm on the days above
           </td>
         </tr>
   
@@ -165,7 +183,7 @@
             Location
           </td>
           <td>
-            Index Space<br>
+            <a href="https://www.index-space.org/" target="_blank" style="text-decoration: none;">Index Space ↗</a><br>
             120 Walker Street, 3rd Floor<br>
             New York, NY 10013
           </td>
@@ -208,17 +226,17 @@
 
         <details>
           <summary>straightforward</summary>
-          simple in concept
+          simple & strong in concept
         </details>
 
         <details>
           <summary>flexible</summary>
-          to changing conditions
+          to changing conditions and environments
         </details>
 
         <details>
           <summary>sustainable</summary>
-          in terms of environment + personal practice
+          in terms of environment & personal practice
         </details>
 
         <details>
@@ -226,21 +244,51 @@
           in terms of web (alt-text, screen readers) and conditions (low bandwidth)
         </details>
 
-        <p>
-          On the literal front, there‘s a growing movement of “lightweight websites” like 512kb.club or 1mb.club that share how the web has become a “bloated mess,” with huge JavaScript libraries making sites not able to load on slow connections.
-        </p>
+        <details>
+          <summary>in situ</summary>
+          related to environment, in harmony with physical surroundings
+        </details>
+
+        <!-- <details>
+          <summary>method or process of working</summary>
+          what does it mean to work in an ultralight way?
+        </details> -->
+
+        <details>
+          <summary>air, wind, sun</summary>
+          invisible, changing, energy
+        </details>
 
         <p>
-          On the metaphorical side, this quote from Italo Calvino, in his book Six Memos for the Next Millennium, on the topic of Lightness (Chapter 1), feels like it situates lightness as a feeling well …
-        </p>
-
-        <blockquote>
+          If you search for “lightweight websites” on the web, you will come across very utilitarian definitions of what lightweight sites are — <a href="https://512kb.club" target="_blank">small</a> or even <a href="https://1mb.club">smaller</a> in file size. This is great — as we are all for a web that is quickly loading, good for the environment, and accessible — but this is a very literal definition.
+      </p>
+      <p>
+          For this workshop, we want to extend the definition of lightweightness to a more literary or feeling-based one. We think lightweightness is about seeing the world in a new way. Maybe Italo Calvino, in the chapter on “Lightness” from his book <i>Six Memos for the Next Millennium</i>, said it best —
+      </p>
+      <blockquote>
           “Whenever humanity seems condemned to heaviness, I think I should fly like Perseus into a different space. I don’t mean escaping into dreams or into the irrational. I mean that I have to <span>change my approach</span>, <span>look at the world from a different perspective</span>, with a different logic and with <span>fresh methods of cognition</span> and verification. The images of lightness that I seek should not fade away like dreams dissolved by the realities of present and future...”
       </blockquote>
-      <!-- <cite>
-          Italo Calvino<br>
-          <i>Six Memos for the Next Millennium</i>, 1. “Lightness”
-      </cite> -->
+
+      <figure class="large">
+        <img src="images/atap.png" alt="TK" style="display: block;">
+        <figcaption>
+            <a href="https://alt-text-as-poetry.net" target="_blank">Website</a> & <a href="https://youtu.be/PUooHXD0JaA?si=cSTdOBAyrsQR7YC2" target="_blank">Video</a> for Alt-Text as Poetry, Laurel Schwulst & Taichi Wi, 2020 –
+        </figcaption>
+    </figure>
+
+    <figure class="large">
+      <div style="display: grid; grid-template-columns: 1fr 1fr; grid-gap: 0.5em;">
+        <video playsinline autoplay loop muted>
+          <source src="images/bird-kite-1.mp4" type="video/mp4">
+      </video>
+      <video playsinline autoplay loop muted>
+          <source src="images/bird-kite-2.mp4" type="video/mp4">
+      </video>
+      </div>
+      <figcaption>
+          <a href="https://www.nytimes.com/interactive/2021/05/19/style/how-to-build-a-bird-kite.html" target="_blank">How to Build a Bird Kite</a>, Laurel Schwulst for The New York Times, 2021
+      </figcaption>
+  </figure>
 
 </div>
 
