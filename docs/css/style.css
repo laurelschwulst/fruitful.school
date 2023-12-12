@@ -592,6 +592,16 @@ body.dark .extralarge a {
   text-shadow: #5c5a53 -1px -2px 0;
 }
 
+body.dark article.twenty-three-letter, body.dark article.twenty-three-letter a  {
+  color: black;
+}
+
+body.dark .offering img  {
+  filter: invert(100%);
+  mix-blend-mode: inherit;
+  opacity: .6;
+
+}
 @media only screen and (max-width: 800px) {
   #offerings,
   section#blog.special-interviews {
