@@ -27,131 +27,143 @@
         gtag('js', new Date());
         gtag('config', 'UA-52650052-6');
     </script>
-    <style>
-        html, body {
+<style>
+html,
+body {
     overflow-x: visible;
 }
-body {
+
+body {}
+
+.orb {
+    /* box-shadow: 0px 0px 20px lemonchiffon; */
+    border: 2px solid rgba(0, 0, 0, 0.12);
+    /* background: lemonchiffon; */
 }
-        .orb {
-        /* box-shadow: 0px 0px 20px lemonchiffon; */
-        border: 2px solid rgba(0,0,0,0.12);
-        /* background: lemonchiffon; */
-      }
-     .dark-switch{
-        display: none;
-     }
-      main {
-        text-align: center;
-      }
-      .metadata time {
-        position: static;
-      }
-      .metadata {
-        top: 0.5em;
-      }
-      /* .metadata .info {
+
+.dark-switch {
+    display: none;
+}
+
+main {
+    text-align: center;
+}
+
+.metadata time {
+    position: static;
+}
+
+.metadata {
+    top: 0.5em;
+}
+
+/* .metadata .info {
         background: lemonchiffon;
       } */
-      .metadata .fruit {
-        filter: grayscale(0%);
-      }
-      article blockquote {
-        border-left: 2px solid rgba(0,0,0,0.25);
-      }
-      table.workshop {
-        border-spacing: 0;
-        border-collapse: collapse;
-        margin: 5em 0;
-        font-family: "Helvetica", sans-serif;
-        font-size: 12px;
-        letter-spacing: 0.4px;
-        text-transform: uppercase;
-      }
+.metadata .fruit {
+    filter: grayscale(0%);
+}
 
-      table.workshop tr, td {
-        border: 1px solid rgba(0,0,0,0.25);
-        border: 1px solid black;
-        border-radius: 0;
-        padding: 0.6em 0.65em 0.5em;
-      }
+article blockquote {
+    border-left: 2px solid rgba(0, 0, 0, 0.25);
+}
 
-      table.workshop td {
-        text-transform: uppercase;
-      }
+table.workshop {
+    border-spacing: 0;
+    border-collapse: collapse;
+    margin: 5em 0;
+    font-family: "Helvetica", sans-serif;
+    font-size: 12px;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+}
 
-      figure figcaption {
-    font-family: Courier,Lucida Sans Typewriter,Lucida Typewriter,monospace; 
-        font-style: normal;
-        text-transform: uppercase;
-        text-align: center;
-        margin-top: 1em;
-      }
-      .portal {
-          margin-top: 15px;
+table.workshop tr,
+td {
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    border: 1px solid black;
+    border-radius: 0;
+    padding: 0.6em 0.65em 0.5em;
+}
 
-      }
+table.workshop td {
+    text-transform: uppercase;
+}
 
-      body {
-            margin-top: 0px;
-        }
-        /* hi */
-    ul,
-    ol {
-        font-size: 18px;
-        padding-left: 1.25em;
-    }
+figure figcaption {
+    font-family: Courier, Lucida Sans Typewriter, Lucida Typewriter, monospace;
+    font-style: normal;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 1em;
+}
 
-    .portal {}
+.portal {
+    margin-top: 15px;
 
-    canvas {
-        display: inline-block;
-        padding: 0px;
-        margin: 0px;
-        image-rendering: pixelated;
-        /* or 'crisp-edges' */
-        border: 3px solid #5c5a53;
-        border-top-color: rgb(163, 154, 143);
-        border-left-color: rgb(163, 154, 143);
-        z-index: 100;
-        position: relative;
-        margin: 8px 0px;
-    }
+}
 
-    #smallCanvas {
-        left: -202px;
-        border-radius: 100%;
-    }
+body {
+    margin-top: 0px;
+}
 
-    li {
-        padding-left: 0.5em;
-    }
+/* hi */
+ul,
+ol {
+    font-size: 18px;
+    padding-left: 1.25em;
+}
 
-    img {
-        width: 100%;
+.portal {}
 
-    }
+canvas {
+    display: inline-block;
+    padding: 0px;
+    margin: 0px;
+    image-rendering: pixelated;
+    /* or 'crisp-edges' */
+    border: 3px solid #5c5a53;
+    border-top-color: rgb(163, 154, 143);
+    border-left-color: rgb(163, 154, 143);
+    z-index: 100;
+    position: relative;
+    margin: 8px 0px;
+}
+
+#smallCanvas {
+    left: -202px;
+    border-radius: 100%;
+}
+
+li {
+    padding-left: 0.5em;
+}
+
+img {
+    width: 100%;
+
+}
 
 
-    .extralarge {
-        text-decoration: none;
-        max-width: 48%;
-        display: inline-block;
-        line-height: 1.2;
-        font-size: 5vw;
-    }
+.extralarge {
+    text-decoration: none;
+    max-width: 48%;
+    display: inline-block;
+    line-height: 1.2;
+    font-size: 5vw;
+}
 
-    #npc {
-        filter: drop-shadow(3px 1px 0 rgb(163, 154, 143));
-        fill: #5c5a53;
-        display: inline-block;
-        width: 650px;
-        height: auto;
-        margin-top: -50px;
-        z-index: -10;
-    }
+#npc {
+    filter: drop-shadow(3px 1px 0 rgb(163, 154, 143));
+    fill: #5c5a53;
+    display: inline-block;
+    width: 580px;
+    height: auto;
+    margin-top: -60px;
+    z-index: -10;
+}
 
-    .apply {
+.apply {
     font-size: 0.8em;
     font-size: 30px;
     text-transform: lowercase;
@@ -161,112 +173,145 @@ body {
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
-    background-image: -webkit-gradient( linear, left bottom, left top, color-stop(0.16, rgb(207, 207, 207)), color-stop(0.79, rgb(252, 252, 252)) );
-    background-image: -moz-linear-gradient( center bottom, rgb(207, 207, 207) 16%, rgb(252, 252, 252) 79% );
-    background-image: linear-gradient( to top, rgb(207, 207, 207) 16%, rgb(252, 252, 252) 79% );
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.16, rgb(207, 207, 207)), color-stop(0.79, rgb(252, 252, 252)));
+    background-image: -moz-linear-gradient(center bottom, rgb(207, 207, 207) 16%, rgb(252, 252, 252) 79%);
+    background-image: linear-gradient(to top, rgb(207, 207, 207) 16%, rgb(252, 252, 252) 79%);
     padding: 3px 8px;
     border: 1px solid rgba(0, 0, 0, 0.5);
     /* color: black; */
     text-decoration: none;
-    }
+}
+
 #pixel {
     text-align: center;
 }
+
 header {
-    position: fixed;
     width: 100%;
     top: 0;
+    position: sticky;
 }
+
 article {
-    margin-top: 95vh;
-        margin-bottom: 90vh;
+
 
 }
-       article h1 {
-            padding-top: 0px;
-            padding-bottom: 0px;
-            margin-bottom: 0px;
 
-        }
-        h1, h2 {
-            line-height: 1.1;
-        }
+article h1 {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+
+}
+
+h1,
+h2 {
+    line-height: 1.1;
+}
+
 .outro {
     display: inline-block;
 }
 
 article p {
     margin-top: 0px;
- }
-    @media only screen and (max-width: 800px) {
-        b, article h2, article h1 {
-            font-size: 26px;
-        }
-        article h1 {
-            font-size: 46px;
-        }
-body {
-    margin: 10px;
 }
-header {
-    position: fixed;
-    width: 100%;
-    top: 0;
-}
-.info time {
-    display: none;
-}
-        #npc {
-            width: 360px;
-            margin: -20px 0px 20px;
-        }
-        header {
-            padding-bottom: 20px;
-            left: 0;
-            height: inherit;
-            position: inherit;
-        }
-  .portal {
-  width: 100%;
-  height: 142px;
-  }
-  article {
+    .m {
+        display: none;
+    }
+@media only screen and (max-width: 800px) {
+
+    .m {
+        display: block;
+    }
+    b,
+    article h2,
+    article h1 {
+        font-size: 26px;
+    }
+
+    article h1 {
+        font-size: 46px;
+    }
+
+    body {
+        margin: 10px;
+    }
+
+    header {
+        position: fixed;
+        width: 100%;
+        top: 0;
+    }
+
+    .info time {
+        display: none;
+    }
+
+    #npc {
+        width: 360px;
+        margin: -20px 0px 20px;
+    }
+
+    header {
+        padding-bottom: 20px;
+        left: 0;
+        height: inherit;
+        position: inherit;
+    }
+
+    .portal {
+        width: 100%;
+        height: 142px;
+    }
+
+    article {
         margin-top: inherit;
         margin-bottom: inherit;
-  }
-  article.twenty-three-letter {
-    padding: 20px;
-  }
-  article.twenty-three-letter p, article.twenty-three-letter blockquote, article.twenty-three-letter details, article.twenty-three-letter li {
-    font-size: 18px;
-  }
-article.twenty-three-letter blockquote {
-    padding-left: 12px;
-}
-  figcaption {
-    font-size: 13px;
-    letter-spacing: .5px;
-    line-height: 1.2;
-  }
-  a.apply-button {
-    display: block;
-    position: normal;
-    top: inherit;
-    left: inherit;
-    right: inherit;
-    font-size: 26px;
-  }
-  #smallCanvas {
-    width: 140px;
-    height: 140px;
-    border-radius: 0;
-    left: 0;
-    margin: 0;
-    margin-bottom: 20px;
-  }
-  #canvas {
-    display: none;
-  }
+    }
+
+    article.twenty-three-letter {
+        padding: 20px;
+    }
+
+    article.twenty-three-letter p,
+    article.twenty-three-letter blockquote,
+    article.twenty-three-letter details,
+    article.twenty-three-letter li {
+        font-size: 18px;
+    }
+
+    article.twenty-three-letter blockquote {
+        padding-left: 12px;
+    }
+
+    figcaption {
+        font-size: 13px;
+        letter-spacing: .5px;
+        line-height: 1.2;
+    }
+
+    a.apply-button {
+        display: block;
+        position: normal;
+        top: inherit;
+        left: inherit;
+        right: inherit;
+        font-size: 26px;
+    }
+
+    #smallCanvas {
+        width: 140px;
+        height: 140px;
+        border-radius: 0;
+        left: 0;
+        margin: 0;
+        margin-bottom: 20px;
+    }
+
+    #canvas {
+        display: none;
+    }
 
 }
       
@@ -274,7 +319,7 @@ article.twenty-three-letter blockquote {
 </head>
 
 <body>
-    <header>
+    <header id="header">
         <p class="small">
             <a href="../../index.html" class="button">fruitful.school</a>
             <!-- <a href="../../index.html#offerings" class="button">Winter 2024 Classes</a> -->
@@ -305,7 +350,7 @@ article.twenty-three-letter blockquote {
     <article class="twenty-three-letter" style="background: #5c5a53; background-image: url('imgs/scroll.jpg');">
         <div class="metadata small">
             <span class="info">
-                <time datetime="2023-12-08 11:11" style="color: black">December 8, 2023
+                <time datetime="2023-12-08 11:11" style="color: black">December 14, 2023
                     &nbsp; &bull; &nbsp;</time>
                 <a href="../../index.html#offerings">Winter 2024 Workshops</a> &nbsp;&nbsp; / &nbsp;&nbsp; NPC ARTIST
             </span>
@@ -316,7 +361,7 @@ article.twenty-three-letter blockquote {
             Programming for the Generative Web
         </h2>
         <a class="apply-button" href="#" target="_blank">apply</a>
-        <br>
+        <br class="m">
         <table class="workshop">
             <tr>
                 <td>
@@ -534,6 +579,17 @@ article.twenty-three-letter blockquote {
     <script src="js/darklight.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.5/vue.min.js"></script>
     <script src="js/index.js"></script>
+    <script type="text/javascript">
+        // JavaScript
+window.onscroll = function() {
+    if (window.scrollY > 1500) {
+        console.log('yp')
+        document.getElementById('header').style.display = 'none';
+    } else {
+        document.getElementById('header').style.display = 'block';
+    }
+};
+    </script>
 </body>
 
 </html>
