@@ -28,6 +28,11 @@
         gtag('config', 'UA-52650052-6');
     </script>
     <style>
+        html, body {
+    overflow-x: visible;
+}
+body {
+}
         .orb {
         /* box-shadow: 0px 0px 20px lemonchiffon; */
         border: 2px solid rgba(0,0,0,0.12);
@@ -76,11 +81,15 @@
       }
 
       figure figcaption {
-        font-family: monospace;
+    font-family: Courier,Lucida Sans Typewriter,Lucida Typewriter,monospace; 
         font-style: normal;
         text-transform: uppercase;
         text-align: center;
         margin-top: 1em;
+      }
+      .portal {
+          margin-top: 15px;
+
       }
 
       body {
@@ -136,9 +145,9 @@
         filter: drop-shadow(3px 1px 0 rgb(163, 154, 143));
         fill: #5c5a53;
         display: inline-block;
-        width: 800px;
+        width: 650px;
         height: auto;
-        margin-top: -20px;
+        margin-top: -50px;
         z-index: -10;
     }
 
@@ -163,27 +172,96 @@
 #pixel {
     text-align: center;
 }
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+article {
+    margin-top: 95vh;
+        margin-bottom: 90vh;
 
+}
+       article h1 {
+            padding-top: 0px;
+            padding-bottom: 0px;
+            margin-bottom: 0px;
+
+        }
+        h1, h2 {
+            line-height: 1.1;
+        }
+.outro {
+    display: inline-block;
+}
+
+article p {
+    margin-top: 0px;
+ }
     @media only screen and (max-width: 800px) {
-
+        b, article h2, article h1 {
+            font-size: 26px;
+        }
+        article h1 {
+            font-size: 46px;
+        }
+body {
+    margin: 10px;
+}
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+.info time {
+    display: none;
+}
         #npc {
-            width: 460px;
+            width: 360px;
+            margin: -20px 0px 20px;
         }
         header {
-            margin: 0;
+            padding-bottom: 20px;
+            left: 0;
             height: inherit;
+            position: inherit;
         }
   .portal {
-  width: 440px;
+  width: 100%;
   height: 142px;
-  margin-bottom: 0;
-  padding-bottom: 0;
+  }
+  article {
+        margin-top: inherit;
+        margin-bottom: inherit;
+  }
+  article.twenty-three-letter {
+    padding: 20px;
+  }
+  article.twenty-three-letter p, article.twenty-three-letter blockquote, article.twenty-three-letter details, article.twenty-three-letter li {
+    font-size: 18px;
+  }
+article.twenty-three-letter blockquote {
+    padding-left: 12px;
+}
+  figcaption {
+    font-size: 13px;
+    letter-spacing: .5px;
+    line-height: 1.2;
+  }
+  a.apply-button {
+    display: block;
+    position: normal;
+    top: inherit;
+    left: inherit;
+    right: inherit;
+    font-size: 26px;
   }
   #smallCanvas {
-    width: 220px;
-    height: 220px;
+    width: 140px;
+    height: 140px;
     border-radius: 0;
     left: 0;
+    margin: 0;
     margin-bottom: 20px;
   }
   #canvas {
@@ -202,16 +280,14 @@
             <!-- <a href="../../index.html#offerings" class="button">Winter 2024 Classes</a> -->
         </p>
         <div class="dark-switch desktop small button">☀</div>
-    </header>
-    <div id="pixel">
-        <div class="portal" style="background:none">
-            <canvas id="canvas" width="440" height="142"></canvas>
-            <canvas id="smallCanvas" width="35" height="35"></canvas>
-            <script src="../../js/workshop.js">
-            </script>
+        <div id="pixel">
+            <div class="portal" style="background:none">
+                <canvas id="canvas" width="440" height="142"></canvas>
+                <canvas id="smallCanvas" width="35" height="35"></canvas>
+                <script src="../../js/workshop.js">
+                </script>
+            </div>
         </div>
-    </div>
-    <main style="">
         <!--<img src="../npc.svg" style="height: 100%;"> -->
         <svg version="1.1" id="npc" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 612 612" style="enable-background:new 0 0 612 612;" xml:space="preserve">
             <g>
@@ -225,21 +301,22 @@
                 <path d="M369.4,572.5c-0.3-0.7-0.8-1.5-1.5-2.1c-1.8-1.5-3.6-3-5.4-4.4c-1.4-1.1-2.8-2.3-4.2-3.4l-1.6,1.9l1.6-1.9 c0,0-0.1-0.1-0.1-0.2c-0.6-2.4-1.2-4.8-1.7-7.1l-0.6-2.4c-0.2-0.9-0.9-1.6-1.7-1.8l-5.1-1.5c-0.7-0.2-1.5-0.1-2.1,0.4 c-0.6,0.4-1,1.1-1.1,1.9c-0.4,5.8,1.3,10.7,4.4,13.2l-0.3,1.3c-0.2,1,0.1,2,1,2.6c1.3,0.9,2,2.1,2.9,3.4l0.1,0.2 c0.1,0.1,0.1,0.2,0.2,0.3c0.4,0.7,1,1.8,2.3,2.3c3.3,1.2,5.8,2,8.2,2.6c0.3,0.1,0.5,0.1,0.8,0.1c1.1,0,2-0.5,2.7-0.9 c0.2-0.1,0.3-0.2,0.5-0.3c0.7-0.3,1.2-0.9,1.4-1.5c0.2-0.7,0.1-1.4-0.3-2.1C369.6,572.9,369.5,572.7,369.4,572.5z" />
             </g>
         </svg>
-    </main>
+    </header>
     <article class="twenty-three-letter" style="background: #5c5a53; background-image: url('imgs/scroll.jpg');">
         <div class="metadata small">
             <span class="info">
-                <time datetime="2023-12-08 11:11" style="color: black">December 8, 2023</time>
-                &nbsp; &bull; &nbsp;
-                <a href="../../index.html#offerings">Winter 2024 Offerings</a> &nbsp;&nbsp; / &nbsp;&nbsp; NPC ARTIST
+                <time datetime="2023-12-08 11:11" style="color: black">December 8, 2023
+                    &nbsp; &bull; &nbsp;</time>
+                <a href="../../index.html#offerings">Winter 2024 Workshops</a> &nbsp;&nbsp; / &nbsp;&nbsp; NPC ARTIST
             </span>
             <span class="fruit">🥝</span>
         </div>
-        <h1 style="text-transform: lowercase; margin-bottom: 0.25em; margin-top: 0.25em;">NPC Artist</h1>
-        <h2 style="text-transform: lowercase; margin: 0; text-decoration: none; font-size: 1em;">
-            Programming for the Generative Web ...
+        <h1 style="text-transform: lowercase;">NPC Artist</h1>
+        <h2 style="text-transform: lowercase; margin: 0; text-decoration: none;">
+            Programming for the Generative Web
         </h2>
         <a class="apply-button" href="#" target="_blank">apply</a>
+        <br>
         <table class="workshop">
             <tr>
                 <td>
@@ -262,8 +339,8 @@
                     Guests
                 </td>
                 <td>
-                    Maya Man<br> &
-                    Travess Smalley
+                    Maya Man (Lecture) & <br>
+                    Travess Smalley (Workshop)
                 </td>
             </tr>
             <tr>
@@ -274,7 +351,7 @@
                     February 4,<br>
                     February 11,<br>
                     February 18<br>
-                    ( 2024 )
+                    2024
                 </td>
             </tr>
             <tr>
@@ -282,7 +359,7 @@
                     Time
                 </td>
                 <td>
-                    1-5pm on the days above
+                    1-5pm, in-person
                 </td>
             </tr>
             <tr>
@@ -290,7 +367,7 @@
                     Location
                 </td>
                 <td>
-                    <a href="https://www.index-space.org/" target="_blank" style="text-decoration: none;">Index Space</a><br>
+                    <a href="https://www.index-space.org/" target="_blank" style="">Index Space</a><br>
                     120 Walker Street, 3rd Floor<br>
                     New York, NY 10013
                 </td>
@@ -300,7 +377,7 @@
                     Price
                 </td>
                 <td>
-                    $900
+                    $900 (half priced scholarships available)
                 </td>
             </tr>
             <tr>
@@ -308,38 +385,40 @@
                     Application Deadline
                 </td>
                 <td>
-                    December 31, 2023 at 11:59pm EST — <a href="#" target="_blank">Apply</a>
+                    December 31, 2023 @ 11:59pm EST — <a href="#" target="_blank">Apply</a>
                 </td>
             </tr>
         </table>
-        <div style="font-family: serif; font-size: 0.75em;">
+        <div style="font-family: serif; font-size: 0.75em">
             <p>
-                Generative art is commonly defined as digital works created through code. Although this feels like a contemporary medium, its origins are and methods are commonly misunderstood or generalized. Spawning from a rich history of net-art, minimalism, and conceptual art, generative artists utilize various processes and approaches to interact with its viewer through chance and systems. It’s almost like generative programs are Non-Player Characters (NPCs) in video games: digital entities with complex, pre-programmed behaviors. And like NPCs, without thoughtful intention, they can appear lifeless. So … how can an artist’s practice be so automatic without losing its soul?</p>
+                Generative art is commonly defined as digital works created through code. Although this feels like a contemporary medium, its origins are and methods are span over decades across many ways of working. Spawning from a rich history of net-art, minimalism, and conceptual art, generative artists utilize various processes and approaches to interact with the viewer through chance and systems. It’s almost like generative programs are Non-Player Characters (NPCs) in video games: digital entities with complex, pre-programmed behaviors. And like NPCs, without thoughtful intention, they can appear lifeless. <i>So … how can an artist’s practice be so automatic without losing its soul?</i></p>
+            <blockquote>
+                “i use chance operations instead of operating according to my likes and dislikes. i use my work to change myself and i accept what the chance operations say. the i ching says that if you don't accept the chance operations you have no right to use them. which is very clear, so that's what i do.”<br>
+                –John Cage, <i>Conversing with Cage</i>
+            </blockquote>
             <p>
-                Some keywords:
+                <b>Keywords</b>
             </p>
             <details>
                 <summary>chance</summary>
-                giving control to get something new
+                <i>can you give control away to get something new?</i><br>
+                ...
             </details>
             <details>
                 <summary>image-making</summary>
-                i made a website that makes image.
+                <i>you'll made a website as a tool.</i><br>
+                ...
             </details>
             <details>
                 <summary>poetry</summary>
-                a string of text composed in no particular order
+                <i>a string of text composed in no particular order ...</i><br>
+                ...
             </details>
             <details>
                 <summary>material</summary>
-                what is the materiality of the web?
+                <i>what is the materiality of the web?</i><br>
+                ...
             </details>
-            <figure>
-                <img src="imgs/lore.png" alt="RIDER-2.PNG, LORE, John Provencher, 2023" />
-                <figcaption>
-                    RIDER-2.PNG, LORE, John Provencher, 2023
-                </figcaption>
-            </figure>
             <figure>
                 <video width="100%" autoplay muted loop>
                     <source src="imgs/john-small.mp4" type="video/mp4">
@@ -349,9 +428,19 @@
                     over-time, john provencher, 2023
                 </figcaption>
             </figure>
+            <figure>
+                <img src="imgs/lore.png" alt="RIDER-2.PNG, LORE, John Provencher, 2023" />
+                <figcaption>
+                    RIDER-2.PNG, LORE, John Provencher, 2023
+                </figcaption>
+            </figure>
             <p>
-                In “NPC Artist: Programming for the Generative Web,” we invite artists, designers, and programmers to explore software as an extension of their artistic practice. How can one create a program that becomes the creator of a work itself? Over three weeks, participants will explore the technical and conceptual areas of generative art. Participants will use mainly JavaScript to program works that operate autonomously, generating a range of outputs from random inputs, sometimes extending beyond the author's direct control.
+                In “NPC Artist: Programming for the Generative Web,” we invite artists, designers, and programmers to explore software as an extension of their artistic practice. <i>How can you create a program that becomes the creator of a work itself?</i> Over three weeks, participants will explore the technical and conceptual aspects of generative art while learning how practitioners use generative methods in their practice. Participants will use mainly JavaScript to program works that operate autonomously, generating a range of random outputs extending beyond the author's direct control.
             </p>
+            <blockquote>
+                “Artists are simulating life forms and their environments within the computer, creating elaborate works through mathematics. With these new artificial life forms, has life itself become a game? What changes in art practice are heralded by artworks that can evolve or be bred?”<br>
+                –Nideffer / LaForge, <i>:: SHIFT CTRL ::</i>
+            </blockquote>
             <figure>
                 <img src="imgs/maya.png" alt="i'm feeling luck, verse, 2023" />
                 <figcaption>
@@ -365,7 +454,7 @@
                 </figcaption>
             </figure>
             <p>
-                Led by John Provencher and supported by guest instructors Travess Smalley and Maya Man, this workshop includes lectures, discussions, and demonstrations. Participants will journey through how these artists work and they're perspective on generative programming for the web.
+                Led by John Provencher and supported by guest instructors Travess Smalley and guest lecturer Maya Man, this workshop includes lectures, discussions, and demonstrations. Participants will journey through how these artists work and they're perspective on generative programming for the web.
             </p>
             <figure>
                 <img src="imgs/travess.png" alt="09_27_23_Pixel_Rug_01.png, 2023, 10240×10240 pixels" />
@@ -404,15 +493,23 @@
             <p>
                 Participants will need a laptop and a text editor, such as VS Code or Sublime Text.
             </p>
-            <b>Who is the ideal candidate?</b>
+                <b>Are there scholarships available?</b>
+            </p>
+            <p>
+                Yes, there are half-priced slots available for individuals who need help funding the workshop.
+            </p>
+            <p>
+                <b>Who is the ideal candidate?</b>
             </p>
             <p>
                 This workshop is ideal for individuals interested in experimenting with generative art, learning about its history, and understanding the context artists operate in the field. The course includes lectures and demonstrations, followed by practical prompts for exploration in and outside of the workshop. <i>Please note:</i> this is not an extensive programming course; the focus is on applying concepts learned in demonstrations rather than in-depth programming instruction.
             </p>
             <hr />
-            <a href="http://johnprovencher.com">John Provencher</a> is an independent artist, designer, and educator based in New York City. His practice explores the generative nature of software as a tool to produce works both online and offline.<br><br>
-            <a href="https://mayaontheinter.net/">Maya Man</a> is an artist focused on contemporary identity culture on the internet. Maya makes websites, generative series, and installations examining dominant narratives around femininity, authenticity, and the performance of self online.<br><br>
-            <a href="https://www.travesssmalley.com/">Travess Smalley</a> is an artist working with computation to make generative image systems. Travess creates painting software, computer graphics, digital images, books, drawings, and Pixel Rugs.
+            <p>
+                <a href="http://johnprovencher.com">John Provencher</a> is an independent artist based in New York City. His practice explores the generative nature of software as a tool to produce works both online and offline.<br><br>
+                <a href="https://mayaontheinter.net/">Maya Man</a> is an artist focused on contemporary identity culture on the internet. Maya makes websites, generative series, and installations examining dominant narratives around femininity, authenticity, and the performance of self online.<br><br>
+                <a href="https://www.travesssmalley.com/">Travess Smalley</a> is an artist working with computation to make generative image systems. Travess creates painting software, computer graphics, digital images, books, drawings, and Pixel Rugs.
+            </p>
             <figure>
                 <img style="mix-blend-mode: multiply;" src="imgs/ender.png" alt="" />
                 <figcaption>
@@ -422,11 +519,10 @@
                 <a href="#" class="button apply small">Apply to “NPC Artist”</a>
             </div>
             <hr>
-            <p class="outro small">
-                🥝<br />
-                posted by John Provencher<br />
-                12/08/23
-            </p>
+            <span class="outro small">
+                🥝<br /><br />
+                posted by John Provencher <br>{ 12/14/23 }
+            </span>
         </div>
     </article>
     <footer>

@@ -5,6 +5,10 @@
   font-style: normal;
 }
 
+
+html, body {
+  overflow-x: visible;
+}
 body {
   background-color: #77746d;
   font-family: serif;
@@ -424,23 +428,19 @@ b {
 }
 
 footer {
-  margin-top: 8em;
+  margin-top: 5em;
   text-align: center;
 }
 
 #fruit {
-  background-color: #6e6c65;
   display: inline-block;
   transition: 5s border-radius ease;
   border-radius: 100%;
   width: 100%;
-  padding: 400px 0;
-  font-size: 0.8em;
+  padding: 0vw 0;
+  font-size: 1em;
   margin-bottom: 50px;
   left: 0;
-  border: 2px solid rgb(163, 154, 143);
-  border-top-color: #5c5a53;
-  border-left-color: #5c5a53;
 }
 
 #logo {
@@ -570,8 +570,7 @@ body.dark #offerings div.offering {
 }
 
 body.dark #fruit {
-  background: #2c271e;
-  background: #171513;
+
 }
 
 body.dark svg {
@@ -604,6 +603,23 @@ body.dark .offering img  {
 
 }
 @media only screen and (max-width: 800px) {
+
+#fruit, body.dark #fruit {
+  background-color: transparent;
+  padding: 50px 0px;
+  margin: 0px;
+  left: 0;
+  border: none;
+  border-top-color: transparent;
+  border-left-color: transparent;
+}
+#fruit .extralarge {
+  font-size: 45px;
+
+}
+  .metadata time  {
+    display: none;
+  }
   #offerings,
   section#blog.special-interviews {
     grid-template-columns: inherit !important;
@@ -652,11 +668,7 @@ body.dark .offering img  {
     font-size: 3em;
   }
 
-  #fruit {
-    font-size: 0.85em;
 
-    padding: 200px 0;
-  }
 
   .m {
     display: none;
@@ -1105,6 +1117,7 @@ a.no-style {
 }
 
 @media only screen and (max-width: 800px) {
+
   a.student-site {
     float: none;
     display: inline-block;

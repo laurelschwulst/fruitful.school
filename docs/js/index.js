@@ -1,11 +1,11 @@
-document.getElementById("fruit").style.borderTopRightRadius =
-  Math.random() * 60 + 40 + "%";
-document.getElementById("fruit").style.borderTopLeftRadius =
-  Math.random() * 60 + 40 + "%";
-document.getElementById("fruit").style.borderBottomRightRadius =
-  Math.random() * 60 + 40 + "%";
-document.getElementById("fruit").style.borderBottomLeftRadius =
-  Math.random() * 60 + 40 + "%";
+// document.getElementById("fruit").style.borderTopRightRadius =
+//   Math.random() * 60 + 40 + "%";
+// document.getElementById("fruit").style.borderTopLeftRadius =
+//   Math.random() * 60 + 40 + "%";
+// document.getElementById("fruit").style.borderBottomRightRadius =
+//   Math.random() * 60 + 40 + "%";
+// document.getElementById("fruit").style.borderBottomLeftRadius =
+//   Math.random() * 60 + 40 + "%";
 
 var fruit = ["🍊", "🍋", "🍒", "🍉", "🍇", "🥭", "🍎", "🍐", "🍏", "🍑", "🍈"];
 
