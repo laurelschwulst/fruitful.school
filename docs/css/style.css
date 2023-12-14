@@ -1179,8 +1179,9 @@ a.no-style {
     font-family: "trattatello", "normalschrift", "wiegel-latein", cursive;
   }
 
-  article.twenty-three-letter h1 {
-    margin-top: 1em !important;
+  article.parchment {
+    background: lemonchiffon;
+    background-image: url('../../images/scroll.png');
   }
 
   a.apply-button {
