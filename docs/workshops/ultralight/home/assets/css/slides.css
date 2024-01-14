@@ -9,7 +9,12 @@ http://motsuka.com/web-typography-workshop
 }
 
 * {
-  line-height: 1.15;
+  line-height: 1.35;
+  font-size: 1.25rem;
+}
+
+img {
+  max-height: 100vh;
 }
 
 .layout-slides header, .layout-slides footer, .layout-slides section {
@@ -30,15 +35,17 @@ http://motsuka.com/web-typography-workshop
 
 .slide.divider {
   text-align: center;
-  padding-bottom: 2.5em;
+  padding-bottom: 5em;
+  background: #FFFFF2;
 }
 
 .slide.divider .text {
   margin: 0 auto;
+  max-width: 100%;
 }
 
 .slide.divider h1 {
-  font-size: 3.5rem;
+  font-size: 3rem;
 }
 
 .slide h2 {
@@ -47,4 +54,18 @@ http://motsuka.com/web-typography-workshop
 
 .slide ol li {
   margin-bottom: 1em;
+}
+
+figcaption {
+  text-align: left;
+  /* font-size: 1em; */
+}
+
+figcaption a {
+  font-size: 1em;
+}
+
+.text {
+  max-width: 100vh;
+  margin: 0 auto;
 }
