@@ -72,6 +72,7 @@ h3 {
     font-size: 1em;
     border-bottom: 1px solid rgba(0,0,0,0.2);
     padding-bottom: 0.25em;
+    margin-bottom: 1em;
     margin-top: 5em;
 }
 /* span {
@@ -292,4 +293,5 @@ section a {
 }
 
 @media(max-width: 620px) {
+    
 }
