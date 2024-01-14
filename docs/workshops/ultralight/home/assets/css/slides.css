@@ -44,3 +44,7 @@ http://motsuka.com/web-typography-workshop
 .slide h2 {
   font-size: 2rem;
 }
+
+.slide ol li {
+  margin-bottom: 1em;
+}
