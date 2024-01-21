@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<title>Date/Time Object Reference — Ultralight - Week 2: Time</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, user-scalable=no" />
+		<link rel="stylesheet" href="../week2-exercise/css/style.css">
+</head>
+<body>
+<section class="guide">
+	<h1>
+		JavaScript Date/Time Technical Reference Guide
+	</h1>
+
+	<details open>
+	<summary>Constructing a Date / Time</summary>
+	<table>
+		<tr class="table-header">
+			<th>
+				JavaScript Code
+			</th>
+			<th>
+				Description
+			</th>
+			<th>
+				Example output
+			</th>
+		</tr>
+		<tr>
+			<td>
+				<code>new Date()</code>
+			</td>
+			<td>
+				the current date and time
+			</td>
+			<td>
+				Sun Jan 21 2024 03:03:00 GMT-0500 (Eastern Standard Time)
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<code>new Date(1705824180000)</code>
+			</td>
+			<td>store a specific date and time in milliseconds(ms) since <em>epoch</em><sup>1</sup>
+			</td>
+			<td>
+				Sun Jan 21 2024 03:03:00 GMT-0500 (Eastern Standard Time)
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<code>new Date("Jan 21, 2024")</code><br>
+			</td>
+			<td>
+				store a specific date and time. 
+			 	because time is not specified, it will assume midnight in your local timezone.
+			</td>
+			<td>
+				Sun Jan 21 2024 00:00:00 GMT-0500 (Eastern Standard Time)
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<code>new Date("Jan 21, 2024 13:00:59")</code>
+			</td>
+			<td>
+				store a specific date and time. unless a timezone is specified, it will assume you are specifying this in your local timezone.<sup>2</sup>
+			</td>
+			<td>
+				Sun Jan 21 2024 13:00:59 GMT-0500 (Eastern Standard Time)
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<code>new Date("Jan 21, 2024 13:00:59-08:00")</code>
+			</td>
+			<td>
+				store a specific date and time with a specific timezone offset.<sup>3</sup> (here, 8h behind UTC, or 3 hours behind EST.)
+			</td>
+			<td>
+				Sun Jan 21 2024 16:00:59 GMT-0500 (Eastern Standard Time)
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<code>new Date("Jan 21, 2024 13:00:59Z")</code>
+			</td>
+			<td>
+				store a specific date and time in UTC (specified by the <code>Z</code> suffix)
+			</td>
+			<td>
+				Sun Jan 21 2024 08:00:59 GMT-0500 (Eastern Standard Time)
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<code>new Date("2024-01-21T13:00:59")</code><br>
+				<code>new Date(2024,0,21,13,0,59,0)</code>
+			</td>
+			<td>
+				store a specific date and time in ISO format: <code>YYYY-MM-DDTHH:mm:ss.sssZ</code><sup>4</sup>. Note that when defining the date using numbers, not strings, the month is counted from a 0 index, meaning January is 0.
+			</td>
+			<td>
+				Sun Jan 21 2024 13:00:59 GMT-0500 (Eastern Standard Time)
+			</td>
+		</tr>
+	</table>
+	</details>
+
+
+	<details open>
+		<summary>Parsing a Date</summary>
+		<p>
+			<code>let now = new Date("Jan 21, 2024 13:00:59")</code>
+			
+		</p>
+		<table>
+			<tr class="table-header"> <th> JavaScript Code </th> <th> Description </th> <th> Possible range </th> <th> example output </th>
+			</tr>
+			<tr>
+				<td>
+					<code>.getDate()</code>
+				</td>
+				<td>
+					numerical date
+				</td>
+				<td>
+					1–31
+				</td>
+				<td>
+					21
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<code>.getDay()</code>
+				</td>
+				<td>
+				 	day of the week
+				</td>
+				<td>
+					0–6 (sun–sat)
+				</td>
+				<td>
+					0
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<code>.getFullYear()</code>
+				</td>
+				<td>
+					full year
+				</td>
+				<td>
+					
+				</td>
+				<td>
+					2024
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<code>.getMonth()</code>
+				</td>
+				<td>
+					numerical month
+				</td>
+				<td>
+					0–11
+				</td>
+				<td>
+					0
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<code>.getHours()	</code>
+				</td>
+				<td>
+					hour
+				</td>
+				<td>
+					0–23
+				</td>
+				<td>
+					13
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<code>.getMinutes()	</code>
+				</td>
+				<td>
+					minutes
+				</td>
+				<td>
+					0–59
+				</td>
+				<td>
+					0
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<code>.getSeconds()	</code>
+				</td>
+				<td>
+					seconds
+				</td>
+				<td>
+					0–59
+				</td>
+				<td>
+					0
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<code>.getMilliseconds()	</code>
+				</td>
+				<td>
+					milliseconds
+				</td>
+				<td>
+					0–999
+				</td>
+				<td>
+					0
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<code>.getTime() </code>
+				</td>
+				<td>
+					milliseconds since epoch
+				</td>
+				<td>
+				</td>
+				<td>
+					1705860059000
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<code>.getTimezoneOffset() </code>
+				</td>
+				<td>
+					difference from UTC in <em>minutes</em><sup>5</sup>
+				</td>
+				<td>
+					-720 / +840 (UTC-12 to UTC+14)
+				</td>
+				<td>
+					300
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<code>.toLocaleString()</code><br><br>
+					<code>now.toLocaleString('en-US', {timeZone: 'America/New_York'});</code>
+				</td>
+				<td>
+					display according to local conventions
+				</td>
+				<td>
+					a string in local language
+				</td>
+				<td>
+					1/21/2024, 1:00:59 PM
+				</td>
+			</tr>
+		</table>
+	</details>
+
+	<details open>
+		<summary>Comparing and operating on Dates</summary>
+		<p>
+			With Vanilla JavaScript, you can manipulate dates — get a time or day before and after a given date — through simple mathemetical subtraction or addition on the numerical millisecond representation of date. 
+		</p>
+		<ol>
+			<li>We convert the given date to ms via the <code> .getTime() </code> method.</li>
+			<li>We calculate the ms of the duration we want to add/subtract. i.e. for xx hours, multiply xx by 60(min)*60(sec)*1000(ms), or for yy days, multiply yy by 24(hours)*60(min)*60(sec)*1000(ms).<sup>6</sup></li>
+			<li>
+				We perform the operation — adding to get future times, subtracting to get past time.
+			</li>
+			<li>
+				The result will be a numerical value in ms. In order to convert this back into a date, you will need to use the Date constructor on the value zz, using <code>new Date(zz)</code>
+			</li>
+		</ol>
+		<p>Example:<br>
+		<code>let date1 = new Date("Jan 01, 2024 13:00:30")</code><br>
+		<code>let date2 = new Date("Jan 02, 2024 14:30:50")</code>
+		</p>
+		<table>
+			<tr>
+				<th>
+					JavaScript Code
+				</th>
+				<th>
+					Description
+				</th>
+				<th>
+					Possible output
+				</th>
+				<th>
+					Example Output
+				</th>
+			</tr>
+
+			<tr>
+				<td>
+					<code>date1 == date2</code>
+				</td>
+				<td>
+					check if date1 and date2 are the same
+				</td>
+				<td>
+					true / false
+				</td>
+				<td>
+					<code>false</code>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<code>date1 < date2</code>
+				</td>
+				<td>
+					check if date1 is before date2
+				</td>
+				<td>
+					true / false
+				</td>
+				<td>
+					<code>true</code>
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					<code>date1 > date2</code>
+				</td>
+				<td>
+					check if date1 is after date2
+				</td>
+				<td>
+					true / false
+				</td>
+				<td>
+					<code>false</code>
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					<code>date1 - date2</code>
+				</td>
+				<td>
+					get the	difference between the date1 and date2 in ms
+				</td>
+				<td>
+					
+				</td>
+				<td>
+					<code>-90020000</code>
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					<code>date1 + date2</code>
+				</td>
+				<td>
+					note: this will not do any meaningful operation on date objects — it will just concatenate the strings!
+				</td>
+				<td colspan="2">
+					<code>'Mon Jan 01 2024 13:00:30 GMT-0500 (Eastern Standard Time)Tue Jan 02 2024 14:00:50 GMT-0500 (Eastern Standard Time)'</code>
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					<code>date1.getTime() + 45*60*1000</code>
+				</td>
+				<td>
+					add 45 minutes to date1, calculated in ms<br><br>we need to use another date constructor to convert the resulting ms back into a date format
+				</td>
+				<td colspan="2">
+					<code>1704134730000</code><br><br>
+					<code>new Date(1704134730000) // 'Mon Jan 01 2024 13:45:30 GMT-0500 (Eastern Standard Time)' </code>
+				</td>
+			</tr>
+
+
+		</table>
+	</details>
+
+	<h3>
+		notes
+	</h3>
+	<ol>
+		<li>epoch refers to january 1, 1970, 00:00:00 UTC</li>
+		<li>browser behavior can be inconsistent in how it treats dates initialized without a timezone, so it is generally best to define time explicitly</li>
+		<li>even though you may have stored the date/time given a particular timezone offset, the default way it will display to you will still be converted to your local timezone.</li>
+		<li>the international standard iso 8601 lists time in the following order: year (yyyy), month (mm), day(dd), hour(hh), minutes(mm), seconds(ss), milliseconds(sss), and timezone offset(z, or +/- followed by hh:mm).</li>
+		<li>
+			the value is positive (+) if the local time zone is behind utc, and negative (-) if the local time zone is ahead of utc. because of daylight savings time, the timezone offset may vary based on the time of year.<br>
+			<code>
+				const nyOffsetSummer = new Date("2022-02-01").getTimezoneOffset(); // 300</code><br>
+			<code>
+				const nyOffsetWinter = new Date("2022-08-01").getTimezoneOffset(); // 240
+			</code>
+		</li>
+		<li>
+			Calculating days after/before with this method will cause weirdness for places observing daylight saving time — when adding/subtracting time to get days in the future/past, keep in mind that some days of the year are 23 hours or 25 hours long! If you require a robust date management system, I recommend using date libraries try to address these complexities.
+		</li>
+	</ol>
+
+	<h2> Testing </h2>
+	<p>You might find yourself wanting to test other timezones — you can use the Chrome developer tools for this</p>
+	<ol>
+		<li>Click the three dots on the right edge of your Inpsector Tools</li>
+		<li>Open More Tools, and click Sensors</li>
+		<li>The Sensors module will display at the bottom of your inspector, and you can change your location to another from the default list, or add custom locations. </li>
+	</ol>
+
+	<h2> Further reading on JavaScript Time</h2>
+	<ul>
+			<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date" target="_blank">JavaScript Date Constructor, MDN Reference</a>
+			<li><a href="https://en.wikipedia.org/wiki/List_of_tz_database_time_zones" target="_blank">List of Timezones</a>
+			<li><a href="https://stackoverflow.com/questions/15141762/how-to-initialize-a-javascript-date-to-a-particular-time-zone/15171030#15171030" target="_blank">On Date object representation, stackoverflow</a></li>
+			<li><a href="https://stackoverflow.com/tags/timezone/info" target="_blank">Further reading on timezones, stackoverflow</a>
+	</ul>
+</section>
+</body>
+</html>
