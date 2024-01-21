@@ -1,0 +1,1003 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<title>Ultralight - Week 2: Lecture</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- Note: This format was adapted from the HTML slide format developed for the Web Typography at Letterform Archive: http://motsuka.com/web-typography-workshop -->
+		<link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+		<link rel="stylesheet" type="text/css" href="slide-styles.css">
+		<link rel="icon"type="image/svg" href="../../assets/favicon.svg">
+		<script src="../assets/js/slides.js"></script>
+</head>
+
+<body>
+<body class="layout-slides">
+<main>
+	<section class="slide divider">
+			<div class="text">
+				<h1>world wide time</h1>
+			</div>
+			<footer>
+				Marie Otsuka / Lecture for Ultralight workshop Fruitful School / January 21 2024 12:00–4:00PM EST
+			</footer>
+	</section>
+
+<!-------------------------------------
+PART ONE
+--------------->
+	<section class="slide divider">
+		<div class="text">
+			<h2>
+				part one<br>
+				A solar-powered website
+			</h2>
+		</div>
+	</section>
+	
+	<section class="slide">
+		<figure>
+			<img src="media/ltm.png">
+		</figure>
+		<footer>
+			screenshot of <a href="https://solar.lowtechmagazine.com/" target="_blank">solar.lowtechmagazine.com</a>, with Kris De Decker, Roel Roscam Abbing, Lauren Traugott-Campbell, Marie Verdeil, Kathy Vanhout. Captured January 20 2024
+		</footer>
+	</section>
+	
+	<section class="slide">
+		<div class="text">
+			<h2>LOW←TECH MAGAZINE <sup>1</sup></h2>
+		</div>
+		<footer>
+			1. A text-based logotype exposes the available fonts and glyphs of the platform. We’ve seen the name written out as low<-tech magazine, too.
+		</footer>
+	</section>
+	
+	<section class="slide">
+		<div class="images">
+			<figure class="img-group">
+					<div class="img"><img src="media/solar_panel007_dithered.png"></div>
+					<div class="img"><img src="media/wholeshelf011_dithered.png"></div>
+			</figure>
+		</div>
+		<footer>
+			[Left] the solar panel installed on Kris De Decker’s balcony in Barcelona, Spain. [Right] the battery and microcomputer server hosting the website.<br>
+			Photos by <a href="https://www.verdeil.net/" target="_blank">Marie Verdeil</a>, processed via a dithering program written by <a href="https://test.roelof.info/" target="_blank">Roel Roscam Abbing</a>
+		</footer>
+	</section>
+	
+	<section class="slide">
+		<figure>
+			<img src="media/www.png">
+		</figure>
+		<footer>
+			The first website: <a href="https://info.cern.ch/hypertext/WWW/TheProject.html">https://info.cern.ch/hypertext/WWW/TheProject.html</a>
+		</footer>
+	</section>
+	
+	<section class="slide">
+		<div class="text">
+			<p>
+				Looking at past technology for inspiration: the world wide web was developed in 1989, and <a href="https://info.cern.ch/hypertext/WWW/TheProject.html">the first website</a> was made public on 23 August 1991. It described hypertext, the underlying mechanism for connecting information on the internet. The website contained no specific styling rules (CSS was not supported) or images and still works as a functioning website today!<sup>2</sup>
+			</p>
+		</div>
+		<footer>
+			2.  technically, the original website files were lost at some point, and the current version you see is a copy restored in 2013.
+		</footer>
+	</section>
+	
+	<section class="slide">
+		<figure>
+			<img src="media/ltm-old.png">
+		</figure>
+		<footer>
+			An early version of low-tech magazine. This layout is still visible in the “archive” page of the current site.
+		</footer>
+	</section>
+	
+	<section class="slide">
+		<figure>
+			<img src="media/browser-font-settings.png">
+		</figure>
+		<footer>
+			Chrome browser font settings
+		</footer>
+	</section>
+	
+	<section class="slide">
+		<div class="images">
+			<figure class="img-group">					
+					<div class="img"><img src="media/Mareorama_(Scientific_American).jpg"></div>
+					<div class="img"><img src="media/Mareorama-American-Scientific_dithered.png"></div>
+			</figure>
+			<figcaption>
+				An image of a <em>mareorama</em> from the article “<a href="https://solar.lowtechmagazine.com/2008/03/life-before-television/" target="_blank">Life Before Television</a>”.<br>
+				[Left] The original image (277KB) <br>
+				[Right] The image dithered with the article’s category color (79KB)
+			</figcaption>
+		</div>
+		<footer>
+		 Illustration of the Mareorama, from <em>Scientific American</em>, 1900, <a href="https://en.wikipedia.org/wiki/Mareorama#/media/File:Mareorama_(Scientific_American).jpg">Public Domain</a>
+		</footer>
+	</section>
+	
+	<section class="slide">
+		<figure class="horizontal">
+			<img src="media/ltm-icon-sprite.png">
+			<p class="text">With an image-sprite,<sup>3</sup> a single image with all the icons are loaded, and the styling just crops into a certain part of this image to show a specific icon. This prevents having to make a server request for every single icon, instead having just one call for an image that can be cached in the browser.</p>
+		</figure>
+		<footer>
+			3. As an aside – studying old video game technology can be a fruitful way to understand how engineers were able to maximize expression in compact formats, especially with 8bit composition. Composers simulated having more channels than available by rapidly alternating 2 notes or dynamically switching channels to simulate more instruments. See: designer Daniel Brenners’s <a href="https://video-game-music-museum.vercel.app/" target="_blank">history of video games</a> through the lens of audio technology development. Bitmap fonts and icons, too, exhibited an expressive economy that creatively worked with the limitations of resolution. Type designer Toshi Omagari explores this in his book, <a href="https://tosche.net/non-fonts/arcade-game-typography" target="_blank"><em>Arcade Game Typography</em></a>. Susan Kare’s original <a href="https://www.behance.net/gallery/81132387/Macintosh-icons" target="_blank">“iconic” icon drawings</a> for the 1984 Macintosh also exhibit how technical constraints don’t necessarily limit creative output. Working with “bits” as a methodology for “lightness” might be a subject of another talk!
+		</footer>
+	</section>
+	
+	<section class="slide">
+		<figure>
+			<img src="media/X60-on-its-side-white_dithered.png">
+		</figure>
+		<footer>
+			Kris De Decker uses a 2006 ThinkPad X60s to write. From “<a href="https://solar.lowtechmagazine.com/2020/12/how-and-why-i-stopped-buying-new-laptops/" target="_blank">How and Why I Stopped Buying New Laptops</a>”.
+		</footer>
+	</section>
+	
+	<section class="slide">
+		<div class="text">
+			<p>
+				This is a solar-powered website, which means it sometimes goes offline.
+			</p>
+			<p>
+				It’s possible to build a setup that prevents the site from going offline – but this also means more infrastructure, and more resources and energy that goes into building that infrastructure. This is what we call embodied energy.<sup>4</sup>
+			</p>
+			<p>
+				Our goal was never 100% uptime: it was to change our visitor’s relationship to the internet.
+			</p>
+		</div>
+		<footer>
+			4. On the supplemental article “<a href="https://solar.lowtechmagazine.com/2020/01/how-sustainable-is-a-solar-powered-website/" target="_blank">how sustainable is a solar powered website?</a>”, you can read a detailed analysis on the optimal compromise that takes into account the specific limitations for our setup: embodied energy of solar panels and batteries, balancing uptime and power, the fact that we have readers in both Europe and the United States, the seasonal changes of sunlight in Barcelona over the year, and the longevity of the battery.
+		</footer>
+	</section>
+	
+	<section class="slide">
+		<div class="text">
+			<h2>
+				how can we be more intentional about our digital consumption?
+			</h2>
+		</div>
+	</section>
+	
+	<section class="slide">
+		<div class="text">
+			<audio controls src="media/Dial_up_modem_noises.ogg"></audio><sup>5</sup>
+			<p>
+				Back when the first website launched, browsers could only render text. Internet access was delivered through dial-up modems and local area networks (LANs) and the maximum speed for modems was 56KB/s. But by 2009, cable internet speeds offered an average 8MB/s, and today, the average internet speed in the states is 227MB/s for desktop, and 111 MB/s for mobile.<sup>6</sup>
+			</p>
+			<p>
+				The technology delivering and displaying websites has become dramatically more efficient. 
+			</p>
+		</div>
+		<footer>
+			5. a recording of dial-up connection from <a href="https://en.wikipedia.org/wiki/File:Dial_up_modem_noises.ogg">wikimedia commons</a><br>
+			6. Statistics from <a href="https://www.speedtest.net/global-index/united-states" target="_blank">speedtest.net</a>
+		</footer>
+	</section>
+	
+	<section class="slide">
+		<div class="text">
+			<figure class="horizontal">
+				<img src="media/chart.png">
+			</figure>
+			<p>
+				in the meantime, websites have been taking advantage of these connection speeds. 
+				currently, the average desktop site weighs 2498 KB and 2216 KB on mobile–an increase of 434% and 1430% since 2010. 	
+			</p>
+			<p>
+		</div>
+		<footer> Chart from <a href="https://httparchive.org/reports/page-weight?start=earliest&end=latest&view=list" target="_blank">httparchive.org</a></footer>
+	</section>
+	
+	<section class="slide">
+		<div class="text">
+			<h2>
+				more efficient<br>
+				≠<br>
+				more sustainable<br>
+			</h2>		
+			<p>making something more efficient does not necessarily mean more sustainable. usage tends to increase as a result of the efficiency (called <a href="https://en.wikipedia.org/wiki/Jevons_paradox" target="_blank">Jevons paradox</a> in economics) and causes a “rebound effect”<sup>7</sup>.</p>
+		</div>
+		<footer>
+			7. In terms of the continued development of internet access, the approach with 5G technology also epitomizes problems with designing for more – while 5G may offer a tenfold increase in speed and a larger number of devices to connect to it, these high frequency waves are weaker, don’t travel as far, and are prone to interference, requiring building denser and redundant infrastructure.
+		</footer>
+	</section>
+	
+	<section class="slide">
+		<div class="text">
+			<h2>
+				less use<br>
+				=<br>
+				more sustainable
+			</h2>
+		</div>
+	</section>
+	
+	<section class="slide">
+		<div class="text">
+			<ul>
+				<li>less data: to minimize website size and server-load</li>
+				<li>less time online: to build a site that goes offline</li>
+				<li>more information: to reveal the system infrastructure</li>
+			</ul>
+		</div>
+	</section>
+
+<!-------------------------------------
+PART TWO
+--------------->
+	<section class="slide divider">
+		<div class="text">
+			<h2>
+				part two<br>
+				time-sensitive websites
+			</h2>
+		</div>
+	</section>
+		
+	<section class="slide">
+		<div class="text">
+			1. websites with active and inactive states<br>
+			2. websites designed to change over time<br>
+			3. websites that are archives of a single moment
+		</div>
+	</section>
+
+	<section class="slide">
+		<div class="text">
+			<h2>
+				websites with downtime
+			</h2>
+			<p>
+				websites with inactive states can direct visits to happen at certain times, offering opportunities for a more concentrated collective experience
+			</p>
+		</div>
+	</section>
+
+	<section class="slide">
+		<figure>
+			<img src="media/ra_sonic_platform_5.jpg">
+		</figure>
+		<footer>
+			Sonic platform by artist <a href="https://jolthoms.com/Home-Set" target="_blank">Jol Thoms</a>, transmitting pieces 2600km deep in the Pacific Ocean.
+		</footer>
+	</section>
+
+	<section class="slide">
+		<figure>
+			<video src="media/ra.mp4" muted>
+			</video>
+		</figure>
+		<footer>
+			A timelapse of screenshots of the website Radio Amnion: Sonic Transmissions of Care in Oceanic Space, from March 1–April 5, 2023. <a href="https://radioamnion.net/" target="_blank">radioamnion.net</a>, with Minkyoung Kim
+		</footer>
+	</section>
+
+	<section class="slide">
+		<figure>
+			<div class="img-group crop">
+				<div class="img"><video src="media/ocean-hearing_compressed.mp4" muted loop controls>
+				</video></div>
+				<div class="img"><img src="media/ra-event.jpg"></div>
+			</div>
+		</figure>
+		<footer>
+			Jol Thoms / a recording of the “Ocean Hearing” during the March 2022 full moon at ambika_p3, London. The month’s sonic transmission was “600HZ (of protean behaviour)” by Tuomas A. Laitinen. 
+		</footer>
+	</section>
+
+	<section class="slide">
+		<div class="text">
+			<h2>A website as peformance,<br>a time-based medium </h2>
+			<p>
+				A website can have opening and closing hours, or durational expression. this means that when and how the audience visits the site becomes an integral part of how the website works. 
+			</p>
+		</div>
+	</section>
+
+	<section class="slide">
+		<div class="text">
+			<h2>
+				When online work fails to to be “on,” it can have a similar effect to <em>breaking the fourth wall</em>–the boundary between website and audience disappears.
+			</h2>
+			<p>
+				Downtime, or deliberately “breaking” the site can emphasize a certain point of view or communicate something unexpected.
+			</p>
+		</div>
+	</section>
+
+	<section class="slide">
+		<figure>
+			<img src="media/onion.png">
+		</figure>
+		<footer>
+			A screenshot of <em>The Life and Death of an Internet Onion</em>, orchestrated by Laurel Schwulst. <a href="https://the-life-and-death-of-an-internet-onion.com/" target="_blank">the-life-and-death-of-an-internet-onion.com</a>, captured January 20 2024.
+		</footer>
+	</section>
+
+	<section class="slide">
+		<div class="text">
+			<p>Laurel Schwulst’s are.na collection <a href="https://www.are.na/laurel-schwulst/performance-is-change-over-time" target="_blank">Performance is Change over Time</a> outlines how durational websites can follow various traces – the trace of the “Trace Passing of Time,” “Trace of the Visitor,” and “Trace of the Making.” </p>
+		</div>
+	</section>
+
+	<section class="slide">
+		<div class="text">
+			<h2>
+				websites that change over time
+			</h2>
+			<p>
+				websites might vary across multiple visits,<br>
+				or evolve over the duration of a single visit
+			</p>
+		</div>
+	</section>
+
+	<section class="slide divider">
+		<div class="text">
+			<p>				
+				If websites with deliberate downtime embody lightness through a <em>limitation of time</em>, <br>websites that change over time might embody lightness through a <em>specificity of time</em>
+			</p>
+		</div>
+	</section>
+
+	<section class="slide">
+		<figure>
+			<div class="img-group lba">
+				<div class="img">
+					<img src="media/gsapp-website.png">
+					<video src="media/gsapp-animation.mp4" muted loop>
+				</video></div>
+				<div class="img">
+					<img src="media/tang-website.png">
+					<img src="media/tang-stats.jpg">
+				</div>
+			</div>
+		</figure>
+		<footer>
+			Sample work by the design studio <a href="https://www.linkedbyair.net/" target="_blank">Linked by Air</a> [Left] A time-sensitive identity for Columbia <a href="https://www.arch.columbia.edu/" target="_blank">GSAPP</a>. [Right] A dynamic background for the <a href="https://tang.skidmore.edu/" target="_blank">Tang Museum</a>.
+		</footer>
+	</section>
+
+	<section class="slide">
+		<figure>
+			<img src="media/pentameter-static.png">
+		</figure>
+		<footer>
+			A screenshot of the <em>Seasons in Pentameter</em>, captured January 20 2024. <a href="https://pentad.world/" target="_blank">pentad.world</a>, with Laurel Schwulst and Tiger Dingsun
+		</footer>
+	</section>
+
+	<section class="slide">
+		<div class="images">
+			<figure class="img-group">
+					<div class="img"><img src="media/pentameter-slack.png"></div>
+					<div class="img"><img src="media/pentameter-social-grid.png"></div>
+			</figure>
+		</div>
+		<footer class="ref">
+			[Left] A screenshot of the website shared on a Slack, from April 7, 2023.
+			[Right] A grid of all 72 social share images, provided by our <a href="https://penta-proxy.herokuapp.com/image" target="_blank">micro-application</a>. Setting the server time of this program to be in Japan meant that technically, someone sharing the site in the evening in New York might see a preview image of the next microseason, since Japan can be a day ahead.
+	</section>
+
+	<section class="slide divider">
+		<div class="text">
+			<h2>
+				websites that archive time
+			</h2>
+			<p>
+				Sometimes, websites simply preserve<br>
+				a single point of time 
+			</p>
+		</div>
+	</section>	
+
+	<section class="slide">
+		<figure>
+			<video src="media/worldclock.mp4" muted>
+			</video>
+		</figure>
+		<footer>
+			An experience “chasing time” by following various SkyCams from around the world, between 1:00am–2:00am EST. Screenrecording of <em>World Clock</em>, <a href="https://motsuka.com/world-clock" target="_blank">motsuka.com/world-clock</a>, 2017<br>
+			(This website created as part of a workshop led by designer Julia Born, and each participant was assigned the task to represent a single hour.)
+		</footer>
+	</section>
+
+	<section class="slide">
+		<figure>
+			<img src="media/windpoem.png">
+		</figure>
+		<footer>
+			Taichi Aritomo’s <a href="https://taichi.pink/2019-12-16_wind-poem/" target="_blank"><em>Wind Poem</em></a> uses windspeed data from March 25 to March 31, 2019 to animate his poem.
+		</footer>
+	</section>
+
+<!-------------------------------------
+PART THREE
+--------------->
+	<section class="slide divider">
+		<div class="text">
+			<h2>part three<br>
+			Harnessing the environment</h2>
+		</div>
+	</section>
+	
+	<section class="slide">
+		<div class="text">
+			<figure>
+				<img src="media/1523_006_l.jpg">
+			</figure>			
+		</div>
+		<footer class="ref">
+			Hans Haacke: Condensation Cube, 1963-1968. Sculpture, 76 x 76 x 76 cm / <a href="https://www.macba.cat/en/art-artists/artists/haacke-hans/condensation-cube" target="_blank">MACBA</a>
+		</footer>
+	</section>
+	
+	<section class="slide">
+		<blockquote class="text">
+				“A physical process as basic as water condensation allows Haacke to redefine not only the work of art as a living system, but, most significantly, the role of the viewer or user of art. While the patterns of water trails within the cube have to do with the conditions of their immediate surroundings, the human presence is also part of this environment.”
+		</blockquote>
+		<footer class="ref">
+			from the artwork description on <a href="https://www.macba.cat/en/art-artists/artists/haacke-hans/condensation-cube">MACBA</a>
+		</footer>
+	</section>
+
+	<section class="slide divider">
+		<div class="text">
+			<p>How can a website be a living system? How might it visually dialogue with the presence of human beings?</p>
+		</div>
+	</section>
+
+	<section class="slide">
+		<div class="images">
+			<figure class="img-group">
+					<div class="img dust"><img src="media/1476987290_The_Dustiest_Place_in_the_Museum.jpg"></div>
+					<div class="img dust"><img src="media/1476987620_Dust_is_Not_Grey.jpg"></div>
+			</figure>
+		</div>
+		<footer class="ref">
+			Nina Katchadourian, from <a href="https://www.moma.org/calendar/exhibitions/3610" target="_blank">Dust Gathering</a>, by Nina Katchadourian, Oct 21, 2016–Oct 1, 2017 MoMA 
+		</footer>
+	</section>
+
+	<section class="slide">
+		<blockquote class="text">
+			“Dust consists of material from both inside and outside, from Earth and the cosmos, from places very high and very low–and at the Museum, it’s literally an intermingling of different people from around the world.”
+		</blockquote>
+		<footer class="ref">
+			Nina Katchadourian, from <a href="https://www.moma.org/calendar/exhibitions/3610" target="_blank">Dust Gathering</a>, by Nina Katchadourian, Oct 21, 2016–Oct 1, 2017 MoMA 
+		</footer>
+	</section>
+
+	<section class="slide divider">
+		<div class="text">
+			<p>What might be the dust of a website? How can we trace the residues of stories that are already here?
+			How can these reveal inherent relationships between people, infrastructures and systems?</p>
+		</div>
+	</section>
+
+	<section class="slide">
+		<div class="text">			
+			<figure style="height: 500px; overflow: hidden;"><img src="media/409-tacks.webp"></figure>
+			<p>“light” methodologies trace life in existing conditions</p>
+		</div>
+		<footer>An installment of <em>Reading the Room</em>, <em>An arrangement of Tacks</em>, 2017. Room 409 of the Fletcher Building at the Rhode Island School of Design was often used as an auxilary crit room. We placed over 3000 into all holes in the walls, tracing the existing residues of the room’s previous use</footer>
+	</section>
+
+	<section class="slide">
+		<div class="images">
+			<figure class="img-group">
+					<div class="img"><img src="media/reading_cover.png"></div>
+					<div class="img"><img src="media/reading5.jpg"></div>
+			</figure>
+		</div>
+		<footer class="ref">
+			<em>A Handbook for Reading the Room</em>, with <a href="https://angelalorenzo.info/" target="_blank"> with Angela Lorenzo</a>, 2017. 
+		</footer>
+	</section>
+
+	<section class="slide">
+		<blockquote class="text" style="text-align: center">
+			“Listen to the sound of the earth turning”
+		</blockquote>
+		<footer>
+			Yoko Ono’s instructional work, <a href="https://artsandculture.google.com/asset/0gGjFv9n_JchildAssetId=WgEmpU-R-DEL3g&hl=en">Earth Piece,</a> 1963.
+		</footer>
+	</section>
+
+<!-- 	<section class="slide">
+		<div class="images">
+			<figure class="img-group">
+					<div class="img"><img src="media/409-tacks.webp"></div>
+					<div class="img"><img src="media/409-tacks-process.webp"></div>
+			</figure>
+		</div>
+		<footer>Process documentation of <em>An arrangement of Tacks</em>, 2017. Room 409 of the Fletcher Building at the Rhode Island School of Design was often used as an auxilary crit room. We placed over 3000 into all holes in the walls, tracing the existing residues of the room’s previous use</footer>
+	</section> -->
+
+	<section class="slide divider">
+		<div class="text">
+			<p><em>listening and reading</em> as strategies for lightness</p>
+		</div>
+	</section>
+
+	<section class="slide">
+		<div class="text">
+			<p>
+				Even with digital work, we <em>listen</em> to detect any form of input, and we <em>read</em> data sent from elsewhere.
+			</p>
+			<p>
+				these are usually handled through <code>API</code>s.
+			</p>
+		</div>
+	</section>
+
+	<section class="slide">
+		<div class="text">
+			<p>
+				An <code>API</code> is a general term for any kind of communication between computer programs. An <em>event listener</em> is a web <code>API</code> helps us detect events like clicking, scrolling, dragging, that occur in the browser.
+			</p>
+			<p>
+				Another way we might use an <code>API</code> is to read data from an external source, usually exchanged in the json format.
+			</p>
+		</div>
+	</section>
+	<section class="slide">
+		<div class="text">
+			<p>
+				Although websites are digital material, we can communicate with physical material by tapping into the fact that it is served up on a live network – a network that can connect to anything in the world. 
+			</p>
+		</div>
+	</section>
+
+	<section class="slide">
+		<pre class="text">
+			<code>
+{
+  "weather": [
+      {
+          "id": 800,
+          "main": "Clear",
+          "description": "clear sky",
+          "icon": "01n"
+      }
+  ],
+  "main": {
+      "temp": 19.72,
+      "feels_like": 7.12,
+      "temp_min": 17.62,
+      "temp_max": 21.09,
+      "pressure": 1018,
+      "humidity": 57
+  }
+ }</code>
+		</pre>
+		<footer>
+			An excerpt from the <code>json</code> output read from the <a href="https://openweathermap.org/api" target="_blank">open weather API</a>.
+		</footer>
+	</section>
+
+	<section class="slide">
+		<div class="text">
+			<p>
+				A website may not be able to produce droplets of condensation or breed dust mites through direct contact, but we can always simulate this kind of input through an exchange of the root-level material: data. 
+			</p>
+		</div>
+	</section>
+
+<!-------------------------------------
+PART FOUR
+--------------->
+	
+	<section class="slide divider">
+		<div class="text">
+			<h2>part four<br>
+			now is a coordinate</h2>
+		</div>
+	</section>
+	
+	<section class="slide">
+		<figure>
+			<img src="media/world-clock-grid.webp">
+		</figure>
+		<footer>
+			a subset of images collected for <em>World Clock</em>
+		</footer>
+	</section> 
+
+	<section class="slide">
+		<div class="text">
+			<p>Time is a singular entity with many “faces”</p>
+			<p>
+				there is only one “Date” object in JavaScript. underlying, the date is stored in UTC<sup>8</sup> – and it is the same, whether you are in New York, Berlin, or Taipei. It is simply <em>displayed</em> differently according to your local timezone, determined by your browser.
+			</p>
+		</div>
+		<footer>
+			8.  Universal Time Coordinated, the time at 0° longitude or the <em>prime meridian</em>. It is based on the location of the Royal Observatory in Greenwich, London; historically, commercial navigational systems depended on British maritime technology. Technically, it is now 102 metres east from the historical meridian due to new coordinate systems developed through satellite data developed in 1984, replacing the Greenwich meridian with an updated International Reference Meridian (IRM).
+		</footer>
+	</section>
+	
+	<section class="slide">
+		<div class="text">
+			<h2 id="date" class="code"></h2>
+			<script>document.getElementById('date').innerText = new Date();</script>
+		</div>
+		<footer>
+			This is the output of our date object created in JavaScript: <code> new Date() </code> We will be working with this date object in our workshop.
+		</footer>
+	</section>
+	
+	<section class="slide">
+		<div class="text">
+			<p>
+				This is the default output of the Date object. It includes: date, time, offset from UTC, and the name of the timezone. 
+			</p>
+			<p>
+				Time is defined by place of access
+			</p>
+		</div>
+	</section>
+
+	
+	<section class="slide">
+		<blockquote class="text">
+			“Now is a place, a co-ordinate; i am where ‘I’ am not, and iThink (type, write, and right-click) therefore I am. If space is a practiced place, then collective navigation produces the commons.”
+		</blockquote>
+		<footer class="ref">
+			Jesse Darling, <a href="https://thenewinquiry.com/arcades-mallrats-tumblr-thugs/" target="_blank">“Arcades, Mall Rats, and Tumblr Thugs,”</a> The New Inquiry, February 13 2012
+		</footer>
+	</section>
+	
+	<section class="slide">
+		<div class="text">
+			<p>
+				Time is defined by the technology that displays it
+			</p>
+		</div>
+	</section>
+	
+	<section class="slide">
+		<div class="images">
+			<figure class="img-group">
+					<div class="img">
+						<img src="media/watchscan.avif">
+					</div>
+					<div class="img">
+						<img src="media/watchscan-detail.avif">
+					</div>
+			</figure>
+		</div>
+		<footer class="ref">
+			Dexter Sinister: Watchscan 1200dpi, 2009, detail. Image source:  <a href="https://walkerart.org/magameet-the-tetracono">walkerart.org</a></li>
+		</footer>
+	</section>
+	
+	<section class="slide">
+		<div class="images">
+			<figure class="img-group crop">
+				<div class="img">
+					<img src="media/wyoscan.jpg">
+				</div>
+				<div class="img">
+					<img src="media/wyoscan-app.gif">
+				</div>					
+			</figure>
+		</div>
+		<footer class="ref">
+			[Left] Dexter Sinister: Wyoscan 0.5hz, 2009. <a href="http://www.dextersinister.org/index.html">dextersinister.org</a> [Right] O-R-G: Wyoscan iOs App. <a href="https://www.o-r-g.com/apps/wyoscan" target="_blank">o-r-g.com</a>
+		</footer>
+	</section>
+
+	<section class="slide">
+		<p class="text">
+			any point in time is actually a durational slice of time, and it is a piece of technology that provides a shape to it
+		</p>
+	</section>
+	
+	<section class="slide">
+		<blockquote class="text">
+				“Time is like that – both point AND duration. This is how it can bend and warp. A week, a second, a season: all are specific and discrete, but none are the same. The present can be cut to any number of lengths, from a single electric pulse of an electronic circuit to the display period of a digital timepiece.”
+		</blockquote>
+		<footer class="ref">
+			Dexter Sinister, description of Wyoscan, <a href="https://www.o-r-g.com/apps/wyoscan" target="_blank">o-r-g.com</a>
+		</footer>
+	</section>
+
+	<section class="slide">
+		<div class="table">
+			<table>
+				<tr class="table-header">
+					<th>
+						JavaScript Code
+					</th>
+					<th>
+						Description
+					</th>
+					<th>
+						Example output
+					</th>
+				</tr>
+				<tr>
+					<td>
+						<code>new Date()</code>
+					</td>
+					<td>
+						the current date and time
+					</td>
+					<td>
+						Sun Jan 21 2024 03:03:00 GMT-0500 (Eastern Standard Time)
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<code>new Date(1705824180000)</code>
+					</td>
+					<td>store a specific date and time in milliseconds(ms) since <em>epoch</em><sup>9</sup>
+					</td>
+					<td>
+						Sun Jan 21 2024 03:03:00 GMT-0500 (Eastern Standard Time)
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<code>new Date("Jan 21, 2024")</code><br>
+					</td>
+					<td>
+						store a specific date and time. 
+					 	because time is not specified, it will assume midnight in your local timezone.
+					</td>
+					<td>
+						Sun Jan 21 2024 00:00:00 GMT-0500 (Eastern Standard Time)
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<code>new Date("Jan 21, 2024 13:00:59")</code>
+					</td>
+					<td>
+						store a specific date and time. unless a timezone is specified, it will assume you are specifying this in your local timezone.<sup>10</sup>
+					</td>
+					<td>
+						Sun Jan 21 2024 13:00:59 GMT-0500 (Eastern Standard Time)
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<code>new Date("Jan 21, 2024 13:00:59-08:00")</code>
+					</td>
+					<td>
+						store a specific date and time with a specific timezone offset.<sup>11</sup> (here, 8h behind UTC, or 3 hours behind EST.)
+					</td>
+					<td>
+						Sun Jan 21 2024 16:00:59 GMT-0500 (Eastern Standard Time)
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<code>new Date("Jan 21, 2024 13:00:59Z")</code>
+					</td>
+					<td>
+						store a specific date and time in UTC (specified by the <code>Z</code> suffix)
+					</td>
+					<td>
+						Sun Jan 21 2024 08:00:59 GMT-0500 (Eastern Standard Time)
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<code>new Date("2024-01-21T13:00:59")</code><br>
+						<code>new Date(2024,0,21,13,0,59,0)</code>
+					</td>
+					<td>
+						store a specific date and time in ISO format: <code>YYYY-MM-DDTHH:mm:ss.sssZ</code><sup>12</sup>. Note that when defining the date using numbers, not strings, the month is counted from a 0 index, meaning January is 0.
+					</td>
+					<td>
+						Sun Jan 21 2024 13:00:59 GMT-0500 (Eastern Standard Time)
+					</td>
+				</tr>
+			</table>
+		</div>
+		<footer>
+			9. <em>epoch</em> refers to January 1, 1970, 00:00:00 UTC<br>
+			10. Browser behavior can be inconsistent in how it treats dates initialized without a timezone, so it is generally best to define time explicitly.
+			11. Even though you may have stored the date/time given a particular timezone offset, the default way it will display to you will still be converted to your local timezone.
+			12. The international standard ISO 8601 lists time in the following order: year (YYYY), month (MM), day(DD), hour(HH), minutes(mm), seconds(ss), milliseconds(sss), and timezone offset(Z, or +/- followed by HH:mm).
+		</footer>
+	</section>
+
+	<section class="slide">
+		<div class="table">
+			<table>
+				<tr>
+					<td colspan="4" style="text-align:center">
+						<code>let now = new Date("Jan 21, 2024 13:00:59")</code>
+					</td>
+				</tr>
+				<tr class="table-header">
+					<th>
+						JavaScript Code
+					</th>
+					<th>
+						Description
+					</th>
+					<th>
+						Possible range
+					</th>
+					<th>
+						example output
+					</th>
+				</tr>
+				<tr>
+					<td>
+						<code>.getDate()</code>
+					</td>
+					<td>
+						numerical date
+					</td>
+					<td>
+						1–31
+					</td>
+					<td>
+						21
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<code>.getDay()</code>
+					</td>
+					<td>
+					 	day of the week
+					</td>
+					<td>
+						0–6 (sun–sat)
+					</td>
+					<td>
+						0
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<code>.getFullYear()</code>
+					</td>
+					<td>
+						full year
+					</td>
+					<td>
+						
+					</td>
+					<td>
+						2024
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<code>.getMonth()</code>
+					</td>
+					<td>
+						numerical month
+					</td>
+					<td>
+						0–11
+					</td>
+					<td>
+						0
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<code>.getHours()	</code>
+					</td>
+					<td>
+						hour
+					</td>
+					<td>
+						0–23
+					</td>
+					<td>
+						13
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<code>.getMinutes()	</code>
+					</td>
+					<td>
+						minutes
+					</td>
+					<td>
+						0–59
+					</td>
+					<td>
+						0
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<code>.getSeconds()	</code>
+					</td>
+					<td>
+						seconds
+					</td>
+					<td>
+						0–59
+					</td>
+					<td>
+						0
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<code>.getMilliseconds()	</code>
+					</td>
+					<td>
+						milliseconds
+					</td>
+					<td>
+						0–999
+					</td>
+					<td>
+						0
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<code>.getTime() </code>
+					</td>
+					<td>
+						milliseconds since epoch
+					</td>
+					<td>
+					</td>
+					<td>
+						1705860059000
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<code>.getTimezoneOffset() </code>
+					</td>
+					<td>
+						difference from UTC in <em>minutes</em><sup>13</sup>
+					</td>
+					<td>
+						-720 / +840 (UTC-12 to UTC+14)
+					</td>
+					<td>
+						300
+					</td>
+				</tr>
+			</table>
+		</div>
+		<footer>
+			Various ways to “slice” the date time object.<br>
+			13. the value is positive (+) if the local time zone is behind UTC, and negative (-) if the local time zone is ahead of UTC. Because of Daylight Savings Time, the timezone offset may vary based on the time of year. <pre><code>const nyOffsetSummer = new Date("2022-02-01").getTimezoneOffset(); // 300
+const nyOffsetWinter = new Date("2022-08-01").getTimezoneOffset(); // 240
+			</code></pre>
+		</footer>
+	</section>
+
+	<section class="slide">
+		<div class="text">
+			<p>
+				approching something with “lightness” allows us to be more intimate with the material we work with.
+			</p>
+			<p>
+				we can better understand its underlying mechanics, and the surrounding forces that affect it
+			</p>
+		</div>
+	</section>
+
+	<section class="slide">
+		<div class="text">
+			<h2>time as an ultralight material</h2>
+		</div>
+	</section>
+</main>
+</body>
+</html>
