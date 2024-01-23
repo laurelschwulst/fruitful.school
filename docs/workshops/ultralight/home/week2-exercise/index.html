@@ -26,10 +26,10 @@
 		<h2>Instructions</h2>
 		<ol>
 				<li>
-						Create a website with deliberate “open” and “closed” hours.<br>
+						Setup a website with deliberate “open” and “closed” hours, or with a specific response to a certain time<br>
 				</li>
 				<li>
-						Using one of the demo templates as a basis, create a website that responds to time
+						Develop the site, using one of the demo templates as a basis
 						<p class="gray">
 								You may also combine time with another form of input, either using other data available in the API, or combining results from another API call.
 						</p>
@@ -37,16 +37,19 @@
 		</ol>
 
 
-		<h2>Methodology</h2>
+		<h2>Steps</h2>
 		<ol>
 				<li>
-						Focus on the HTML & CSS— create the structure both on/off states
+						First focus on the HTML & CSS— create the structure both on/off states
 				</li>
 				<li>
 						Setup a <code>data attribute</code> on a containing element to trigger different CSS to be applied. A space '<code> </code>' betweeen two selectors sets up a parent — child relationship. Using this, we can set up conditional style rules in our css, making sure that certain things only apply when a parent has a particular attribute.
 				</li>
 				<li>
 					Write your JavaScript code to setup your logic, that then triggers the updates to this data attribute.
+				</li>
+				<li>
+					If you are using data in addition to working with the object, first try setting up the logic by simply storing the expected / desired <code>JSON</code> data in a variable. (See more about the json syntax on the <a href="../week2-reference/js.html#json">JS reference page</a>.) Then, use the <code>fetch</code> API to switch your data to a live source.
 				</li>
 		</ol>
 

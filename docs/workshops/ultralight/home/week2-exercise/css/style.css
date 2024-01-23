@@ -112,6 +112,10 @@ td:first-child, th:first-child{
   padding-left: 0;
 }
 
+#dt-format td,th{
+	width: 16%;
+}
+
 /* span {
 	background: white;
 } */
@@ -128,6 +132,9 @@ hr {
 } */
 .gray {
 	opacity: 0.5;
+}
+.token.comment{
+	opacity: 0.4;
 }
 a {
 	color: black;
