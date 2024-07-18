@@ -617,9 +617,9 @@ body.dark .offering img  {
   font-size: 45px;
 
 }
-  .metadata time  {
+  /* .metadata time  {
     display: none;
-  }
+  } */
   #offerings,
   section#blog.special-interviews {
     grid-template-columns: inherit !important;
