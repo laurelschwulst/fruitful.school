@@ -1,0 +1,1115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="feed-style.xsl" type="text/xsl"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0">
+  <channel>
+    <title>Fruitful Blog</title>
+    <link>https://fruitful.school/blog</link>
+    <description>The blog of Fruitful School</description>
+    <copyright>Copyright © 2020 Fruitful School</copyright>
+    <docs>http://www.rssboard.org/rss-specification</docs>
+    <language>en</language>
+    <lastBuildDate>Fri, 18 Jun 2021 11:11:11 +0000</lastBuildDate>
+    <pubDate>Fri, 18 Jun 2021 11:11:11 +0000</pubDate>
+    
+    <!-- <item>
+      <title>First, Last, Security</title>
+      <link>https://fruitful.school/blog/2020-06-11.html</link>
+      <description><![CDATA[
+      ]]</description>
+      <guid isPermaLink="true">https://fruitful.school/blog/2021-06-11.html</guid>
+      <pubDate>Tues, 11 Jun 2021 11:11:11 +0000</pubDate>
+    </item> -->
+    
+    <item>
+      <title>Clay Corporation</title>
+      <link>https://fruitful.school/blog/2020-06-18.html</link>
+      <description><![CDATA[<h1>Clay Corporation<sup>®</sup></h1>
+      <h2>Interview with Robert Levine, Winter 2021 Participant</h2>
+
+      <div class="metadata small">
+        <time datetime="2021-06-18 11:11">June 18, 2021</time>
+        <span class="fruit">🍏 </span>
+      </div>
+
+      <div class="series">
+        This is one in a series of
+        <a href="index.html#special-interviews">interviews with participants</a>
+        from Fruitful School about the sites they created as part of our 6 week
+        workshop.
+      </div>
+
+      <figure class="large">
+        <img
+          src="http://fruitful.school/blog/images/robert-levine-clay-corp4.png"
+          alt="Screenshot of claycorporation.net, a mostly white website that greets visitors with the message, ‘Welcome to Clay Corporation, where we make clay from code. The factory is currently closed. Would you like to visit the warehouse or the generator?' The text is brown colored and in a pixelated serif font."
+        />
+        <img
+          src="http://fruitful.school/blog/images/robert-levine-clay-corp3.png"
+          alt="Screenshot of claycorporation.net on the 'Warehouse' tab, which shows various small clay sculptures and pottery in a grid with technical-looking textual metadata above each"
+        />
+        <img
+          src="http://fruitful.school/blog/images/robert-levine-clay-corp6.png"
+          alt="Screenshot of the text that appears in the 'Generator' section of claycorporation.net which reads, 'ROLL a grapefruit-sized ball of clay, DO it slower, REMOVE some clay, PINCH horizontally, ASK it a question, THROW it in the dirt, GIVE it a kiss, REPEAT the instructions in reverse.'"
+        />
+        <figcaption>
+          Clay Corporation by Robert Levine, 2021 —
+          <a href="http://claycorporation.net" target="_blank"
+            >claycorporation.net</a
+          >
+        </figcaption>
+      </figure>
+
+      <p><b>Describe the process of creating your site.</b></p>
+      <p>
+        When you plant a seed, you don't know what it will become. It might
+        emerge like the picture on the envelope but maybe it will sprout a
+        monstrous other thing. It will probably sprout a monstrous other thing.
+      </p>
+      <p>
+        <b>What did you learn through Fruitful School?</b>
+      </p>
+      <p>
+        HTML, CSS, and JavaScript are materials, and that these materials have
+        histories.
+      </p>
+      <p>
+        <b>What's something you'd like visitors to know?</b>
+      </p>
+      <p>This is make-believe.</p>
+      <p><b>What's it like to run a corporation?</b></p>
+      <p>It is no big deal.</p>
+      <p>
+        <b>What type of site would you like to see more on the www?</b>
+      </p>
+      <p>
+        Less SquareSpace, Shopify, Wix, Weebly, and Cargo. More websites
+        handmade on the QWERTY loom.
+      </p>
+
+      <hr />
+
+      <p class="outro">
+        🍓<br />
+        Robert Levine<br />
+        <a href="https://robertmorrislevine.info"
+          >http://robertmorrislevine.info</a
+        ><br /><br />
+        <img
+          src="http://fruitful.school/blog/images/robert-levine-clay-corp5.png"
+          alt="Screenshot of the 'Factory' tab of claycorporation.net, which shows a livestream from above of RL working at their desk. A spiraling white cord in the foreground, almost obscuring RL."
+        />
+      </p>
+      ]]</description>
+      <guid isPermaLink="true">https://fruitful.school/blog/2021-06-18.html</guid>
+      <pubDate>Fri, 18 Jun 2021 11:11:11 +0000</pubDate>
+    </item>
+    
+    <item>
+      <title>rite.house</title>
+      <link>https://fruitful.school/blog/2020-06-17.html</link>
+      <description><![CDATA[<a class="student-site" href="http://rite.house" target="_blank"
+        >rite.house
+      </a>
+
+      <h1>rite.house</h1>
+      <h2>Interview with Vanya Padmanabhan, Fall 2020 Participant</h2>
+
+      <div class="metadata small">
+        <time datetime="2021-06-17 11:11">June 17, 2021</time>
+        <span class="fruit">🍏 </span>
+      </div>
+
+      <div class="series">
+        This is one in a series of
+        <a href="index.html#special-interviews">interviews with participants</a>
+        from Fruitful School about the sites they created as part of our 6 week
+        workshop.
+      </div>
+
+      <figure class="large">
+        <img
+          src="http://fruitful.school/blog/images/vanya-padmanabhan-rite-house.png"
+          alt="A screenshot of www.rite.house at 11:06am. It includes an isometric exploded drawing of a house with round colored circles inhabiting it. Below, a colored key provides details around different individuals' daily quarantine rituals."
+        />
+        <figcaption>
+          rite.house by Vanya Padmanabhan, 2020 —
+          <a href="http://rite.house" target="_blank">rite.house</a>
+        </figcaption>
+      </figure>
+      <p>
+        <b>What’s it been like since launching rite.house?</b>
+      </p>
+      <p>
+        It's been really interesting to watch the site grow in a natural way. I
+        never shared it on social media, so I assume people are finding it
+        through word of mouth at this point or through the magic that is the
+        internet. Randomly, strangers are still finding it and still submitting
+        rituals through the Google form. I also think the comments section of
+        the form has been really interesting... like what strangers feel like
+        they want to share. People have submitted book recs, recipes, poems. A
+        few strangers have said that they came to the site at a low point in
+        their lives and that seeing other people's rituals helped them come up
+        with something they could be doing everyday. The fact that even one
+        person was able to find the website and take something positive away is
+        really special.
+      </p>
+      <p>
+        It's funny because I think people who have seen the site assume that I
+        must have pretty consistent rituals in my own life. But in reality, I've
+        always struggled to keep much of a routine (for better or worse lol).
+        Part of me always saw the project as a way to get ideas for how to
+        structure my own day.
+      </p>
+      <p>
+        Since making the site, I have become better about setting aside
+        intentional time away from the computer — to be outside or do something
+        with my hands — and that's been helpful.
+      </p>
+      <p>
+        <b>How was Fruitful School for you?</b>
+      </p>
+      <p>
+        Fruitful School was probably one of my favorite experiences in 2020 :')
+        It made me realize how muchIi missed learning and also how much
+        potential the internet has to be something special and handmade. I had
+        built up a lot of resentment towards my computer and really anything
+        digital (especially social media) throughout the course of the year, so
+        I was so grateful when fruitful helped restore my curiosity online.
+      </p>
+      <p>
+        The course made the act of making a site feel a lot less intimidating. I
+        think I’ve always been scared that my code would have to be “perfect” or
+        “finished” to be published? It felt freeing to publish a bunch of “in
+        progress” versions of the site and to recognize that any site will
+        always be “in progress” and never finished.
+      </p>
+      <p>
+        <b>What type of website would you like to encounter more?</b>
+      </p>
+      <p>
+        When I was younger, I felt like I had a place online and everything was
+        exciting. I kind of hope the future holds a cuter, more playful, and
+        welcoming internet... one where you really want to take up digital space
+        again. It would be nice to see websites that feel less permanent or
+        websites that make you feel more present / more connected in genuine and
+        unique ways.
+      </p>
+
+      <hr />
+
+      <p class="series">
+        You can also experience a walkthrough of
+        <i>rite.house</i> via our
+        <a href="https://youtu.be/Uj988pBqSBQ?t=2369">video recording</a>
+        of the Fall 2020 live exhibition (at the 39:29 mark)!
+      </p>
+
+      <hr />
+
+      <p class="outro">
+        🥭<br />
+        Vanya Padmanabhan<br /><br />
+        <a href="pages/vanya-padmanabhan-fruitful-id/index.html">
+          <img
+            src="http://fruitful.school/blog/images/vanya-padmanabhan-fruitful-id.png"
+            alt="Screenshot of Vanya Padmanabhan's Fruitful ID card"
+          />
+        </a>
+      </p>
+    ]]</description>
+      <guid isPermaLink="true">https://fruitful.school/blog/2021-06-17.html</guid>
+      <pubDate>Thurs, 17 Jun 2021 11:11:11 +0000</pubDate>
+    </item>
+    
+    <item>
+      <title>First, Last, Security</title>
+      <link>https://fruitful.school/blog/2020-06-11.html</link>
+      <description><![CDATA[ <h1>First, Last, Security</h1>
+      <h2>Interview with Raegan Bird, Fall 2020 Participant</h2>
+
+      <div class="metadata small">
+        <time datetime="2021-06-11 11:11">June 11, 2021</time>
+        <span class="fruit">🍏 </span>
+      </div>
+
+      <div class="series">
+        This is one in a series of
+        <a href="index.html#special-interviews">interviews with participants</a>
+        from Fruitful School about the sites they created as part of our 6 week
+        workshop.
+      </div>
+
+      <figure class="large" style="margin-bottom: 0em">
+        <img
+          src="http://fruitful.school/blog/images/raegan-bird-first-last-2.png"
+          alt="A screenshot of First, Last, Security showing a slightly bleak and mysterious image of an apartment in desert tones with a small purple peace sign in the corner"
+        />
+        <!-- <img
+          src="http://fruitful.school/blog/images/raegan-bird-first-last-3.png"
+          alt="A screenshot of Many Sceneries that contains ovals of natural scenery some which occupies the background"
+        /> -->
+      </figure>
+      <figure style="margin-top: 0">
+        <img
+          src="http://fruitful.school/blog/images/raegan-bird-first-last-1.png"
+          alt="Image of the homepage of the website First, Last, Security, which asks you to knock to enter and says, 'Screenshots collected between Febuary 2018 and June 2019 from Craigslist, Zillow and Trulia listings for 2+ bedroom rentals, under $1000 a month, in Tucson, Arizona. Other photos taken between 2015- 2019 in places where I was a leasee or in properties where I worked as an independent contractor.'"
+        />
+        <figcaption>
+          First, Last, Security by Reagan Bird, 2020 —
+          <a href="https://first-last-security.us" target="_blank"
+            >first-last-security.us</a
+          >
+        </figcaption>
+      </figure>
+
+      <p><b>What was the process of creating the site like?</b></p>
+      <p>
+        It went through a lot of iterations. First it was going to be a book, I
+        printed all the pictures out in tiny grids and cut them up to sequence
+        on the walls. Then I thought it made more sense to be online so I made a
+        draft using Cargo Collective, a website building tool, that was a lot
+        more linear, just clicking forward through the whole thing.
+      </p>
+      <p>
+        In workshop, I was encouraged to lean into the maze aspect of it, so it
+        became a little more interactive. The actual code for it ended up being
+        pretty bare bones and simple, most of the time went into linking all the
+        pages together and building a maze that made enough sense. I had to draw
+        out a key for myself so I wouldn't get lost. I wanted the sequence to be
+        somewhat associative and wanted the navigation to be frustrating but not
+        so frustrating that you give up, just enough to hang on for the dopamine
+        hits of more pictures.
+      </p>
+      <p></p>
+      <p>
+        <b
+          >What's something you'd like visitors to your site to know that they
+          wouldn't otherwise?</b
+        >
+      </p>
+      <p>
+        Despite some of these images being really bleak, I actually absolutely
+        loved living in Tucson and would move back in a heartbeat!
+      </p>
+      <p>
+        Also, the project sorta came full circle. I collected pictures in
+        anticipation to move there for longer than I ended up staying (pandemic
+        etc.)
+      </p>
+      <p>
+        It was also a major challenge for me to find steady work out there. I
+        would get a ton of gigs and then nothing and it would repeat. Some of
+        the more steady work I got was with a guy I met from Craigslist. He and
+        his buddy were able to get a loan and started buying these super run
+        down trailer homes. I worked to gut and help rebuild them and then he
+        would either sell them to people or back to the park. So after
+        collecting all these pictures I ended up playing the role of real estate
+        photographer. In taking the pictures there was this balance of trying to
+        figure out what potential buyers would want to see but then also having
+        moments like this one — where we wanted to get the posting onto
+        Craigslist but hadn’t found a mirror for cheap enough yet so the room
+        just feels a little off.
+      </p>
+      <p>
+        But I also think that’s a feeling that is understood and respected in
+        Tucson. There’s the general understanding that while the city is
+        increasingly gentrifying, the heart of it is pretty scrappy and
+        impoverished. At the same time the scrappiness also feeds into a lot of
+        liveliness and creativity and I think some of that feeling comes across
+        in the pictures. Like someone thinking,
+        <span style="background: white"
+          >“instead of spending money we don’t have to redo all the bathroom
+          tile after a plumbing problem, let’s just make a path of river rock up
+          to the toilet, that’s character, people will love it.”</span
+        >
+      </p>
+      <figure>
+        <img
+          src="http://fruitful.school/blog/images/raegan-bird-example.png"
+          alt="Two images of apartment listings Raegan Bird collected as part of their project First, Last, Security, one which shows a toilet with river rocks on the floor leading up to it"
+        />
+      </figure>
+      <p>
+        <b
+          >What did you learn through creating the site and being in fruitful
+          school?</b
+        >
+      </p>
+      <p>
+        Wow, so many things! I came to fruitful school with MySpace-level HTML
+        literacy and I could not have imagined everything that was possible. I
+        think the most difficult part of learning a new language and something
+        that can keep you from being fluent in it is not being around other
+        people who speak it. Before when I would look up tutorials and stuff, it
+        was hard for me to contextualize it all. Having access to a community of
+        people who not only work in web making but are also artists and
+        designers was so crucial for me to engage and learn.
+      </p>
+      <p>
+        Would say one of the biggest things I took away from the experience has
+        been confidence :-) Fruitful made the web feel much less bleak and
+        instead opened my mind to a space of play and exploration. I feel steady
+        now in my foundation of starting a site and know more of what to look
+        for to get my ideas across, have even been able to do a few freelance
+        gigs since. I have stayed eager and energized to continue learning,
+        practicing, and code-foraging and am in the process of hand coding a
+        group show for
+        <a href="https://bluearrangements.com" target="_blank"
+          >Blue Arrangements</a
+        >, my collaborative publishing project.
+      </p>
+      <p>
+        <b
+          >Have you been collecting any new images (apartment or otherwise)
+          lately?</b
+        >
+      </p>
+      <p>
+        Always! In terms of found images, still mostly screenshots and mostly on
+        Craigslist or eBay.
+      </p>
+      <p>
+        I’m really excited about pictures people take of things they are trying
+        to get rid of but not throw away and especially images taken by people
+        who do not consider themselves photographers, (especially x100 when the
+        image taker is also anonymous).
+      </p>
+      <p>
+        A couple months ago, I was on this huge cliff/rock thing on the ocean
+        and found a handful of ripped up drug store prints of a middle aged
+        person sitting at a table with a lit birthday cake. I still have the
+        pieces and feel like I can’t get rid of them for some reason, even
+        though I feel really guilty about it, like someone made a conscious act
+        to try and let this person or memory go, yet I can’t stop myself from
+        projecting a story onto it.
+      </p>
+      <p>
+        I’ve also been collecting every picture I can find of
+        <a href="https://en.wikipedia.org/wiki/Truth_window">truth windows</a>.
+      </p>
+      <p>
+        <b
+          >What type of website would you like to experience more in the
+          future?</b
+        >
+      </p>
+      <p>
+        More websites that collect, connect and archive learning tools in
+        accessible ways.
+      </p>
+      <p>More websites that promote low-stakes creative collaboration.</p>
+      <p>More websites that feel like curiosity shops.</p>
+
+      <hr />
+
+      <p class="series">
+        You can also experience a walkthrough of
+        <i>First, Last, Security</i> via our
+        <a href="https://youtu.be/Uj988pBqSBQ?t=3274">video recording</a>
+        of the Fall 2020 live exhibition (at the 54:34 mark)!
+      </p>
+      <hr />
+
+      <p class="outro">
+        🍐<br />
+        Raegan Bird<br />
+        <a href="https://raeganbird.com">https://raeganbird.com</a><br /><br />
+        <img
+          src="http://fruitful.school/blog/images/raegan-bird-fruitful-id.png"
+          alt="Screenshot of Raegan Bird's Fruitful ID card"
+        />
+      </p>
+      ]]
+      </description>
+      <guid isPermaLink="true">https://fruitful.school/blog/2021-06-11.html</guid>
+      <pubDate>Tues, 11 Jun 2021 11:11:11 +0000</pubDate>
+    </item>
+    <item>
+      <title>Many Sceneries</title>
+      <link>https://fruitful.school/blog/2020-06-09.html</link>
+      <description><![CDATA[ <a class="student-site" href="https://sceneries.site" target="_blank"
+        >sceneries.site
+      </a>
+
+      <h1>Many Sceneries</h1>
+      <h2>Interview with Ji Kim, Fall 2020 Participant</h2>
+
+      <div class="metadata small">
+        <time datetime="2021-06-09 11:11" style="color: #000"
+          >June 9, 2021</time
+        >
+        <span class="fruit">🍏 </span>
+      </div>
+
+      <div class="series">
+        This is one in a series of
+        <a href="index.html#special-interviews" style="color: #a0a0a0"
+          >interviews with participants</a
+        >
+        from Fruitful School about the sites they created as part of our 6 week
+        workshop.
+      </div>
+
+      <figure class="large">
+        <img
+          src="http://fruitful.school/blog/images/ji-kim-many-sceneries-1.png"
+          alt="A screenshot of Many Sceneries that contains ovals of natural scenery some which occupies the background"
+          style="border-radius: 20px"
+        />
+        <img
+          src="http://fruitful.school/blog/images/ji-kim-many-sceneries-2.png"
+          alt="A screenshot of Many Sceneries that contains ovals of natural scenery some which occupies the background"
+          style="border-radius: 20px"
+        />
+        <img
+          src="http://fruitful.school/blog/images/ji-kim-many-sceneries-3.png"
+          alt="A screenshot of Many Sceneries that contains ovals of natural scenery some which occupies the background"
+          style="border-radius: 20px"
+        />
+        <figcaption>
+          Many Sceneries by Ji Kim, 2020 —
+          <a
+            href="https://sceneries.site"
+            target="_blank"
+            style="color: #a0a0a0"
+            >https://sceneries.site</a
+          >
+        </figcaption>
+      </figure>
+      <p>
+        <b>What's something you'd like visitors to your site to know?</b>
+      </p>
+      <p>
+        This site is not for information. You don't have a task to do. This site
+        is like one of many sceneries that you look out at every day. We don't
+        need to try to understand or absorb the flowing scenes in front of us,
+        but we may remember some of them.
+      </p>
+      <p>
+        <b>Have you traveled anywhere beautiful lately?</b>
+      </p>
+      <p>
+        Throughout the pandemic, I often walked in Prospect Park at night after
+        10pm. There was no one around most of the time, and I liked that rare
+        moment of vast silence. I recently went to the Great Swamp Wildlife
+        Refuge in NJ last month, which is a great wetland to visit near NYC.
+      </p>
+      <p>
+        <b>What was the process of creating the site like?</b>
+      </p>
+      <p>
+        Around the time I started on the site design, I read the poem
+        <i>The Forty Two Greens</i> by the South Korean poet Mah Jong Ki. It
+        became my design inspiration for the site. The poem describes various
+        "greens" that the poet encounters on his railroad journey to the
+        Southwest province in South Korea. I liked that the poem is written in
+        the present tense, but it feels nostalgic. I could visualize the passing
+        scenery outside the train window. I imagined what it would feel like to
+        be surrounded by my scenery videos altogether — what space, scale,
+        sequence, atmosphere, and how to move between different sceneries. Once
+        I felt good about it, I made a quick layout sketch and began research to
+        find the simplest way to code it. I had to get help on JavaScript to
+        make the video and sound work the way I wanted.
+      </p>
+      <p>
+        <b
+          >What did you learn through creating the site and being in the
+          fruitful school? What have you taken away from experience?</b
+        >
+      </p>
+      <p>
+        In particular, fruitful helped me rediscover the joy and importance of
+        making more small personal websites. Focusing on a smaller scale opened
+        my thoughts — like drawing a self-portrait outside of rigid rules,
+        conventions, and high (self) expectations. Seeing other people and their
+        personalities well reflected in their sites, not only in subject matter
+        and aesthetics but also in site structure and interactions, was fun and
+        inspiring.
+      </p>
+      <p>
+        <b
+          >Since some time has passed now, have you had any new reflections
+          since making it?</b
+        >
+      </p>
+      <p>
+        When I was making the site, I was obsessed with making every corner of
+        it complete. Now, there are still some things that could be perfected,
+        but I'm not so sure I want to change them anymore. Instead I'm thinking
+        of adding more categories with sceneries.
+      </p>
+      <p>
+        I also finally bought a domain. Before it was only on GitHub, and now it
+        is at <a href="sceneries.site" target="_blank">sceneries.site</a>.
+      </p>
+      <p>
+        <b
+          >What type of website would you like to experience more in the
+          future?</b
+        >
+      </p>
+      <p>
+        I feel like personal websites are like visiting a friend's room. My
+        friend wouldn't tell me what to do or give me instructions. But I
+        wouldn't have a problem hanging out there.
+      </p>
+      <p>
+        In other words, I want to see more lazy websites. I think not all
+        websites need to be too user-friendly. People are really good at
+        utilizing a website like a book or a poster. I am interested when
+        websites are like paintings or sculptures. There's a lot to contemplate,
+        so I would revisit.
+      </p>
+      <hr />
+
+      <p class="outro">
+        🍑<br />
+        Ji Kim<br />
+        <a href="https://ji-kim.net" style="color: #a0a0a0"
+          >https://ji-kim.net</a
+        ><br /><br />
+        <span style="max-width: 250px; display: inline-block">
+          <img
+            src="http://fruitful.school/blog/images/ji-kim-in-fruitful-school-1.png"
+            alt="Screenshot of Ji Kim on video chat smiling as part of Fruitful School"
+          />
+        </span>
+      </p>
+      ]]
+      </description>
+      <guid isPermaLink="true">https://fruitful.school/blog/2021-06-09.html</guid>
+      <pubDate>Tues, 9 Jun 2021 11:11:11 +0000</pubDate>
+    </item>
+    <item>
+      <title>Pensée Sauvage</title>
+      <link>https://fruitful.school/blog/2020-06-08.html</link>
+      <description><![CDATA[<a
+        class="student-site"
+        href="http://kiyel.care/pensee_sauvage"
+        target="_blank"
+        >kiyel.care/pensee-sauvage
+      </a>
+
+      <h1>Pensée Sauvage</h1>
+      <h2>Interview with Yelim Ki, Winter 2021 Participant</h2>
+
+      <div class="metadata small">
+        <time datetime="2021-06-08 11:11">June 8, 2021</time>
+        <span class="fruit">🍏 </span>
+      </div>
+
+      <div class="series">
+        This is one in a series of
+        <a href="index.html#special-interviews">interviews with participants</a>
+        from Fruitful School about the sites they created as part of our 6 week
+        workshop.
+      </div>
+
+      <figure class="large">
+        <img
+          src="http://fruitful.school/blog/images/yelim-ki-pensee-sauvage.png"
+          alt="A screenshot of a chat-based website that has an angled image of the pansy flower in the background, messages on the right hand side, and a blueish purple background"
+          style="border-radius: 20px"
+        />
+        <figcaption>
+          Pensée Sauvage by Yelim Ki, 2021 —
+          <a href="http://kiyel.care/pensee_sauvage" target="_blank"
+            >http://kiyel.care/pensee_sauvage</a
+          >
+        </figcaption>
+      </figure>
+
+      <p><b>What is your site?</b></p>
+
+      <p>
+        It’s a hypothetical & imaginary institution that can soothe all my
+        complaints floating up in my mind as I attend art classes and more
+        generally, institutions teaching art, such as the university.
+      </p>
+
+      <p><b>Wow, an institution. Seems like a big project!</b></p>
+
+      <p>
+        In my mind, this is a long-term project that may be able to realize
+        finally when I’m older — in my 40’s or 50’s. So this website is a
+        cornerstone which can work as an empty courtyard in that place.
+      </p>
+      <p>
+        It’s like I’m writing a possible scenario, and this website is the first
+        step: setting up the stage and arranging it. It’s very important for me
+        to build up tangibility on each step.
+      </p>
+      <p>
+        <b>What did you learn through creating the site?</b>
+      </p>
+      <p>
+        I consider front-end coding a tool which I can use for drawing,
+        sculpting, and writing — a way to deliver my thoughts to the public.
+      </p>
+      <p>
+        Of course, coding languages have also disappointed me by the lack of my
+        capacity. But I know I'm free to find a solution by searching, being
+        lost, and sometimes asking to someone specific I know. I love trial and
+        error. It gives me strength to stay awake.
+      </p>
+      <p>
+        Personally, I like cruising in thoughts while looking at some shapes and
+        structures. Some architectural sites or artifacts that are left as
+        traces. And building up a website is easy, takes less energy and risk to
+        build up such a trace. Very effective, and so much fun when you share,
+        of course.
+      </p>
+      <p>
+        About technical issues on my site: There is still an error that I can’t
+        solve on counting the number of people, so I have to come and check
+        regularly to clean up the database. Keeping it tidy is part of creating
+        and caring for a place.
+      </p>
+      <p><b>What did you learn from being in fruitful school?</b></p>
+
+      <p>
+        I appreciated the linear sequences that came along with fruitful school.
+        I had to stay up a whole night and had to wake up too early to attend
+        with the distance & time difference, but the massive amount of articles
+        and references that were shared pushed me to stay awake.
+      </p>
+      <p>
+        <b
+          >What's something you'd like visitors to your site to know that they
+          wouldn't otherwise?</b
+        >
+      </p>
+      <p>
+        The freedom of their being there. You are welcomed to make a mess. You
+        are welcomed to stay as long as you can. You are welcomed to play with
+        HTML code (that was the funny part I didn’t expect at first — entering
+        HTML into the chat works pretty well). You are welcomed to leave some
+        messages or curses to me so that I can check when I come to clean up.
+      </p>
+      <p>
+        <b>Why pansies?</b>
+      </p>
+      <p>
+        Pansies… I simply like their faces. There is something brutal about
+        their faces. They have a sauvage beauty and are animalistic. I also
+        enjoyed breeding pansies in Animal Crossing back in the days.
+      </p>
+      <p>
+        <b>What's the significance of the title, "Pensée Sauvage"?</b>
+      </p>
+      <p>
+        Ah yes, it’s important. Since there are obviously not many contents
+        contained on the site, it’s almost like an empty yard. So I think this
+        semantic naming can lead you in a decent way.
+      </p>
+      <p>
+        Pensée Sauvage can literally mean “wild pansies” or “wild thought.”
+        There is a
+        <a href="https://en.wikipedia.org/wiki/The_Savage_Mind">book</a> also
+        named this. I didn’t read it, but I like this double meaning or pun.
+      </p>
+      <p>
+        <b
+          >What type of website would you like to experience more in the
+          future?</b
+        >
+      </p>
+      <p>
+        More space debris. Once I got a mail from someone who found my debris,
+        and she introduced me an artist Jasper Spicero (<a
+          href="https://jasperspicero.com"
+          >https://jasperspicero.com</a
+        >). His works may be a good example of what I’d like to experience more.
+        Not only his coding works, but also his object works and video
+        installations blow my mind and make me conceive them as a certain
+        interaction or image that I can probably find somewhere on the web. He
+        deals with a very gentle and subtle layout, a frame. And time. I still
+        don’t know how to call this sensation.
+      </p>
+      <p>
+        But I have been collecting such references in my Are.na channel, “<a
+          href="https://www.are.na/yelim-ki/probably-web"
+          >Probably Web</a
+        >”. You can feel this by having a glimpse of a series of my collection,
+        rather than listening to my desperate explanation.
+      </p>
+      <hr />
+
+      <p class="outro">
+        🥥<br />
+        Yelim Ki<br />
+        <a href="http://kiyel.care">http://kiyel.care</a><br /><br />
+
+        <a href="http://kiyel.care/hello/credit/">
+          <img
+            src="http://fruitful.school/blog/images/yelim-ki-card.png"
+            alt="Yelim Ki's Fruitful Student ID card"
+            style="border-radius: 20px"
+          />
+        </a>
+      </p>]]></description>
+      <guid isPermaLink="true">https://fruitful.school/blog/2021-06-08.html</guid>
+      <pubDate>Tues, 6 Jun 2021 11:11:11 +0000</pubDate>
+    </item>
+    <item>
+      <title>Quarantine Links</title>
+      <link>https://fruitful.school/blog/2020-10-17.html</link>
+      <description><![CDATA[<p>
+                We planned to do our second workshop over the summer, but, like everything else, things ended up getting pushed back.
+            </p>
+        
+            <p>
+                Instead we noticed an exciting energy emerge around publishing online simply by the sheer quantity of new web projects published from the beginning of the pandemic till now. We wanted to take some time to reflect on what we saw this paradigm shift (of sorts). 
+            </p>
+        
+            <hr>
+        
+            <p>
+                Over the past few years, a handful of designers, developers, and educators have been likening web design to architecture ( 1-3 ). This isn’t a new thought among web designers, developers, and educators. But some would argue that the web could never fill that role ( 4 ). Maybe they’re right. And having gone through the pandemic, one could argue that anything virtual does not hold the same weight. Although, it’s funny and interesting to think about what Twitter ( 5 ) or Are.na ( 6 ) might feel like as a space...
+            </p>
+        
+            <ol>
+                <li><a href="https://www.are.na/malte-muller/web-design-as-architecture">https://www.are.na/malte-muller/web-design-as-architecture</a></li>
+                <li><a href="https://frankchimero.com/blog/2018/the-good-room/">https://frankchimero.com/blog/2018/the-good-room/</a></li>
+                <li><a href="https://thecreativeindependent.com/people/laurel-schwulst-my-website-is-a-shifting-house-next-to-a-river-of-knowledge-what-could-yours-be/">https://thecreativeindependent.com/people/laurel-schwulst-my-website-is-a-shifting-house-next-to-a-river-of-knowledge-what-could-yours-be/</a></li>
+                <li><a href="https://twitter.com/geomorphologies/status/1283424186690609154">https://twitter.com/geomorphologies/status/1283424186690609154</a></li>
+                <li><a href="https://www.are.na/block/618123">https://www.are.na/block/618123</a></li>
+                <li><a href="https://www.are.na/christopher-barley/if-are-na-was-a-place">https://www.are.na/christopher-barley/if-are-na-was-a-place</a></li>
+            </ol>
+        
+            <p>
+                The lockdown happened when most higher learning semesters were ending. It was kind of like a mad-scramble for institutions to transition physical event budgets to web projects. We saw everything from thesis shows to graduations happening completely online. ( 1-3 ). This was the same for almost every event during lockdown. Upstream gallery hosted a virtual show where artists talked about works and guests were represented on the webpages ( 4 ). Soundsaboutriso.online hosted a virtual event with different “rooms” to celebrate risograph printing ( 5 ). Club Quarantine tried to bring the club to your house with many video stream rooms where users could listen and chat ( 6 ). And in lieu of an exhibition closing, the brick-and-mortar gallery Artists Space published a generous video tour of their current exhibition about playwright Adrienne Kennedey narrated by Hilton Als ( 7 ).
+            </p>
+        
+            <ol>
+                <li><a href="https://zoom.juniorshow.185nassau.art">https://zoom.juniorshow.185nassau.art</a></li>
+                <li><a href="http://aasgd.parsons.edu">http://aasgd.parsons.edu</a></li>
+                <li><a href="https://parsons-graduation-homepage.netlify.app">https://parsons-graduation-homepage.netlify.app </a></li>
+                <li><a href="https://www.upstream.gallery">https://www.upstream.gallery</a></li>
+                <li><a href="https://soundsaboutriso.online">https://soundsaboutriso.online</a></li>
+                <li><a href="https://clubquarantaene.stream">https://clubquarantaene.stream</a></li>
+                <li><a href="https://videos.artistsspace.org/4tsd58je">https://videos.artistsspace.org/4tsd58je</a></li>
+            </ol>
+        
+            <p>
+                Video games solve an immersion problem that most websites have. Instead of dealing with dense information on a flat plane, you simply roam and explore. Large and small events took advantage of already popular video games to host shows, concerts and other events. A gallery group show on Animal Crossing ( 1 ), music festivals and graduations on Minecraft ( 2-3 ), and even a Travis Scott concert on Fortnite ( 4 ).
+            </p>
+        
+            <ol>
+                <li><a href="http://www.txtbooks.us/special-projects">http://www.txtbooks.us/special-projects</a></li>
+                <li><a href="https://pitchfork.com/thepitch/how-the-hell-do-you-throw-a-music-festival-in-minecraft">https://pitchfork.com/thepitch/how-the-hell-do-you-throw-a-music-festival-in-minecraft</a></li>
+                <li><a href="https://www.bbc.co.uk/newsround/51930728">https://www.bbc.co.uk/newsround/51930728</a></li>
+                <li><a href="https://www.youtube.com/watch?v=wYeFAlVC8qU&ab_channel=TravisScott">https://www.youtube.com/watch?v=wYeFAlVC8qU&ab_channel=TravisScott</a></li>
+            </ol>
+        
+            <p>
+                There are some lessons we can learn from video games … beyond expensive 3D graphics, there are a few core things that really do make us feel like we’re immersed: proximity / feedback to people in a space. Here are a couple lo-fi sites that do this well ( 1-2 ).
+            </p>
+        
+            <ol>
+                <li><a href="https://theonline.town">https://theonline.town</a></li>
+                <li><a href="https://cozyroom.xyz">https://cozyroom.xyz</a></li>
+            </ol>
+        
+            <p>
+                This has also been a time to speak up against racial inequality and police brutality sparked by the unjust death of George Floyd and many others. While people met and marched IRL, quick and resourceful sites that were published to help educate, organize and contribute. Widgets and sites with resources to support the BLM movement ( 1-3 ), ways to help black businesses ( 4 ), information and tools about surveillance, masks and image scrubbing during protests ( 5-6 ) and a project about inequality in higher education ( 7 ). For many of these, it was important they lived outside of social media since social media’s “architecture” is predetermined and changeable at any time by the companies that run them. While they are still just a tool, websites, when compared to social media, allow more flexibility and authorship in presenting information.
+            </p>
+        
+            <ol>
+                <li><a href="https://sanctuarycomputer.github.io/blm-resource-embed/index.html">https://sanctuarycomputer.github.io/blm-resource-embed/index.html</a></li>
+                <li><a href="http://pfw.guide">http://pfw.guide</a></li>
+                <li><a href="https://pond.computer">https://pond.computer</a></li>
+                <li><a href="https://forblacklives.com">https://forblacklives.com</a></li>
+                <li><a href="https://maskon.zone">https://maskon.zone</a></li>
+                <ul>
+                    <li><a href="https://html.energy/neta-ritu.html">https://html.energy/neta-ritu.html</a></li>
+                </ul>
+                <li><a href="https://everestpipkin.github.io/image-scrubber">https://everestpipkin.github.io/image-scrubber</a></li>
+                <li><a href="https://visibility-project.org">https://visibility-project.org</a></li>
+            </ol>
+            
+            <p>
+                Ultimately, we think it’s important to see the web as a space. Your space to share with others. Paul Ford said ( 1 ), “Anyone can set up a web site and point to all the other web pages. Everyone is a publisher. Everyone is a peer. That’s why it’s called a web. Individuals knit themselves together by linking to one another. Everyone tends his or her own little epistemological garden, growing ideas from seed and sharing them with anyone who comes by.” We’ve seen many “digital gardens” arising, many of them based in plain text ( 2-5 ) and inspired by recent technologies and a general re-excitement in hypertext ( 5-6 ).
+            </p>
+        
+            <ol>
+                <li><a href="https://newrepublic.com/article/133889/reboot-world">https://newrepublic.com/article/133889/reboot-world</a></li>
+                <li><a href="https://evy.garden">https://evy.garden</a></li>
+                <li><a href="https://tomcritchlow.com/2019/02/17/building-digital-garden">https://tomcritchlow.com/2019/02/17/building-digital-garden</a></li>
+                <li><a href="https://www.technologyreview.com/2020/09/03/1007716/digital-gardens-let-you-cultivate-your-own-little-bit-of-the-internet/">https://www.technologyreview.com/2020/09/03/1007716/digital-gardens-let-you-cultivate-your-own-little-bit-of-the-internet/</a></li>
+                <li><a href="https://www.ribbonfarm.com/2020/02/24/a-text-renaissance">https://www.ribbonfarm.com/2020/02/24/a-text-renaissance</a></li>
+                <li><a href="https://web.archive.org/web/20200519071621if_/https://www.kickscondor.com">https://web.archive.org/web/20200519071621if_/https://www.kickscondor.com</a></li>
+            </ol>]]></description>
+      <guid isPermaLink="true">https://fruitful.school/blog/2020-10-17.html</guid>
+      <pubDate>Sat, 17 Oct 2020 11:11:11 +0000</pubDate>
+    </item>
+    <item>
+      <title>Designing for Decay</title>
+      <link>https://fruitful.school/blog/2020-09-17.html</link>
+      <description><![CDATA[<p>
+        On our main fruitful.school site, we say…
+    </p>
+
+    <p>
+        🍋 <i>A fruitful web can be performative. Maybe we can make sites with a purpose and life that’s brief but beautiful. We also recognize that the web is inherently a performative medium by its design.</i>
+    </p>
+    
+    <figure style="text-align: center; max-height: 200px; opacity: 0.65;">
+        <img src="http://fruitful.school/blog/images/lemon-blur.png" height="200" width="auto" alt="">
+    </figure>
+    
+    <p id="vcu-talk-content">
+        Recently Laurel gave a <a href="#vcu-talk">talk on Zoom *</a> about the “internet onion,” an ephemeral project she orchestrated.
+    </p>
+    <p>
+        “The Life and Death of an Internet Onion” is an anthology webzine created by Laurel's Spring 2019 interactive design class at Yale and centered around written responses to the prompt:
+    </p>
+    <blockquote style="font-style: italic;">
+        What is expressing “real” love or affirmation about? Is it about effort, thoughtfulness, generosity, something else? What might a thoughtful or generous interface feel or behave like?
+    </blockquote>
+    <p>  
+        You can visit the project here:
+    </p>
+    <p>
+        <a href="https://the-life-and-death-of-an-internet-onion.com">https://the-life-and-death-of-an-internet-onion.com</a>
+    </p>
+    <figure class="large">
+        <img src="http://fruitful.school/blog/images/decay1.png" alt="">
+        <figcaption>
+            Screencaptures of the various phases of decay, beginning on August 27, 2020
+        </figcaption>
+    </figure>
+    <p>  
+        If you don’t know about the project or haven’t seen it before, you might be wondering why it looks the way it does — very illegible and blurry. You might even wonder what you’re looking at.
+    </p>
+    <p>
+        That’s because the project has “died” or is still in the process of decaying…
+    </p>
+    <p>
+        This is a perennial webzine, meaning it will emerge once per year. It’s likely decaying now, but you can expect to see some legible version of it online again next summer 2021. When it emerges again, it will be live for 5 weeks: the average lifespan of a non-refrigerated onion. And after those 5 weeks of life, it will again begin its process of gradual decay.
+    </p>
+    <p>
+        <i>You can learn more about the internet onion in this <a href="https://www.are.na/blog/onion-and-rocks">blog post</a> and see excerpts in this <a href="https://www.are.na/laurel-schwulst/the-life-and-death-of-an-internet-onion">Are.na channel</a>.</i>
+    </p>
+    <figure class="large">
+        <img src="http://fruitful.school/blog/images/decay2.png" alt="">
+        <figcaption>The original plan for the decay, Spring 2019</figcaption>
+    </figure>
+    <p>
+        So much thought and energy often goes into how something we create goes up, but what about when it comes down?
+    </p>
+    <p>
+        Websites are often assumed to be up and running 100% of the time. Of course, certain websites we depend on for health and knowledge need to be. But in the case of an artistic project, the web medium is inherently performative — why not embrace it if it makes sense for the project at hand?
+    </p>
+    <p>
+        In the workshop that followed my talk about the internet onion, my group discussed how often in today’s day and age, the word “performative” often implies “not authentic” — that is, superficial and insincere. But actually, some performance is part of love. With the best love, this performance is reciprocal. So the perennial nature of this project fit the content well.
+    </p>
+
+<pre><code class="css">/* DECAY */
+
+* {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* PHASE 1 */
+     
+section,
+header nav,
+header h1,
+button.peel-button,
+.onion-container {
+    filter: blur(2px);
+    opacity: 0.95;
+}
+
+/* PHASE 2 */
+    
+section,
+header nav,
+header h1,
+button.peel-button,
+.onion-container {
+    filter: blur(5px) saturate(90%);
+    opacity: 0.85;
+}
+
+/* PHASE 3 */
+
+section,
+header nav,
+header h1,
+button.peel-button,
+.onion-container {
+    filter: blur(12px) saturate(70%);
+    opacity: 0.6;
+}
+
+/* PHASE 4 */
+
+section,
+header nav,
+header h1,
+button.peel-button,
+.onion-container {
+    filter: blur(18px) saturate(60%);
+    opacity: 0.5;
+}
+
+/* PHASE 5 */
+
+section,
+header nav,
+header h1,
+button.peel-button,
+.onion-container {
+    filter: blur(24px) saturate(50%);
+    opacity: 0.45;
+}
+</code></pre>
+
+<p>
+    The internet onion is decaying by phases because it has to be, given the basic hand-coding HTML and CSS we are using. We could write a script, but we are lazy, and there won’t be that many more phases of decay than this, Laurel thinks to herself. (Although down the line, Laurel would like to also degrade the content itself and source code, but that will be in Late Decay.)
+</p>
+<p>
+    But what if more thought and energy were put into tools and interfaces for decay and subtraction in the digital platforms we use more regularly?
+</p>
+<p>
+    In his podcast episode, “<a href="https://breakingsmart.substack.com/p/towards-subtractive-social-media">Towards Subtractive Social Media</a>,” Venkatesh Rao summarizes, “The set of positive, additive operations you can do on your feed — posting, liking, following is large, rich, powerful, and thoughtfully designed, but the set of negative operations is a wasteland.” He goes on to say that the negative operations, like block or mute, are “<b>painfully manual</b>.”
+</p>
+<p>
+    This reminds us of a feature we have dreamed of on both Twitter and Instagram: a softer, more conditional mute. That is, what if you don’t want to hide someone forever? You just need a break for a little while; you don’t want to forget them entirely. Maybe this button could be called “time-out with a fade-in” because it would hard mute their posts for a set amount of time and then gradually sprinkle their content back into the feed. You don't need to manually give them another chance, by default they re-appear.
+</p>
+
+<hr>
+
+<p>
+    In Laurel's writing from a couple years ago about <a href="https://thecreativeindependent.com/people/laurel-schwulst-my-website-is-a-shifting-house-next-to-a-river-of-knowledge-what-could-yours-be/">what websites can be</a>, she cycled through a handful of potential metaphors. One was “puddle.” She wrote, “Puddles evaporate slowly over time. It might be difficult, but I would love to see a website evaporate slowly, too.”
+</p>
+<p>
+    Not long after Laurel published her writing, she learned about Anny Li’s <a href="https://volume-1.org/Triple-Canopy-How-to-Encounter-a-Puddle">meditation on puddles</a>. Li asks:
+</p>
+<blockquote style="color: navy;">
+    What can be learned from the humble puddle? I wonder how they could present new models for publication. To this end I think too of Jack Halberstam’s “low theory” in <i>The Queer Art of Failure</i>, where he outlines inroads to non-dominant and resistant modes of being, knowing, and learning, recuperating failure as a practice and locating sites of “more creative, more cooperative, more surprising ways of being in the world.” Similarly, the puddle may lead a precarious existence, but it thrives in these very same in-between, overlooked spaces. A puddle infiltrates, interferes, and ultimately vanishes, only to replenish itself anew.
+</blockquote>
+<p>
+    We would love to see more designers putting energy into decay. Enter, designers of decay & subtraction!
+</p>
+<p>
+    If it makes sense for the project, let’s consider decay just as equally along with growth. And if we’re working on a tool, can we create features to allow participants to expertly & gracefully embrace their subtractive powers?
+</p>
+<figure>
+    <img src="http://fruitful.school/blog/images/puddle-from-wikipedia.jpg" alt="A puddle with reflection of a tree" width="200">
+</figure>
+<p>
+    How about an “evaporate” button?
+</p>
+
+<hr>
+
+<p id="vcu-talk" class="footnote">
+    * Laurel gave this talk at Virgnia Commonwealth University (VCU) on Thursday, September 10, 2020. She explored the internet onion project and her teaching practice more holistically. The talk wasn’t recorded, but you can see some of the materials here: <a href="https://www.are.na/laurel-schwulst/circular-learning">https://www.are.na/laurel-schwulst/circular-learning</a>. Thanks to Nontsikelelo Mutiti, Aidan Quinlan, Julia Dann, and everyone else at VCU who made this possible. <a href="#vcu-talk-content">↩</a>
+</p>]]></description>
+      <guid isPermaLink="true">https://fruitful.school/blog/2020-09-17.html</guid>
+      <pubDate>Fri, 17 Sep 2020 11:11:11 +0000</pubDate>
+    </item>
+    <item>
+      <title>Learning Online?</title>
+      <link>https://fruitful.school/blog/2020-09-04.html</link>
+      <description><![CDATA[<figure style="max-width: 500px;">
+          <img src="http://fruitful.school/blog/images/learning-comic.gif" alt="This is a comic or meme in which a father in a hat says, ‘ARE YA learning SON??’ and his son who is laying on the ground surrounded by papers, pens, and his computer while crying says ‘NO.’">
+        </figure>
+        
+        <p>
+          We saw this photo on Instagram the other day and thought, “Wow, this is a perfect encapsulation of what learning in the fall of 2020 can easily look like.” With many schools and institutions going completely virtual due to the global pandemic, there is a lot of pressure and expectation to continue the school year as normal.
+        </p>
+        <p>
+          This meme is quite refreshing and clear to us: <i>Yes, learning remotely is HARD.</i> But there are some things we've learned so far:
+        </p>
+        <h2>Learning online is completely different than in person</h2>
+        <p>
+          This might seem obvious, but having students glued to a screen 100% of class-time does not make sense. Not all the learning has to happen from class-time and there will be very little required screen time ... Screen time should be reserved to mostly be to engage with each other. 
+        </p>
+        <h2>Not all learning has to come from the teacher</h2>
+        <p>
+          We view teaching as creating and maintaining a healthy learning environment, so not all learning should come from directly the teacher. Learning happens many ways. Yes, teachers will share a wealth of relative knowledge that will be curated, assigned, or suggested over time. But you also have a community going through the same experience as you. We think online can be an very intimate social format for the 1-on-1 or small groups and a great environment to meet likeminded friends!
+        </p>
+        <h2>Slowness should be prioritized for our mental health</h2>
+        <p>
+          Going at the same pace as normal circumstances would be a recipe for burnout. There should be goals, deadlines and other requirements in the learning environment but above all our mental health should be a priority.
+        </p>
+        <hr>
+        <h2>What does this mean for Fruitful School... ?</h2>
+
+        <figure style="max-width: 100%; margin-bottom: 0;">
+          <a href="2020-02-16.html">
+            <img src="http://fruitful.school/blog/images/fruitful-documentation-group.jpg" alt="A group of mostly smiling people pose with various fruits and a projection of a renaissance painting of fruit. In the foreground, there's an Apple laptop next to a few bananas on a wooden table and a cable charging trails off to the right.">
+          </a>
+        </figure>
+
+        <p>
+          <i>Where we were:</i> Earlier this year (January–February 2020), we did our first 6-week workshop IRL in Brooklyn, NY at Pioneer Works. It was so <a href="2020-02-16.html">fun</a>! We met every Sunday afternoon. This feels like so long ago now, however...
+        </p>
+        <div style="font-size: 4em; text-align:center">🍉</div>
+
+        <figure style="max-width: 100%; margin-bottom: 0;">
+          <img src="http://fruitful.school/blog/images/whereby.png" alt="A screenshot of two people video chatting while holding fruits on the Whereby platform. Laurel appears in a larger frame than the other, and she presents a mango. John Provencher is in the smaller frame, and he covers his face with a clementine.">
+        </figure>
+        <p>
+          <i>Where we are:</i> This coming fall (October–November, 2020) we will do another 6-week workshop, this time online / virtual. What does our POV on learning online mean in the context of Fruitful School, specifically?
+        </p>
+        <div style="font-size: 4em; text-align:center">🥭</div><br>
+
+
+        <h2>Our workshop is all virtual — could it be an opportunity?</h2>
+        <p>
+          <i>Yes, learning remotely is HARD, but could it not only be a setback but also an opportunity for those of us working with the web?</i>
+        </p>
+        <p>
+          We see a “portal” to some new world, as now we are finally able to truly live and breathe the medium (websites!) in new and important ways with more people around the world. As stated above, this doesn’t mean that we’ll be glued to our screens all the time, but it does mean we are interested in experimenting to evolve these web mediums in ways that truly work for us.
+        </p>
+        <p>
+          We hope this workshop can be a place to start experimenting around new ways be online and how we engage with others. Since physical interaction is limited, we've been inspired by what people have been <a href="https://darkblueheaven.com/spatialinterfaces/" target="_blank">doing</a> with the web. How can we playfully integrate spatial concepts and co-presence?
+        </p>
+        <p>
+          We are excited to explore these concepts and realms with you all, and we hope you are too.
+        </p>
+
+        <h2>Our workshop needs all participants’ ideas to create a healthy learning environment, especially now that we’re fully online</h2>
+        <p>
+          This workshop is interested in what it means to learn. We view learning as a lifelong pursuit, not just something that happens within the context of an intentional learning environment like this one. However, spaces like Fruitful School can be great for “learning how to learn” with others just as enthusiastic.
+        </p>
+        <p id="hoff-content">
+          As we said before, not all learning has to come from the teacher. We think learning can happen in many ways, and it isn’t only teacher → student, but student ↔ student, and student ↔ teacher. We consider learning more like a landscape of possible discoveries and less of a prescribed <a href="#hoff">A → B journey.*</a>
+        </p>
+        <p>
+          So as teachers, our role is creating a healthy learning environment in which this can happen. And as participants, we hope you'll see yourself as an agent in this e</a>nvironment. We also ask that you follow and provide any suggestions you might have for our “<a href="http://fruitful.school/#conduct">Code of Conduct</a>” which suggests good ways to be in a respectful and healthy learning environment together.
+        </p>
+
+        <h2>Our workshop is happening during a global pandemic</h2>
+        <p>
+          As a reminder, this workshop is happening during a global pandemic. That said, let’s be empathetic to each other. In this public health crisis, <a href="https://twitter.com/ProfChrisMJones/status/1282036533562834944">none of us is truly “ok.”</a> Know that if you’re having trouble, no one at Fruitful School (teachers, students, guests) will think less of you or judge you. Please extend everyone else here this same grace. You never owe anyone at Fruitful School personal information about your health (mental or physical), or anything else. As participants, you are always welcome to talk to us (Laurel and John, teachers) about things you’re going through. If we can’t personally help you, we usually know someone who can. And if you need extra help, or you need to miss a session, or you need more time with something, just ask. We will work with you!
+        </p>
+
+        <hr>
+
+        <h2>Fall 2020 application is due October 1</h2>
+
+        <p>
+          <a href="https://airtable.com/shruAfCtuTa0VS8zR">Application Link</a>
+        </p>
+
+        <hr>
+
+        <p id="hoff" class="footnote">
+          * This is sometimes called “horizontal learning,” as recently described by <a href="https://www.melaniehoff.com/">Melanie Hoff</a> during her <a href="https://sfpc.io/">School for Poetic Computation</a> course. <a href="#hoff-content">↩</a>
+        </p>]]></description>
+      <guid isPermaLink="true">https://fruitful.school/blog/2020-09-04.html</guid>
+      <pubDate>Fri, 04 Sep 2020 11:11:11 +0000</pubDate>
+    </item>
+  </channel>
+</rss>

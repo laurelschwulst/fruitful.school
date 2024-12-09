@@ -1,0 +1,23 @@
+        ....                                    ..      .            ...             .....         
+    .n~8888888nx          x8h.     x8.       x88f` `..x88. .>    .x888888hx    :  .H8888888h.  ~-. 
+  :88>'8888888888:      :88888> .x8888x.   :8888   xf`*8888%    d88888888888hxx   888888888888x  `>
+ :8888 "*888888888k      `8888   `8888f   :8888f .888  `"`     8" ... `"*8888%`  X~     `?888888hx~
+ '88888.         "8>      8888    8888'   88888' X8888. >"8x  !  "   ` .xnxx.    '      x8.^"*88*" 
+  ?88888          'X      8888    8888    88888  ?88888< 888> X X   .H8888888%:   `-:- X8888x      
+?  %888!           !      8888    8888    88888   "88888 "8%  X 'hn8888888*"   >       488888>     
+ ".:88"            !      8888    8888    88888 '  `8888>     X: `*88888%`     !     .. `"88*      
+   xHH8Hx.        .X  :   8888    8888    `8888> %  X88!      '8h.. ``     ..x8>   x88888nX"      .
+ :888888888hx....x\8..X -n88888x>"88888x-  `888X  `~""`   :    `88888888888888f   !"*8888888n..  : 
+:~  `"8888888888!`'8888   `%888"  4888!`     "88k.      .~      '%8888888888*"   '    "*88888888*  
+       `""*8*""`   "*"      `"      ""         `""*==~~`           ^"****""`             ^"***"`  
+
+
+
+02 . 04 . 2024
+Make a text-based exploration using generative means. Feel free to use any demo(s) we've discussed in our working session as a jumping off point. 
+
+The work can exist as screenshots outputs, or you can take the work further by applying it to different mediums. Is it formal? Is it written? Is it a website? How can this tool inform new outcomes? 
+
+Output an image of at least one of your outputs and post it to the discord:
+https://discord.com/channels/735179433492873286/1200138286241419285
+(if you don't have time to further your work, share a reference relating the the topics last session)

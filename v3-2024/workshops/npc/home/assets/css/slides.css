@@ -1,0 +1,71 @@
+/*
+Note: 
+This was adapted from Marie Otsuka's lectures for Web Typography:
+http://motsuka.com/web-typography-workshop
+*/
+
+:root {
+  --pad: 1em;
+}
+
+* {
+  line-height: 1.35;
+  font-size: 1.25rem;
+}
+
+img {
+  max-height: 100vh;
+}
+
+.layout-slides header, .layout-slides footer, .layout-slides section {
+  max-width: none;
+  margin: 0;
+  width: 100%;
+}
+
+.slide {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background: var(--color-bg);
+  padding: var(--pad);
+}
+
+.slide.divider {
+  text-align: center;
+  padding-bottom: 5em;
+  background: #FFFFF2;
+}
+
+.slide.divider .text {
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.slide.divider h1 {
+  font-size: 3rem;
+}
+
+.slide h2 {
+  font-size: 2rem;
+}
+
+.slide ol li {
+  margin-bottom: 1em;
+}
+
+figcaption {
+  text-align: left;
+  /* font-size: 1em; */
+}
+
+figcaption a {
+  font-size: 1em;
+}
+
+.text {
+  max-width: 100vh;
+  margin: 0 auto;
+}

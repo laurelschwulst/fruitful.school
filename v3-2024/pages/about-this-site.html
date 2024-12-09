@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<!---
+               *%%%%%&%/
+         %#  (#%%%%%%%%%%%&.
+         ,(#*,,,,,,,,,****,
+      ,%#,/(.............,,,**,
+    #%%%*,*(,...............,,,*,
+  /####/**/#*.................,,**
+ /#####***(#*,.................,,**,
+ #####(/*(##/,.................,,***,
+ #####///#(#/*,,..............,,,,***
+ ####((((###/**,,,,,,,,,,,,,,,,,,,****
+ .###(((#(((//**,,,,,,,,,,,,,,,,******
+  *##(((//((//****,,,,,,,,,,*******//*
+   (((. *//////*****************/////*
+   ..    *////////*********//////////,
+          .*///////////////////((((//
+            .///(((((((((((((((((((/
+               *//(((((((((#####((/
+                   *//((((((((((//
+
+by John Provencher & Laurel Schwulst
+
+--->
+
+<html lang="en">
+
+<head>
+    <title>Fruitful School</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/style.css?38291038">
+
+    <!-- Tags for social media links -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://fruitful.school">
+    <meta property="og:title" content="Fruitful School">
+    <meta property="og:image" content="https://fruitful.school/images/giovanni_stanchi_scattered_flowers_and_fruit_on_a_ledge_1_medium.jpg">
+    <meta property="og:description" content="fruitful.school is an independently-run learning initiative for making 'fruitful websites' founded in 2020 by Laurel Schwulst and John Provencher and is dedicated to exploring new ways of publishing together using the www. For our Fall 2020 workshop, participants will hang out and work together online to self-publish a piece to the www over the course of 6 weeks.">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://fruitful.school">
+    <meta name="twitter:title" content="Fruitful School">
+    <link rel="icon" type="image/png" href="images/fav.png" />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-52650052-6"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'UA-52650052-6');
+    </script>
+</head>
+
+<body>
+
+    <header>
+        <p class="small">
+            <a href="index.html" class="button">fruitful.school</a>
+        </p>
+         <div class="dark-switch m small button" role="dark-mode-toggle" aria-hidden="true">☀</div>
+    </header>
+
+    <main>
+        <h1>About this site</h1>
+        <section>
+            <p>
+                This website is hand coded in HTML, CSS, and JavaScript by us, Laurel Schwulst & John Provencher.
+            </p>
+            <p>
+                We collaborate on the code using GitHub, and the site is hosted on GitHub Pages.
+            </p>
+            <p>
+                The website is a work-in-progress. We like improving our websites slowly over time and sometimes creating entirely new versions.
+            </p>
+            <p>
+                You can see our forthcoming features and improvements on this <a href="https://public.3.basecamp.com/p/95UL8J6bwBwfhfDwcuwC9qgP">to-do list</a>.
+            </p>
+            <p>
+                If you encounter any bugs, please kindly email us: <a href="mailto: support@fruitful.school">support@fruitful.school</a>. Thank you :)
+            </p>
+
+        </section>
+    </main>
+
+    
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.tablesorter.min.js"></script>
+    <script src="js/darklight.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.5/vue.min.js"></script>
+    <script src="js/index.js"></script>
+
+    <script>
+    
+    /* airtable vue */
+
+    Vue.config.devtools = true;
+
+    var apiURL = "https://api.airtable.com/v0/appqXzKPJH35X5rp1/People?api_key=keyTeRltpx9W8Qwjd";
+    app = new Vue({
+      el: '#people-table',
+      data: {
+        records: null,
+        timer: null
+      },
+      created: function () {
+        this.fetchData();
+      },
+      beforeDestroy: function() {
+        clearInterval(this.timer)
+      },
+      methods: {
+        fruitfulClasses: function(record) {
+          return {
+          }
+        },
+        fetchData: function () {
+          var xhr = new XMLHttpRequest()
+          var self = this
+          xhr.open('GET', apiURL)
+          xhr.onload = function () {
+            self.records = JSON.parse(xhr.responseText).records
+            console.log("Fetched data.");
+          }
+          xhr.send()
+        }
+      }
+    })
+
+    </script>
+
+</body>
+
+</html>

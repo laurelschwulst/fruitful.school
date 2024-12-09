@@ -1,0 +1,208 @@
+/*
+Note: This was adapted from http://motsuka.com/web-typography-workshop
+*/
+:root {
+  --pad: 1em;
+  --size-small: 0.6em;
+  --height-imgmax: 70vh;
+  --grey: rgb(200 200 200);
+}
+
+body{
+  line-height: 1.35;
+  font-size: 1.5rem;
+}
+main{
+  max-width: none;
+}
+
+blockquote{
+  text-indent: -0.3em;
+  border: 0;
+}
+
+figure{
+  height: 80vh;
+}
+figcaption{
+  font-size: var(--size-small);
+}
+img, video {
+  mix-blend-mode: normal;
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+
+img.imgSmall {
+width: 25%;
+margin: 0 auto;
+}
+
+img.imgMedium {
+  width: 75%;
+  margin: 0 auto;
+  }
+
+.horizontal{
+  height: auto;
+}
+.horizontal img{
+  width: 100%;
+  height: auto;
+  margin-bottom: 1em;
+}
+
+sup{
+  font-size: 0.5em;
+}
+.slide {
+  position: relative;
+  width: 100%;
+  max-width: 1400px;
+  margin: auto;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: var(--pad);
+}
+
+.slide.divider {
+  text-align: center;
+  padding-bottom: 5em;
+}
+
+.slide.divider .text {
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+/* .slide.divider h2{
+  border: 1px solid var(--grey);
+  border-radius: 50%;
+} */
+
+.slide footer{
+  width: 100%;
+  position: absolute;
+  bottom: var(--pad);
+  left: 0;
+  border-top: 1px solid var(--grey);
+  padding-top: var(--pad);
+  font-size: var(--size-small);
+}
+
+.slide.divider h1 {
+  font-size: 3rem;
+}
+
+.slide h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  line-height: 1.15;
+}
+.slide h2 + p{
+  text-align: center;
+}
+.slide ul{
+  padding: 0;
+}
+.slide li{
+  list-style-type: none;
+  /* margin-bottom: 1em; */
+  text-indent: -1em;
+}
+
+ul li::before{
+  content: " — ";
+}
+
+.text {
+  width: 36rem;
+  margin: 0 auto;
+}
+
+.image{
+  height: var(--height-imgmax);
+}
+.image,.images{
+  margin: auto;
+}
+.img-group{
+  max-width: none;
+  display: flex;
+  height: var(--height-imgmax);
+  justify-content: center;
+}
+.img-group .img{
+  width: 50%;
+}
+.img-group .img:first-child{
+  margin-right: 1em;
+}
+
+
+/*slide-specific overrides*/
+.img-group.lba img, .img-group.lba video{
+  height: auto;
+  margin-bottom: 1em;
+}
+.img-group.crop .img{
+  overflow: hidden;
+}
+.img-group.crop video, .img-group.crop img{
+  object-fit: cover;
+  max-width: none;
+}
+.img-group .dust{
+  height: 60vh;
+  width: 60vh;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.dust img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+span.ultralight {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 100;
+}
+
+.source{
+  font-size: var(--size-small);
+}
+/*.source:before{
+  content: '— ';
+}*/
+.code, code{
+  text-transform: none;
+}
+
+.table{
+  margin: auto;
+  margin-top: var(--pad);
+}
+table{
+  font-size: .75em;
+  width: 100%;
+}
+th{
+  text-align: left;
+  font-weight: normal;
+  border-bottom: 1px solid var(--grey);
+}
+td, th{
+  padding: 0.5em;
+  vertical-align: top;
+}
+td{
+  text-transform: none;
+  width: 30%;
+  min-width: 25%;
+}
+td:first-child, th:first-child{
+  padding-left: 0;
+}
+
